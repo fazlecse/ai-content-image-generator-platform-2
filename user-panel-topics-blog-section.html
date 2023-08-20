@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai-content-&-image-enerator-platform</title>
+    <!-- Favicon-link -->
+    <link rel="shortcut icon" href="assets/img/logo/chatbot.png" type="image/x-icon">
+    <!-- Fontawesome-6 Js link -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Bootstrap 5 Css link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Owl carousel Css link -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- Swiper Css link -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- select2 Css link -->
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <!-- richeditor Css link -->
+    <link rel="stylesheet" href="assets/css/rte_theme_default.css">
+    <script src="assets/js/rte.js"></script>
+    <script src="assets/js/all_plugins.js"></script>
+
+
+
+    <!-- Style Css link -->
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+
+</head>
+
+<body onload="preloder_function()" class="">
+    <!-- Preloader area start -->
+    <div id="preloader">
+
+    </div>
+    <!-- Preloader area end -->
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="user-panel.html" class="logo d-flex align-items-center">
+                <img src="assets/img/logo/logo.png" alt="">
+
+            </a>
+            <button onclick="toggleSideMenu()" class="toggle-sidebar-btn d-none d-lg-block"><i
+                    class="fa-regular fa-bars-staggered"></i></button>
+        </div><!-- End Logo -->
+
+        <div class="search-bar">
+            <form class="search-form d-flex align-items-center" method="POST" action="#">
+                <input type="text" class="form-control" name="query" placeholder="Search" title="Enter search keyword">
+                <button type="submit" title="Search"><i class="fa-regular fa-magnifying-glass"></i></button>
+            </form>
+        </div><!-- End Search Bar -->
+
+
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+
+                <li class="nav-item d-none d-lg-block d-xl-none">
+                    <a class="nav-link nav-icon search-bar-toggle " href="#">
+                        <i class="fa-regular fa-magnifying-glass"></i>
+                    </a>
+                </li><!-- End Search Icon-->
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="badge bg-primary badge-number">4</span>
+                    </a><!-- End Notification Icon -->
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+                        <li class="dropdown-header">
+                            You have 4 new notifications
+                            <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <a href="">
+                                <i class="fa-regular fa-circle-exclamation text-warning"></i>
+                                <div>
+                                    <h4>Lorem Ipsum</h4>
+                                    <p>Quae dolorem earum veritatis oditseno</p>
+                                    <p>30 min. ago</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <a href="">
+                                <i class="fa-regular fa-circle-xmark text-danger"></i>
+                                <div>
+                                    <h4>Atque rerum nesciunt</h4>
+                                    <p>Quae dolorem earum veritatis oditseno</p>
+                                    <p>1 hr. ago</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <a href="">
+                                <i class="fa-regular fa-circle-check text-success"></i>
+                                <div>
+                                    <h4>Sit rerum fuga</h4>
+                                    <p>Quae dolorem earum veritatis oditseno</p>
+                                    <p>2 hrs. ago</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <a href="">
+                                <i class="fa-regular fa-circle-info text-primary"></i>
+                                <div>
+                                    <h4>Dicta reprehenderit</h4>
+                                    <p>Quae dolorem earum veritatis oditseno</p>
+                                    <p>4 hrs. ago</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="dropdown-footer">
+                            <a href="#">Show all notifications</a>
+                        </li>
+
+                    </ul><!-- End Notification Dropdown Items -->
+
+                </li><!-- End Notification Nav -->
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                        <i class="fa-regular fa-messages"></i>
+                        <span class="badge bg-success badge-number">3</span>
+                    </a><!-- End Messages Icon -->
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+                        <li class="dropdown-header">
+                            You have 3 new messages
+                            <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="message-item">
+                            <a href="#">
+                                <img src="assets/img/user_panel/profile/1.png" alt="" class="rounded-circle">
+                                <div>
+                                    <h4>Maria Hudson</h4>
+                                    <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                                    <p>4 hrs. ago</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="message-item">
+                            <a href="#">
+                                <img src="assets/img/profile/profile2.jpg" alt="" class="rounded-circle">
+                                <div>
+                                    <h4>Anna Nelson</h4>
+                                    <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                                    <p>6 hrs. ago</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="message-item">
+                            <a href="#">
+                                <img src="assets/img/profile/profile1.jpg" alt="" class="rounded-circle">
+                                <div>
+                                    <h4>David Muldon</h4>
+                                    <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                                    <p>8 hrs. ago</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="dropdown-footer">
+                            <a href="#">Show all messages</a>
+                        </li>
+
+                    </ul><!-- End Messages Dropdown Items -->
+
+                </li><!-- End Messages Nav -->
+
+                <li class="nav-item dropdown pe-3">
+
+                    <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                        <img src="assets/img/user_panel/profile/1.png" alt="Profile" class="rounded-circle">
+                        <span class="d-none d-lg-block dropdown-toggle ps-2">John Doe</span>
+                    </a><!-- End Profile Iamge Icon -->
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                        <li class="dropdown-header d-flex justify-content-center text-start">
+                            <div class="profile-thum">
+                                <img src="assets/img/user_panel/profile/1.png" alt="">
+                            </div>
+                            <div class="profile-content">
+                                <h6>John Doe</h6>
+                                <span>Content Creator</span>
+                            </div>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                                <i class="fa-regular fa-user"></i>
+                                <span>My Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                                <i class="fa-sharp fa-regular fa-gear"></i>
+                                <span>Account Settings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                                <i class="fa-regular fa-circle-question"></i>
+                                <span>Need Help?</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <i class="fa-regular fa-right-from-bracket"></i>
+                                <span>Sign Out</span>
+                            </a>
+                        </li>
+
+                    </ul><!-- End Profile Dropdown Items -->
+                </li><!-- End Profile Nav -->
+
+            </ul>
+        </nav><!-- End Icons Navigation -->
+
+    </header><!-- End Header -->
+
+    <!-------------------------------------------------------->
+    <!-- Bottom Mobile Tab nav section start -->
+    <!-------------------------------------------------------->
+    <ul class="nav bottom-nav fixed-bottom d-lg-none">
+        <li class="nav-item">
+            <a onclick="toggleSideMenu()" class="nav-link toggle-sidebar" aria-current="page"><i
+                    class="fa-regular fa-bars-staggered"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-regular fa-shuttle-space"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="#"><i class="fa-regular fa-house"></i></a>
+        </li>
+        <li class="nav-item">
+            <a onclick="searchBar()" class="nav-link search-bar-toggle" href="#"><i
+                    class="fa-regular fa-magnifying-glass"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-regular fa-user"></i></a>
+        </li>
+    </ul>
+    <!-------------------------------------------------------->
+    <!-- Bottom Mobile Tab nav section end -->
+    <!-------------------------------------------------------->
+
+    <!-------------------------------------------------------->
+    <!-- Sidebar section start -->
+    <!-------------------------------------------------------->
+    <aside id="sidebar" class="sidebar">
+        <div class="progress-area">
+            <div class="progress-header">
+                <div class="icon-box">
+                    <i class="fa-regular fa-gift"></i>
+                </div>
+                <div class="title">
+                    <h4 class="">Standerd</h4>
+                </div>
+            </div>
+            <div class="content-area">
+                <div class="item item1">
+                    <h5 class="mb-0">3,092</h5>
+                    <span>Word left</span>
+                </div>
+                <div class="item item2">
+                    <h5 class="mb-0">1,124</h5>
+                    <span>Image left</span>
+                </div>
+            </div>
+            <div class="upgrade-btn-area">
+                <a href="user-panel-pricing.html" class="btn cmn-btn2"><i class="fa-regular fa-bolt"></i>
+                    Upgraded to Pro</a>
+            </div>
+        </div>
+        <ul class="sidebar-nav" id="sidebar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="user-panel.html">
+                    <i class="fa-regular fa-grid"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li><!-- End Dashboard Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="topics.html">
+                    <i class="fa-regular fa-microchip-ai"></i>
+                    <span>topics</span>
+                </a>
+            </li><!-- End topics Page Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+                    <i class="fa-sharp fa-regular fa-file-word"></i><span>Documents</span>
+                    <i class="fa-regular fa-angle-down ms-auto bi-chevron-down"></i>
+                </a>
+                <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="user-panel-all-images.html">
+                            <i class="fa-regular fa-circle"></i><span>All Documents</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-panel-all-images.html">
+                            <i class="fa-regular fa-circle"></i><span>All Images</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="forms-editors.html">
+                            <i class="fa-regular fa-circle"></i><span>All Codes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-panel-workbooks.html">
+                            <i class="fa-regular fa-circle"></i><span>Workbooks</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-panel-ai-image.html">
+                            <i class="fa-regular fa-circle"></i><span>AI Images</span>
+                        </a>
+                    </li>
+                </ul>
+            </li><!-- End Documents Nav -->
+            <!-- Start Account settings Nav -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#account-settings" data-bs-toggle="collapse" href="#">
+                    <i class="fa-sharp fa-regular fa-file-word"></i><span>Account Settings</span>
+                    <i class="fa-regular fa-angle-down ms-auto bi-chevron-down"></i>
+                </a>
+                <ul id="account-settings" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="account-settings-profile.html">
+                            <i class="fa-regular fa-circle"></i><span>Account</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="account-settings-notifications.html">
+                            <i class="fa-regular fa-circle"></i><span>Notifications</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="account-settings-identity-verification.html">
+                            <i class="fa-regular fa-circle"></i><span>KYC</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!-- End Account settings Nav -->
+            <!-- Start Account settings Nav -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#components" data-bs-toggle="collapse" href="#">
+                    <i class="fa-sharp fa-regular fa-file-word"></i><span>Components</span>
+                    <i class="fa-regular fa-angle-down ms-auto bi-chevron-down"></i>
+                </a>
+                <ul id="components" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="components-alerts.html">
+                            <i class="fa-regular fa-circle"></i><span>Alerts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-circle"></i><span>Accordion</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!-- End Account settings Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="user-panel-ai-image.html">
+                    <i class="fa-regular fa-image"></i>
+                    <span>AI Images</span>
+                </a>
+            </li><!-- End AI Images Page Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="user-panel-ai-code.html">
+                    <i class="fa-regular fa-message-code"></i>
+                    <span>AI Code</span>
+                </a>
+            </li><!-- End AI Code Page Nav -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="chats.html">
+                    <i class="fa-regular fa-message-code"></i>
+                    <span>Ai Chats</span>
+                </a>
+            </li>
+        </ul>
+
+    </aside>
+    <!-------------------------------------------------------->
+    <!-- Sidebar section end -->
+    <!-------------------------------------------------------->
+
+    <main id="main" class="main">
+        <div class="section dashboard">
+            <div class="template-create-page">
+                <form action="">
+                    <div class="row g-4">
+                        <div class="col-lg-4">
+                            <div class="section-left-card">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="template-view">
+                                            <div class="templete-title-area">
+                                                <div class="template-icon-area">
+                                                    <div class="item item1">
+                                                        <i class="fa-regular fa-message-code"></i> <span
+                                                            class="template-title">AI Code Generate</span>
+                                                    </div>
+                                                    <div class="btn-area d-lg-none">
+                                                        <button type="button" class="cmn-btn" data-bs-toggle="modal"
+                                                            data-bs-target="#image-generator-modal">Filter<i
+                                                                class="fa-regular fa-filter"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="col-12 d-none d-lg-block">
+                                            <div class="row g-3">
+                                                <div class="col-12">
+                                                    <div class="notification">
+                                                        Use this code generator to create code in any programming
+                                                        language.
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="Title" class="form-label">Title<span
+                                                            class="highlight">*</span></label>
+                                                    <input class="form-control" id="Title" value="Title here">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="inputAddress" class="form-label">Language</label>
+                                                    <select class="js-example-basic-single" name="state">
+                                                        <option value="ae">English (USA)</option>
+                                                        <option value="cn">Bulgarian (Bulgaria)</option>
+                                                        <option value="es"> Chinese (Mandarin)</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="exampleFormControlTextarea1" class="form-label">Example
+                                                        textarea</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                        placeholder="e.g. Describe your blog post" rows="3"></textarea>
+
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="inputAddress" class="form-label">Quality type</label>
+                                                    <select class="cmn-select2-dropdown" name="state">
+                                                        <option value="AL">Low</option>
+                                                        <option value="WY">Average</option>
+                                                        <option value="WY">High</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputAddress" class="form-label">Number of
+                                                        Results</label>
+                                                    <select class="cmn-select2-dropdown" name="state">
+                                                        <option value="AL">1</option>
+                                                        <option value="WY">2</option>
+                                                        <option value="WY">3</option>
+                                                        <option value="WY">4</option>
+                                                        <option value="WY">5</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputCity" class="form-label">Max Result Length</label>
+                                                    <input type="text" class="form-control" id="inputCity" value="200"
+                                                        onkeyup="this.value = this.value.replace (/^\.|[^\d\.]/g, '')">
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="btn-area">
+                                                        <button type="submit" class="cmn-btn">generate text <i
+                                                                class="fa-regular fa-angle-right"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="section-right-card">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="row g-4">
+                                            <div class="col-sm-6">
+                                                <div class="template-view">
+                                                    <div class="templete-title-area">
+                                                        <div class="template-icon-area">
+                                                            <div class="item item1">
+                                                                <i class="fa-regular fa-ballot-check"></i> <span
+                                                                    class="template-title">Generated Result</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="cmn-btn-group d-flex justify-content-sm-end ">
+                                                    <button type="button" data-bs-toggle="tooltip"
+                                                        data-bs-placement="top" data-bs-title="Export as Word Document"
+                                                        class="single-btn"><i
+                                                            class="fa-sharp fa-regular fa-file-word"></i></button>
+
+                                                    <button type="button" data-bs-toggle="tooltip"
+                                                        data-bs-placement="top" data-bs-title="Export as PDF Document"
+                                                        class="single-btn"><i
+                                                            class="fa-regular fa-file-pdf"></i></button>
+
+                                                    <button type="button" data-bs-toggle="tooltip"
+                                                        data-bs-placement="top" data-bs-title="Export as Text Document"
+                                                        class="single-btn"><i
+                                                            class="fa-sharp fa-regular fa-file-invoice"></i></button>
+
+                                                    <button type="button" data-bs-toggle="tooltip"
+                                                        data-bs-placement="top" data-bs-title="Copy Text"
+                                                        class="single-btn"><i class="fa-regular fa-copy"></i></button>
+
+                                                    <button type="button" data-bs-toggle="tooltip"
+                                                        data-bs-placement="top" data-bs-title="Save Document"
+                                                        class="single-btn"><i
+                                                            class="fa-regular fa-print active"></i></button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-body-top">
+                                            <div class="row g-4">
+                                                <div class="col-sm-6">
+                                                    <select class="cmn-select2-dropdown" name="state">
+                                                        <option value="AL">Select Workbook Name</option>
+                                                        <option value="WY"> DADA</option>
+                                                        <option value="WY">TRST</option>
+                                                        <option value="WY">Aaaa</option>
+                                                        <option value="WY">Forla</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="input-box">
+                                                        <input type="text" class="form-control" id="inputCity"
+                                                            value="New Code">
+                                                        <button type="button" class="single-btn"
+                                                            data-bs-toggle="tooltip" data-bs-placement="top"
+                                                            data-bs-title="Save Document"><i
+                                                                class="fa-regular fa-floppy-disk"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="rich-text-editor">
+                                                <div id="div_editor1">
+                                                    <p>Hello world!</p>
+                                                    <!-- <p><img src='/images/editor-image.png' /></p> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        </div>
+
+    </main><!-- End #main -->
+
+    <!-------------------------------------------------------->
+    <!-- Footer section start -->
+    <!-------------------------------------------------------->
+    <footer id="footer" class="footer">
+        <div class="copyright">
+            &copy; Copyright <strong><span>Best Ai Admin</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            Designed by <a href="javascript:void(0)" class="highlight">Bug-Finder</a>
+        </div>
+    </footer>
+    <!-------------------------------------------------------->
+    <!-- Footer section end -->
+    <!-------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+    <!-- Modal section start -->
+
+    <!-- Image generate modal start-->
+    <div class="modal fade image-generator-modal" id="image-generator-modal" data-bs-backdrop="static" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="template-view">
+                        <div class="templete-title-area">
+                            <div class="template-icon-area">
+                                <div class="item item1">
+                                    <i class="fa-regular fa-image"></i> <span class="template-title">AI Image
+                                        Generator</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="formModal">
+
+                    <div class="col-12">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <div class="notification">
+                                    Use this code generator to create code in any programming
+                                    language.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <label for="Title" class="form-label">Title<span class="highlight">*</span></label>
+                                <input class="form-control" id="Title" value="Title here">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress" class="form-label">Language</label>
+                                <select class="modal-select" name="state">
+                                    <option value="ae">English (USA)</option>
+                                    <option value="cn">Bulgarian (Bulgaria)</option>
+                                    <option value="es"> Chinese (Mandarin)</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="exampleFormControlTextarea1" class="form-label">Example
+                                    textarea</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1"
+                                    placeholder="e.g. Describe your blog post" rows="3"></textarea>
+
+                            </div>
+                            <div class="col-12">
+                                <label for="inputAddress" class="form-label">Quality type</label>
+                                <select class="modal-select" name="state">
+                                    <option value="AL">Low</option>
+                                    <option value="WY">Average</option>
+                                    <option value="WY">High</option>
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <label for="inputAddress" class="form-label">Number of
+                                    Results</label>
+                                <select class="modal-select" name="state">
+                                    <option value="AL">1</option>
+                                    <option value="WY">2</option>
+                                    <option value="WY">3</option>
+                                    <option value="WY">4</option>
+                                    <option value="WY">5</option>
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <label for="inputCity" class="form-label">Max Result Length</label>
+                                <input type="text" class="form-control" id="inputCity" value="200"
+                                    onkeyup="this.value = this.value.replace (/^\.|[^\d\.]/g, '')">
+                            </div>
+                            <div class="col-12">
+                                <div class="generate-btn-area">
+                                    <button type="submit" class="cmn-btn">generate image <i
+                                            class="fa-regular fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Image generate modal end-->
+
+
+
+    <!-- Modal section end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Jquery Js link -->
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+
+    <!-- Bootstrap Js link -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- select2_Js_link -->
+    <script src="assets/js/select2.min.js"></script>
+    <!-- Richeditor Js link -->
+    <script src="assets/js/richeditor.js"></script>
+
+
+    <!-- Main Js slink -->
+    <script src="assets/js/dashboard.js"></script>
+
+</body>
+
+</html>

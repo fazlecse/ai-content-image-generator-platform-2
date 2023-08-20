@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai-content-&-image-enerator-platform</title>
+    <!-- Favicon-link -->
+    <link rel="shortcut icon" href="assets/img/logo/chatbot.png" type="image/x-icon">
+    <!-- Fontawesome6_Js_link -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Bootstrap5_Css_link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Owl_carousel_Css_link -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- Swiper_Css_link -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- select2_Css_link -->
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+
+
+
+    <!-- Style_Css_link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body onload="preloder_function()" class="">
+    <!-- Preloader area start -->
+    <div id="preloader">
+
+    </div>
+    <!-- Preloader area end -->
+
+    <!-- Nav section start -->
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <i class="fa-light fa-list"></i>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbar">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand" href="index.html"><img class="logo" src="assets/img/logo/logo.png"
+                            alt=""></a>
+                    <button type="button" class="cmn-btn-close btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"><i class="fa-light fa-arrow-right"></i></button>
+                </div>
+                <div class="offcanvas-body align-items-center justify-content-between">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="features.html">features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form>
+                        <ul class="navbar-nav nav-right d-flex align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html"><i
+                                        class="login-icon fa-regular fa-right-to-bracket"></i>Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="get-start-btn" href="signup.html">register now</a>
+                            </li>
+                            <li>
+                                <a id="toggle-btn" class="nav-link d-flex toggle-btn">
+                                    <i class="fa-regular fa-moon" id="moon"></i>
+                                    <i class="fa-regular fa-sun-bright" id="sun"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Nav section end -->
+
+    <!-------------------------------------------------------->
+    <!-- Bottom Mobile Tab nav section start -->
+    <!-------------------------------------------------------->
+    <ul class="nav bottom-nav fixed-bottom d-lg-none">
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasExample"
+                href="#offcanvasNavbar" aria-current="page" href="#"><i class="fa-regular fa-bars-staggered"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-regular fa-shuttle-space"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active"><i class="fa-regular fa-house"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-regular fa-address-book"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-regular fa-user"></i></a>
+        </li>
+    </ul>
+    <!-------------------------------------------------------->
+    <!-- Bottom Mobile Tab nav section end -->
+    <!-------------------------------------------------------->
+
+
+    <!-- Hero area start -->
+    <div class="hero-section">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 order-2 order-md-1">
+                    <h1>the artificial intelligence <br>
+                        tool that will make
+                        <br>
+                        <span class="text-gradient"> your life easier</span>
+                    </h1>
+                    <p class="hero-para-text cmn-para-text">Generate Engaging and High-Quality Content in Minutes with
+                        the Help of AI. There are several AI-powered writing assistants.</p>
+                    <div class="hero-btn-area">
+                        <button type="button" class="cmn-btn">get started</button>
+                        <button type="button" class="cmn-btn3">more features</button>
+                    </div>
+                </div>
+                <div class="col-md-6 order-1 order-md-2">
+                    <div class="hero-image-area">
+                        <img src="assets/img/hero/Chat bot-amico-charecter-no-shadow.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero area end -->
+
+    <!-- Feature section start -->
+    <section class="feature-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header mx-auto text-center mb-50">
+                        <div class="section-subtitle">key features</div>
+                        <h2>AI Generate Content In Seconds</h2>
+                        <p class="cmn-para-text mx-auto">Get better results in a fraction of the time.
+                            Finally, a writing tool you’ll actually use.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-xl-4 col-md-6">
+                    <a href="">
+                        <div class="feature-box">
+                            <div class="icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class=" svg-icon">
+                                    <path
+                                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                    </path>
+                                </svg>
+                                <span class="icon"><i class="fa-regular fa-money-check-pen"></i></span>
+                            </div>
+                            <div class="text-box">
+                                <h4>Blog Content</h4>
+                                <p>Write optimized blog posts in a fraction of the time.</p>
+                                <div class="highlight">Try blog content</div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <a href="">
+                        <div class="feature-box">
+                            <div class="icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class=" svg-icon">
+                                    <path
+                                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                    </path>
+                                </svg>
+                                <span class="icon">
+                                    <i class="fa-regular fa-money-check-pen"></i>
+                                </span>
+                            </div>
+                            <div class="text-box">
+                                <h4>SEO Content</h4>
+                                <p>Write optimized blog posts in a fraction of the time.</p>
+                                <div class="highlight">Try SEO content</div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <a href="">
+                        <div class="feature-box">
+                            <div class="icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class=" svg-icon">
+                                    <path
+                                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                    </path>
+                                </svg>
+                                <span class="icon">
+                                    <i class="fa-regular fa-cart-shopping"></i>
+                                </span>
+                            </div>
+                            <div class="text-box">
+                                <h4>eCommerce content</h4>
+                                <p>Write optimized blog posts in a fraction of the time.</p>
+                                <div class="highlight">Try eCommerce content</div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <a href="">
+                        <div class="feature-box">
+                            <div class="icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class=" svg-icon">
+                                    <path
+                                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                    </path>
+                                </svg>
+                                <span class="icon">
+                                    <i class="fa-regular fa-messages"></i>
+                                </span>
+                            </div>
+                            <div class="text-box">
+                                <h4>Social Media Content</h4>
+                                <p>Write optimized blog posts in a fraction of the time.</p>
+                                <div class="highlight">Try
+                                    Social Media Content</div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <a href="">
+                        <div class="feature-box">
+                            <div class="icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class=" svg-icon">
+                                    <path
+                                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                    </path>
+                                </svg>
+                                <span class="icon">
+                                    <i class="fa-regular fa-money-check-pen"></i>
+                                </span>
+                            </div>
+                            <div class="text-box">
+                                <h4>Digital Ad Copy</h4>
+                                <p>Write optimized blog posts in a fraction of the time.</p>
+                                <div class="highlight">Try
+                                    Digital Ad Copy</div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <a href="">
+                        <div class="feature-box">
+                            <div class="icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class=" svg-icon">
+                                    <path
+                                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                    </path>
+                                </svg>
+                                <span class="icon">
+                                    <i class="fa-regular fa-money-check-pen"></i>
+                                </span>
+                            </div>
+                            <div class="text-box">
+                                <h4>Website copy</h4>
+                                <p>Write optimized blog posts in a fraction of the time.</p>
+                                <div class="highlight">Try blog content</div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feature section end -->
+
+    <!-- About section start -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-6">
+                    <div class="about-image-area">
+                        <img src="assets/img/about/person-working-html-computer.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-content">
+                        <div class="section-subtitle">About CreativeGenius AI</div>
+                        <h2 class="section-title">Your Ultimate Content and Image Creation Hub</h2>
+                        <p>Welcome to CreativeGenius AI, your one-stop destination for revolutionizing content and image
+                            creation. We combine cutting-edge artificial intelligence technology with creative ingenuity
+                            to empower you with the tools you need to stand out in the digital world.</p>
+                        <br>
+                        <ul class="item-list-container">
+                            <li class="item">
+                                <div class="icon-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=" svg-icon">
+                                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                        </path>
+                                    </svg>
+                                    <span class="number">01</span>
+                                </div>
+                                <div class="item-content">
+                                    <h5>Advanced AI Algorithms :</h5>
+                                    <span>Our AI algorithms are designed to understand your specific needs and preferences.</span>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <div class="icon-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=" svg-icon">
+                                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                        </path>
+                                    </svg>
+                                    <span class="number">02</span>
+                                </div>
+                                <div class="item-content">
+                                    <h5>Image Generation :</h5>
+                                    <span>Say goodbye to stock photos and generic graphics. Our image generation tools let you design stunning visuals, infographics, logos, and more in minutes, all customized to your brand and message.</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="btn-area mt-30">
+                            <button type="buttot" class="cmn-btn3">learn more</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section end -->
+
+    <!-------------------------------------------------------->
+    <!-- Qr section start -->
+    <!-------------------------------------------------------->
+    <section class="qr-section">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 order-2 order-md-1">
+                    <div class="section-header">
+                        <div class="section-subtitle">Chat bot help you</div>
+                        <h2 class="section-title">Content Creation With chat bot in easy way</h2>
+                        <p class="cmn-para-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
+                            perferendis culpa architecto corrupti, natus dicta.</p>
+
+                    </div>
+                    <div class="qr-box">
+                        <input type="hidden" id="qrUrl" value="https://www.example.com" />
+                        <div id="qrcode"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 order-1 order-md-2">
+                    <div class="qr-section-imgae-area">
+                        <img src="assets/img/qr-section/chat-bot.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------------------------------------------->
+    <!-- Qr section start -->
+    <!-------------------------------------------------------->
+
+    <!-- How it works section start -->
+    <section class="how-it-work">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center mb-50">
+                        <h2>How it <span class="text-gradient">works</span></h2>
+                        <p class="cmn-para-text mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Phasellus molestie, justo nec convallis sollicitudin.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="how-it-work-wrapper">
+                <div class="col-xl-10 mx-auto ">
+                    <div class="how-it-work-item">
+                        <div class="row align-items-center g-4">
+                            <div class="col-sm-6">
+                                <div class="image-area">
+                                    <img src="assets/img/how-it-works/1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="section-header">
+                                    <div class="number">1</div>
+                                    <div class="text-area">
+                                        <h3>Enter your copywriting project</h3>
+                                        <p>Choose from emails, social posts, long-form blog posts, and more!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="section-devider-area">
+                                    <img src="assets/img/how-it-works/line_right.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="how-it-work-item">
+                        <div class="row align-items-center g-4">
+                            <div class="col-sm-6 order-2 order-sm-1">
+                                <div class="section-header">
+                                    <div class="number">2</div>
+                                    <div class="text-area">
+                                        <h3>Give Copy.ai a bit of context
+                                        </h3>
+                                        <p>Enter a few sentences about your brand and products.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 order-1 order-sm-2">
+                                <div class="image-area">
+                                    <img src="assets/img/how-it-works/2.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="section-devider-area">
+                                    <img src="assets/img/how-it-works/line_left.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="how-it-work-item">
+                        <div class="row align-items-center g-4">
+                            <div class="col-sm-6">
+                                <div class="image-area">
+                                    <img src="assets/img/how-it-works/3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="section-header">
+                                    <div class="number">3</div>
+                                    <div class="text-area">
+                                        <h3>Sift through the results
+                                        </h3>
+                                        <p>Our AI content generator gives you multiple options for each campaign that
+                                            you’re working on.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="section-devider-area">
+                                    <img src="assets/img/how-it-works/line_middle-from-left.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="how-it-work-item">
+                        <div class="row">
+                            <div class="col-sm-6 mx-auto justify-content-center">
+                                <div class="section-header">
+                                    <div class="number">4</div>
+                                    <div class="text-area">
+                                        <h3>Edit, polish, and publish
+                                        </h3>
+                                        <p>Use Copy.ai’s editor to rewrite paragraphs and polish up sentences. Then,
+                                            just copy and paste the work into your CMS for publishing.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- How it works section end -->
+
+    <!-------------------------------------------------------->
+    <!-- Pricing section start -->
+    <!-------------------------------------------------------->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center mb-50">
+                        <h2>Perfect plan <span class="text-gradient">for everyone</span>
+                        </h2>
+                        <p class="cmn-para-text mx-auto">Manage your projects and your talent in a single system,
+                            resulting in empowered teams.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <!-- Cmn tabs start -->
+                    <div class="cmn-tabs mb-50">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="Prepaid-tab" data-bs-toggle="pill"
+                                    data-bs-target="#Prepaid" type="button" role="tab" aria-controls="Prepaid"
+                                    aria-selected="true">Prepaid</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="monthly-plan-tab" data-bs-toggle="pill"
+                                    data-bs-target="#monthly-plan" type="button" role="tab" aria-controls="monthly-plan"
+                                    aria-selected="false">monthly plan</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="yearly-plan-tab" data-bs-toggle="pill"
+                                    data-bs-target="#yearly-plan" type="button" role="tab" aria-controls="yearly-plan"
+                                    aria-selected="false">yearly plan</button>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- Cmn tabs end -->
+
+                    <!-- Cmn tab content start -->
+                    <div class="cmn-tab-content">
+                        <div class="tab-content" id="pills-tabContent">
+                            <!-- Prepaid tab content start -->
+                            <div class="tab-pane fade" id="Prepaid" role="tabpanel" aria-labelledby="Prepaid-tab"
+                                tabindex="0">
+                                <div class="row g-4 justify-content-center">
+                                    <div class="col-xl-6">
+                                        <div class="pricing-box prepaid-plan">
+                                            <div class="section-body">
+                                                <div class="price-area">
+                                                    <div class="price-title">
+                                                        <div><sup>$</sup> <span>99.99</span> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="content-details">
+                                                    <div class="prepaid-title">
+                                                        <div>5000x100</div>
+                                                    </div>
+                                                    <p class="prepaid-info"><span>Words Included:</span> <span
+                                                            class="highlight">5,000</span></p>
+                                                    <p class="prepaid-info"><span>Images Included:</span> <span
+                                                            class="highlight">100</span></p>
+                                                </div>
+                                                <div class="btn-area">
+                                                    <button type="button" class="cmn-btn">Purchase</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="pricing-box prepaid-plan">
+                                            <div class="section-body">
+                                                <div class="price-area">
+                                                    <div class="price-title">
+                                                        <div><sup>$</sup> <span>9.99</span> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="content-details">
+                                                    <div class="prepaid-title">
+                                                        <div>5000x100</div>
+                                                    </div>
+                                                    <p class="prepaid-info"><span>Words Included:</span> <span
+                                                            class="highlight">5,000</span></p>
+                                                    <p class="prepaid-info"><span>Images Included:</span> <span
+                                                            class="highlight">100</span></p>
+                                                </div>
+                                                <div class="btn-area">
+                                                    <button type="button" class="cmn-btn">Purchase</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="pricing-box prepaid-plan">
+                                            <div class="section-body">
+                                                <div class="price-area">
+                                                    <div class="price-title">
+                                                        <div><sup>$</sup> <span>100.99</span> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="content-details">
+                                                    <div class="prepaid-title">
+                                                        <div>5000x100</div>
+                                                    </div>
+                                                    <p class="prepaid-info"><span>Words Included:</span> <span
+                                                            class="highlight">5,000</span></p>
+                                                    <p class="prepaid-info"><span>Images Included:</span> <span
+                                                            class="highlight">100</span></p>
+                                                </div>
+                                                <div class="btn-area">
+                                                    <button type="button" class="cmn-btn">Purchase</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="pricing-box prepaid-plan">
+                                            <div class="section-body">
+                                                <div class="price-area">
+                                                    <div class="price-title">
+                                                        <div><sup>$</sup> <span>9.99</span> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="content-details">
+                                                    <div class="prepaid-title">
+                                                        <div>5000x100</div>
+                                                    </div>
+                                                    <p class="prepaid-info"><span>Words Included:</span> <span
+                                                            class="highlight">5,000</span></p>
+                                                    <p class="prepaid-info"><span>Images Included:</span> <span
+                                                            class="highlight">100</span></p>
+                                                </div>
+                                                <div class="btn-area">
+                                                    <button type="button" class="cmn-btn">Purchase</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Prepaid tab content end -->
+
+                            <!-- Monthly plan tab content start -->
+                            <div class="tab-pane fade show active" id="monthly-plan" role="tabpanel"
+                                aria-labelledby="monthly-plan-tab" tabindex="0">
+                                <div class="cmn-tab-content">
+                                    <div class="row g-5">
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="pricing-box">
+                                                <div class="section-header">
+                                                    <h3 class="section-title">standerd</h3>
+                                                </div>
+                                                <div class="section-body">
+                                                    <div class="title">
+                                                        <span class="price">$12</span> <span>/month</span>
+                                                    </div>
+                                                    <ul class="pricing-feature">
+                                                        <li><i class="fa-solid fa-check"></i>5 user seats
+                                                        </li>
+                                                        <li><i class="fa-solid fa-check"></i>90+ copywriting tools</li>
+                                                        <li><i class="fa-solid fa-check"></i>90+ copywriting tools</li>
+                                                        <li><i class="fa-solid fa-check"></i>Unlimited projects</li>
+                                                        <li><i class="fa-solid fa-check"></i>Unlimited projects</li>
+                                                        <li><i class="fa-solid fa-check"></i>Priority email support</li>
+
+                                                        <li><i class="fa-solid fa-xmark"></i>25+ languages </li>
+                                                        <li><i class="fa-solid fa-xmark"></i>Blog Wizard tool</li>
+                                                    </ul>
+                                                    <div class="btn-area">
+                                                        <button type="button" class="cmn-btn2">Start free trial</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="pricing-box featured">
+                                                <div class="featured-title">most popular</div>
+                                                <div class="section-header">
+                                                    <h3 class="section-title">plus</h3>
+                                                </div>
+                                                <div class="section-body">
+                                                    <div class="title">
+                                                        <span class="price">$39</span> <span>/month</span>
+                                                    </div>
+                                                    <ul class="pricing-feature">
+                                                        <li><i class="fa-solid fa-check"></i>90+ copywriting tools</li>
+                                                        <li><i class="fa-solid fa-check"></i>Unlimited projects</li>
+                                                        <li><i class="fa-solid fa-check"></i>Priority email support</li>
+                                                        <li><i class="fa-solid fa-check"></i>Priority email support</li>
+                                                        <li><i class="fa-solid fa-check"></i>25+ languages </li>
+                                                        <li><i class="fa-solid fa-check"></i>Blog Wizard tool</li>
+                                                        <li><i class="fa-solid fa-check"></i>Blog Wizard tool</li>
+                                                        <li><i class="fa-solid fa-xmark"></i>Access to newest features
+                                                        </li>
+                                                    </ul>
+                                                    <div class="btn-area">
+                                                        <button type="button" class="cmn-btn2">Start free trial</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="pricing-box">
+                                                <div class="section-header">
+                                                    <h3 class="section-title">enterprise</h3>
+                                                </div>
+                                                <div class="section-body">
+                                                    <div class="title">
+                                                        <span class="price">$129</span> <span>/month</span>
+                                                    </div>
+                                                    <ul class="pricing-feature">
+                                                        <li><i class="fa-solid fa-check"></i>90+ copywriting tools</li>
+                                                        <li><i class="fa-solid fa-check"></i>Unlimited projects</li>
+                                                        <li><i class="fa-solid fa-check"></i>25+ languages </li>
+                                                        <li><i class="fa-solid fa-check"></i>25+ languages </li>
+                                                        <li><i class="fa-solid fa-check"></i>Blog Wizard tool</li>
+                                                        <li><i class="fa-solid fa-check"></i>Access to newest features
+                                                        </li>
+                                                        <li><i class="fa-solid fa-check"></i>API access</li>
+                                                        <li><i class="fa-solid fa-check"></i>API access</li>
+                                                    </ul>
+                                                    <div class="btn-area">
+                                                        <button type="button" class="cmn-btn2">Start free trial</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Monthly plan tab content end -->
+
+                            <!-- Yearly plan tab content start -->
+                            <div class="tab-pane fade" id="yearly-plan" role="tabpanel"
+                                aria-labelledby="yearly-plan-tab" tabindex="0">
+                                <div class="cmn-tab-content">
+                                    <div class="row g-5">
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="pricing-box">
+                                                <div class="section-header">
+                                                    <h3 class="section-title">standerd</h3>
+                                                </div>
+                                                <div class="section-body">
+                                                    <div class="title">
+                                                        <span class="price">$12</span> <span>/month</span>
+                                                    </div>
+                                                    <ul class="pricing-feature">
+                                                        <li><i class="fa-solid fa-check"></i>5 user seats
+                                                        </li>
+                                                        <li><i class="fa-solid fa-check"></i>90+ copywriting tools</li>
+                                                        <li><i class="fa-solid fa-check"></i>90+ copywriting tools</li>
+                                                        <li><i class="fa-solid fa-check"></i>Unlimited projects</li>
+                                                        <li><i class="fa-solid fa-check"></i>Unlimited projects</li>
+                                                        <li><i class="fa-solid fa-check"></i>Priority email support</li>
+
+                                                        <li><i class="fa-solid fa-xmark"></i>25+ languages </li>
+                                                        <li><i class="fa-solid fa-xmark"></i>Blog Wizard tool</li>
+                                                    </ul>
+                                                    <div class="btn-area">
+                                                        <button type="button" class="cmn-btn2">Start free trial</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="pricing-box featured">
+                                                <div class="featured-title">most popular</div>
+                                                <div class="section-header">
+                                                    <h3 class="section-title">plus</h3>
+                                                </div>
+                                                <div class="section-body">
+                                                    <div class="title">
+                                                        <span class="price">$39</span> <span>/month</span>
+                                                    </div>
+                                                    <ul class="pricing-feature">
+                                                        <li><i class="fa-solid fa-check"></i>90+ copywriting tools</li>
+                                                        <li><i class="fa-solid fa-check"></i>Unlimited projects</li>
+                                                        <li><i class="fa-solid fa-check"></i>Priority email support</li>
+                                                        <li><i class="fa-solid fa-check"></i>Priority email support</li>
+                                                        <li><i class="fa-solid fa-check"></i>25+ languages </li>
+                                                        <li><i class="fa-solid fa-check"></i>Blog Wizard tool</li>
+                                                        <li><i class="fa-solid fa-check"></i>Blog Wizard tool</li>
+                                                        <li><i class="fa-solid fa-xmark"></i>Access to newest features
+                                                        </li>
+                                                    </ul>
+                                                    <div class="btn-area">
+                                                        <button type="button" class="cmn-btn2">Start free trial</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="pricing-box">
+                                                <div class="section-header">
+                                                    <h3 class="section-title">enterprise</h3>
+                                                </div>
+                                                <div class="section-body">
+                                                    <div class="title">
+                                                        <span class="price">$129</span> <span>/month</span>
+                                                    </div>
+                                                    <ul class="pricing-feature">
+                                                        <li><i class="fa-solid fa-check"></i>90+ copywriting tools</li>
+                                                        <li><i class="fa-solid fa-check"></i>Unlimited projects</li>
+                                                        <li><i class="fa-solid fa-check"></i>25+ languages </li>
+                                                        <li><i class="fa-solid fa-check"></i>25+ languages </li>
+                                                        <li><i class="fa-solid fa-check"></i>Blog Wizard tool</li>
+                                                        <li><i class="fa-solid fa-check"></i>Access to newest features
+                                                        </li>
+                                                        <li><i class="fa-solid fa-check"></i>API access</li>
+                                                        <li><i class="fa-solid fa-check"></i>API access</li>
+                                                    </ul>
+                                                    <div class="btn-area">
+                                                        <button type="button" class="cmn-btn2">Start free trial</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Yearly plan tab content end -->
+                        </div>
+                    </div>
+                    <!-- Cmn tab content end -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------------------------------------------->
+    <!-- Pricing section end -->
+    <!-------------------------------------------------------->
+
+    <!-- Testimonial section start -->
+    <section id="testimonial" class="testimonial-section">
+        <div class="container">
+            <div class="section-header text-center mb-50">
+                <h2>We serve<span class="text-gradient"> our clients</span></h2>
+                <p class="cmn-para-text mx-auto">As a Saas developer or web crawler expert, I help
+                    organizations adjust to the expanding significance.</p>
+
+            </div>
+            <!-- /section-title -->
+            <div class="testimonial-slider">
+                <div id="testimonial-slide" class="carousel slide" data-bs-ride="carousel">
+                    <div class="row g-sm-4">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="testimonial-indicator relative-position">
+                                <ol class="carousel-indicators">
+                                    <li data-bs-target="#testimonial-slide" data-bs-slide-to="0" class="">
+                                        <img src="assets/img/testimonial/tst1.png" alt="">
+                                    </li>
+                                    <li data-bs-target="#testimonial-slide" data-bs-slide-to="1" class="">
+                                        <img src="assets/img/testimonial/tst2.png" alt="">
+                                    </li>
+                                    <li data-bs-target="#testimonial-slide" data-bs-slide-to="2" class="">
+                                        <img src="assets/img/testimonial/tst3.png" alt="">
+                                    </li>
+                                    <li data-bs-target="#testimonial-slide" data-bs-slide-to="3" class="">
+                                        <img src="assets/img/testimonial/tst4.png" alt="">
+                                    </li>
+                                    <li data-bs-target="#testimonial-slide" data-bs-slide-to="4" class="active">
+                                        <img src="assets/img/testimonial/tst5.png" alt="">
+                                    </li>
+                                    <li data-bs-target="#testimonial-slide" data-bs-slide-to="5" class="">
+                                        <img src="assets/img/testimonial/tst6.png" alt="">
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="carousel-preview">
+                                <div class="carousel-inner relative-position">
+                                    <div class="carousel-item">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-text relative-position pera-content">
+                                                <p>Lorem ipsum dolor sit amet consecter tony adipiscing elitsed do
+                                                    eiusmodi tempor roar incididunt ut laboreet dolore magna as the
+                                                    opposed to using. Type of partnership or Malta. The limited todot
+                                                    liability.</p>
+                                                <div class="testimonial-rating ul-li">
+                                                    <ul class="d-flex">
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="qoute-mark relative-position"></div>
+                                            <div class="testimonial-name-designation">
+                                                <div class="testimonial-img float-left">
+                                                    <img src="assets/img/testimonial/tst1.png" alt="">
+                                                </div>
+                                                <div class="testimonial-meta saas-modern-headline pera-content">
+                                                    <h4>Nepoli Dewan</h4>
+                                                    <p>SEO Manager</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /slide item -->
+                                    <div class="carousel-item">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-text relative-position pera-content">
+                                                <p>Lorem ipsum dolor sit amet consecter tony adipiscing elitsed do
+                                                    eiusmodi tempor roar incididunt ut laboreet dolore magna as the
+                                                    opposed to using. Type of partnership or Malta. The limited todot
+                                                    liability.</p>
+                                                <div class="testimonial-rating ul-li">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="testimonial-name-designation">
+                                                <div class="testimonial-img float-left">
+                                                    <img src="assets/img/testimonial/tst2.png" alt="">
+                                                </div>
+                                                <div class="testimonial-meta saas-modern-headline pera-content">
+                                                    <h4>Rameli Andrea</h4>
+                                                    <p>SEO Manager</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /slide-item -->
+                                    <div class="carousel-item">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-text relative-position pera-content">
+                                                <p>Lorem ipsum dolor sit amet consecter tony adipiscing elitsed do
+                                                    eiusmodi tempor roar incididunt ut laboreet dolore magna as the
+                                                    opposed to using. Type of partnership or Malta. The limited todot
+                                                    liability.</p>
+                                                <div class="testimonial-rating ul-li">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="qoute-mark relative-position"></div>
+                                            <div class="testimonial-name-designation">
+                                                <div class="testimonial-img float-left">
+                                                    <img src="assets/img/testimonial/tst1.png" alt="">
+                                                </div>
+                                                <div class="testimonial-meta saas-modern-headline pera-content">
+                                                    <h4>Nepoli Dewan</h4>
+                                                    <p>SEO Manager</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /slide item -->
+                                    <div class="carousel-item">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-text relative-position pera-content">
+                                                <p>Lorem ipsum dolor sit amet consecter tony adipiscing elitsed do
+                                                    eiusmodi tempor roar incididunt ut laboreet dolore magna as the
+                                                    opposed to using. Type of partnership or Malta. The limited todot
+                                                    liability.</p>
+                                                <div class="testimonial-rating ul-li">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="qoute-mark relative-position"></div>
+                                            <div class="testimonial-name-designation">
+                                                <div class="testimonial-img float-left">
+                                                    <img src="assets/img/testimonial/tst3.png" alt="">
+                                                </div>
+                                                <div class="testimonial-meta saas-modern-headline pera-content">
+                                                    <h4>Nepoli Dewan</h4>
+                                                    <p>SEO Manager</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /slide item -->
+                                    <div class="carousel-item active">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-text relative-position pera-content">
+                                                <p>Lorem ipsum dolor sit amet consecter tony adipiscing elitsed do
+                                                    eiusmodi tempor roar incididunt ut laboreet dolore magna as the
+                                                    opposed to using. Type of partnership or Malta. The limited todot
+                                                    liability.</p>
+                                                <div class="testimonial-rating ul-li">
+                                                    <ul class="d-flex">
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="qoute-mark relative-position"></div>
+                                            <div class="testimonial-name-designation">
+                                                <div class="testimonial-img float-left">
+                                                    <img src="assets/img/testimonial/tst4.png" alt="">
+                                                </div>
+                                                <div class="testimonial-meta saas-modern-headline pera-content">
+                                                    <h4>Nepoli Dewan</h4>
+                                                    <p>SEO Manager</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /slide item -->
+                                    <div class="carousel-item">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-text relative-position pera-content">
+                                                <p>Lorem ipsum dolor sit amet consecter tony adipiscing elitsed do
+                                                    eiusmodi tempor roar incididunt ut laboreet dolore magna as the
+                                                    opposed to using. Type of partnership or Malta. The limited todot
+                                                    liability.</p>
+                                                <div class="testimonial-rating ul-li">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="qoute-mark relative-position"></div>
+                                            <div class="testimonial-name-designation">
+                                                <div class="testimonial-img float-left">
+                                                    <img src="assets/img/testimonial/tst5.png" alt="">
+                                                </div>
+                                                <div class="testimonial-meta saas-modern-headline pera-content">
+                                                    <h4>Nepoli Dewan</h4>
+                                                    <p>SEO Manager</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /slide item -->
+                                </div>
+                                <!-- /carosel arrow -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-slide"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#testimonial-slide"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+
+                                <!-- /carosel arrow -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial section end -->
+
+    <!-- Faq section start -->
+    <section class="faq-area">
+        <div class="container">
+            <div class="row">
+                <div class="section-header text-center mb-50">
+                    <h2>Frequently Asked <span class="text-gradient">Questions</span> </h2>
+                    <p class="cmn-para-text mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+                        possimus itaque earum dolor sit repudiandae impedit tempore accusantium quos in.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    How much does this project cost?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="table-responsive">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem beatae
+                                            laudantium accusantium eius natus deleniti animi incidunt iure sit velit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Do I have a warranty?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, labore
+                                        repudiandae. Quis ipsam distinctio necessitatibus, similique sit suscipit magni
+                                        nobis.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, labore
+                                        repudiandae. Quis ipsam distinctio necessitatibus, similique sit suscipit magni
+                                        nobis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What we offer?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cupiditate aliquam
+                                        corporis, delectus, quis molestias officiis culpa facere nulla fuga explicabo
+                                        expedita.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                    What's most important to you
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, omnis? Iure
+                                        inventore architecto repudiandae sequi vitae, iste autem pariatur ducimus
+                                        veritatis numquam error quo! Esse!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                                    Client Services
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic accusantium maiores
+                                        dolorem cupiditate debitis facilis inventore cumque nisi non, minus error, sit
+                                        asperiores, voluptates autem natus molestias aspernatur ut voluptate?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                                    Expect nothing less than perfect
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum obcaecati quis
+                                        veritatis reiciendis voluptate harum.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Faq section end -->
+
+
+
+    <!-- ---------------------------------------------------- -->
+    <!-- Blog Section start -->
+    <!-- ---------------------------------------------------- -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="section-header text-center mb-50">
+                        <h2>Our Recent <span class="text-gradient">Blog</span> </h2>
+                        <p class="cmn-para-text mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-box">
+                        <div class="img-box">
+                            <img src="assets/img/blog/01.jpg" alt="">
+                        </div>
+                        <div class="blog-author">
+                            <div class="author-img">
+                                <img src="assets/img/testimonial/tst1.png" alt="">
+                            </div>
+                            <div class="author-info ">
+                                <a href="#">
+                                    <h5>Joshep brathwaith</h5>
+                                </a>
+                                <span>Consultant</span>
+                            </div>
+                        </div>
+                        <div class=" blog-title">
+                            <h4><a href="blog-details.html">Survival strategies to ensure business domination</a></h4>
+                        </div>
+                        <div class="pera-text">
+                            <p>Business we opertes in is like an intericate games and chess where every move counts
+                            </p>
+                        </div>
+                        <button type="button" class="cmn-btn3">read more</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-box" data-wow-delay="0.1s">
+                        <div class="img-box">
+                            <img src="assets/img/blog/2.png" alt="">
+                        </div>
+                        <div class="blog-author">
+                            <div class="author-img">
+                                <img src="assets/img/testimonial/tst2.png" alt="">
+                            </div>
+                            <div class="author-info ">
+                                <a href="#">
+                                    <h5>Joshep brathwaith</h5>
+                                </a>
+                                <span>Consultant</span>
+                            </div>
+                        </div>
+                        <div class=" blog-title">
+                            <h4><a href="">Survival strategies to ensure business domination Lorem ipsum dolor sit
+                                    amet consectetur adipisicing elit. Sed, aliquam?</a></h4>
+                        </div>
+                        <div class="pera-text">
+                            <p>Business we opertes in is like an intericate games and chess where every move counts
+                            </p>
+                        </div>
+                        <button type="button" class="cmn-btn3">read more</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-box" data-wow-delay="0.2s">
+                        <div class="img-box">
+                            <img src="assets/img/blog/3.png" alt="">
+                        </div>
+                        <div class="blog-author">
+                            <div class="author-img">
+                                <img src="assets/img/testimonial/tst3.png" alt="">
+                            </div>
+                            <div class="author-info ">
+                                <a href="#">
+                                    <h5>Joshep brathwaith</h5>
+                                </a>
+                                <span>Consultant</span>
+                            </div>
+                        </div>
+                        <div class=" blog-title">
+                            <h4><a href="">Survival strategies to ensure business domination</a></h4>
+                        </div>
+                        <div class="pera-text">
+                            <p>Business we opertes in is like an intericate games and chess where every move counts
+                            </p>
+                        </div>
+                        <button type="button" class="cmn-btn3">read more</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------------------------------------- -->
+    <!-- Blog Section end -->
+    <!-- ---------------------------------------------------- -->
+
+
+    <!-- footer section start -->
+    <section class="footer-area pb-50 pt-50">
+        <div class="container">
+            <div class="newsletter-area">
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-6">
+                        <h2 class="Newslatter-title mb-0">Connect With Smart AI Tools
+                        </h2>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="newsletter-inner">
+                            <form class="subscribe-form">
+                                <input type="text" placeholder="Enter your email address">
+                                <button><i class="fa-regular fa-arrow-right fa-beat"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="cmn-hr">
+            <div class="row gy-4 gy-sm-5">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="footer-widget">
+                        <div class="widget_logo mb-30">
+                            <a href="#nav_area"><img class="footer-logo" src="assets/img/logo/logo.png" alt=""></a>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur fuga odit excepturi,
+                            natus voluptate commodi qui sunt quisquam cupiditate molestiae?</p>
+                        <div class="social-area mt-50">
+                            <ul class="d-flex">
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="footer-widget">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 pt-sm-0 pt-3 ps-lg-5">
+                    <div class="footer-widget">
+                        <h5>Support</h5>
+                        <ul>
+                            <li><a href="">Help Center</a></li>
+                            <li><a href="">Blog & Tutorial</a></li>
+                            <li><a href="">Pricing</a></li>
+                            <li><a href="">Student Discount</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 pt-sm-0 pt-3">
+                    <div class="footer-widget">
+                        <h5>Contact Us</h5>
+                        <p>10714 163rd Pl, Orland Park, IL 60467, United States</p>
+                        <p>email@website.com</p>
+                        <p>354-4156745674</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="cmn-hr">
+            <div class="copy-right-area">
+                <div class="row gy-4 ">
+                    <div class="col-sm-6 text-sm-start text-center">
+                        <p>Copyright © 2023 <a href="" class="highlight">Best Ai</a> All Rights Reserved</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="language text-sm-end text-center">
+                            <a href="" class="language">English</a>
+                            <a href="" class="language">Spanish</a>
+                            <a href="" class="language">Germany</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section start -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Jquery_Js_link -->
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+
+    <!-- Bootstrap_Js_link -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Owl_carausel_Js_link -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Swiper_Js_link -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Qr_Js_link -->
+    <script src="assets/js/qrjs2.min.js"></script>
+    <!-- select2_Js_link -->
+    <script src="assets/js/select2.min.js"></script>
+
+
+    <!-- Main_Js_link -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

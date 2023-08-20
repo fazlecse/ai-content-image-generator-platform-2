@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai-content-&-image-enerator-platform</title>
+    <!-- Favicon-link -->
+    <link rel="shortcut icon" href="assets/img/logo/chatbot.png" type="image/x-icon">
+    <!-- Fontawesome6_Js_link -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- Bootstrap5_Css_link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Owl_carousel_Css_link -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- Swiper_Css_link -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- select2_Css_link -->
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+
+
+
+    <!-- Style_Css_link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body onload="preloder_function()" class="">
+    <!-- Preloader area start -->
+    <div id="preloader">
+
+    </div>
+    <!-- Preloader area end -->
+
+    <!-- Nav Area Start -->
+    <nav class="navbar banner-nav fixed-top navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand logo" href="#"><img src="assets/img/logo/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <i class="fa-regular fa-bars-staggered"></i>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a class="navbar-brand logo" href="#"><img
+                                src="assets/img/logo/chatbot.png" alt=""></a></h5>
+                    <button type="button" class="cmn-btn-close btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"><i class="fa-regular fa-arrow-right"></i></button>
+                </div>
+                <div class="offcanvas-body align-items-center justify-content-between">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">pricing</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="features.html">features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form>
+                        <ul class="nav-right d-flex align-items-center">
+                            <li>
+                                <a class="login-btn" href="login.html">Login</a>
+                            </li>
+                            <li>
+                                <button type="button" class="get-start-btn" href="signup.html">Get Started</button>
+                            </li>
+
+                        </ul>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Nav Area End -->
+
+    <!-------------------------------------------------------->
+    <!-- Bottom Mobile Tab nav section start -->
+    <!-------------------------------------------------------->
+    <ul class="nav bottom-nav fixed-bottom d-lg-none">
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasExample"
+                href="#offcanvasNavbar" aria-current="page" href="#"><i class="fa-regular fa-bars-staggered"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-regular fa-shuttle-space"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="#"><i class="fa-regular fa-house"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-regular fa-address-book"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-regular fa-user"></i></a>
+        </li>
+    </ul>
+    <!-------------------------------------------------------->
+    <!-- Bottom Mobile Tab nav section end -->
+    <!-------------------------------------------------------->
+
+    <!-- Banner section start -->
+    <div class="banner-area">
+        <div class="container">
+            <div class="row ">
+                <div class="col">
+                    <div class="breadcrumb-area">
+                        <h3>About Us</h3>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="home-1.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner section end -->
+
+    <!-- About section start -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6">
+                    <div class="about-image-area">
+                        <img src="assets/img/about/Innovation-pana (1).png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="section-header">
+                        <h2 class="mb-50">Revolutionizing Content Creation with <span class="text-gradient">AI-Powered
+                                Tools</span></h2>
+                        <p>At AI Tools, we believe that creating high-quality content should be easy and accessible for
+                            everyone. That is why we will developed an AI-powered content creation tool that automates
+                            the content creation process and generates engaging content across various mediums,
+                            including articles, blogs, social media posts, and more.</p>
+                        <br>
+                        <p>Our team consists of experts in machine learning, natural language processing, and content
+                            creation who work tirelessly to ensure that our product is user-friendly, effective, and
+                            reliable. We are committed to using AI technology to make content creation more efficient
+                            and effective for our users.</p>
+                        <div class="btn-area mt-50">
+                            <button type="buttot" class="cmn-btn3">learn more</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section end -->
+
+    <!-- Testimonial section start -->
+    <section id="testimonial" class="testimonial-section">
+        <div class="container">
+            <div class="section-header text-center mb-50">
+                <h2>We serve<span class="text-gradient"> our clients</span></h2>
+                <p class="cmn-para-text mx-auto">As a Saas developer or web crawler expert, I help
+                    organizations adjust to the expanding significance.</p>
+
+            </div>
+            <!-- /section-title -->
+            <div class="testimonial-slider">
+                <div id="testimonial-slide" class="carousel slide" data-bs-ride="carousel">
+                    <div class="row g-sm-4">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="testimonial-indicator relative-position">
+                                <ol class="carousel-indicators">
+                                    <li data-bs-target="#testimonial-slide" data-bs-slide-to="0" class="">
+                                        <img src="assets/img/testimonial/tst1.png" alt="">
+                                    </li>
+                                    <li data-bs-target="#testimonial-slide" data-bs-slide-to="1" class="">
+                                        <img src="assets/img/testimonial/tst2.png" alt="">
+                                    </li>
+                                    <li data-bs-target="#testimonial-slide" data-bs-slide-to="2" class="">
+                                        <img src="assets/img/testimonial/tst3.png" alt="">
+                                    </li>
+                                    <li data-bs-target="#testimonial-slide" data-bs-slide-to="3" class="">
+                                        <img src="assets/img/testimonial/tst4.png" alt="">
+                                    </li>
+                                    <li data-bs-target="#testimonial-slide" data-bs-slide-to="4" class="active">
+                                        <img src="assets/img/testimonial/tst5.png" alt="">
+                                    </li>
+                                    <li data-bs-target="#testimonial-slide" data-bs-slide-to="5" class="">
+                                        <img src="assets/img/testimonial/tst6.png" alt="">
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="carousel-preview">
+                                <div class="carousel-inner relative-position">
+                                    <div class="carousel-item">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-text relative-position pera-content">
+                                                <p>Lorem ipsum dolor sit amet consecter tony adipiscing elitsed do
+                                                    eiusmodi tempor roar incididunt ut laboreet dolore magna as the
+                                                    opposed to using. Type of partnership or Malta. The limited todot
+                                                    liability.</p>
+                                                <div class="testimonial-rating ul-li">
+                                                    <ul class="d-flex">
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="qoute-mark relative-position"></div>
+                                            <div class="testimonial-name-designation">
+                                                <div class="testimonial-img float-left">
+                                                    <img src="assets/img/testimonial/tst1.png" alt="">
+                                                </div>
+                                                <div class="testimonial-meta saas-modern-headline pera-content">
+                                                    <h4>Nepoli Dewan</h4>
+                                                    <p>SEO Manager</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /slide item -->
+                                    <div class="carousel-item">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-text relative-position pera-content">
+                                                <p>Lorem ipsum dolor sit amet consecter tony adipiscing elitsed do
+                                                    eiusmodi tempor roar incididunt ut laboreet dolore magna as the
+                                                    opposed to using. Type of partnership or Malta. The limited todot
+                                                    liability.</p>
+                                                <div class="testimonial-rating ul-li">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="testimonial-name-designation">
+                                                <div class="testimonial-img float-left">
+                                                    <img src="assets/img/testimonial/tst2.png" alt="">
+                                                </div>
+                                                <div class="testimonial-meta saas-modern-headline pera-content">
+                                                    <h4>Rameli Andrea</h4>
+                                                    <p>SEO Manager</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /slide-item -->
+                                    <div class="carousel-item">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-text relative-position pera-content">
+                                                <p>Lorem ipsum dolor sit amet consecter tony adipiscing elitsed do
+                                                    eiusmodi tempor roar incididunt ut laboreet dolore magna as the
+                                                    opposed to using. Type of partnership or Malta. The limited todot
+                                                    liability.</p>
+                                                <div class="testimonial-rating ul-li">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="qoute-mark relative-position"></div>
+                                            <div class="testimonial-name-designation">
+                                                <div class="testimonial-img float-left">
+                                                    <img src="assets/img/testimonial/tst1.png" alt="">
+                                                </div>
+                                                <div class="testimonial-meta saas-modern-headline pera-content">
+                                                    <h4>Nepoli Dewan</h4>
+                                                    <p>SEO Manager</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /slide item -->
+                                    <div class="carousel-item">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-text relative-position pera-content">
+                                                <p>Lorem ipsum dolor sit amet consecter tony adipiscing elitsed do
+                                                    eiusmodi tempor roar incididunt ut laboreet dolore magna as the
+                                                    opposed to using. Type of partnership or Malta. The limited todot
+                                                    liability.</p>
+                                                <div class="testimonial-rating ul-li">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="qoute-mark relative-position"></div>
+                                            <div class="testimonial-name-designation">
+                                                <div class="testimonial-img float-left">
+                                                    <img src="assets/img/testimonial/tst3.png" alt="">
+                                                </div>
+                                                <div class="testimonial-meta saas-modern-headline pera-content">
+                                                    <h4>Nepoli Dewan</h4>
+                                                    <p>SEO Manager</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /slide item -->
+                                    <div class="carousel-item active">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-text relative-position pera-content">
+                                                <p>Lorem ipsum dolor sit amet consecter tony adipiscing elitsed do
+                                                    eiusmodi tempor roar incididunt ut laboreet dolore magna as the
+                                                    opposed to using. Type of partnership or Malta. The limited todot
+                                                    liability.</p>
+                                                <div class="testimonial-rating ul-li">
+                                                    <ul class="d-flex">
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="qoute-mark relative-position"></div>
+                                            <div class="testimonial-name-designation">
+                                                <div class="testimonial-img float-left">
+                                                    <img src="assets/img/testimonial/tst4.png" alt="">
+                                                </div>
+                                                <div class="testimonial-meta saas-modern-headline pera-content">
+                                                    <h4>Nepoli Dewan</h4>
+                                                    <p>SEO Manager</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /slide item -->
+                                    <div class="carousel-item">
+                                        <div class="testimonial-content">
+                                            <div class="testimonial-text relative-position pera-content">
+                                                <p>Lorem ipsum dolor sit amet consecter tony adipiscing elitsed do
+                                                    eiusmodi tempor roar incididunt ut laboreet dolore magna as the
+                                                    opposed to using. Type of partnership or Malta. The limited todot
+                                                    liability.</p>
+                                                <div class="testimonial-rating ul-li">
+                                                    <ul>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                        <li><i class="fas fa-star"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="qoute-mark relative-position"></div>
+                                            <div class="testimonial-name-designation">
+                                                <div class="testimonial-img float-left">
+                                                    <img src="assets/img/testimonial/tst5.png" alt="">
+                                                </div>
+                                                <div class="testimonial-meta saas-modern-headline pera-content">
+                                                    <h4>Nepoli Dewan</h4>
+                                                    <p>SEO Manager</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /slide item -->
+                                </div>
+                                <!-- /carosel arrow -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-slide"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#testimonial-slide"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+
+                                <!-- /carosel arrow -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial section end -->
+
+    <!-- Faq section start -->
+    <section class="faq-area">
+        <div class="container">
+            <div class="row">
+                <div class="section-header text-center mb-50">
+                    <h2>Frequently Asked <span class="text-gradient">Questions</span> </h2>
+                    <p class="cmn-para-text mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+                        possimus itaque earum dolor sit repudiandae impedit tempore accusantium quos in.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    How much does this project cost?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="table-responsive">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem beatae
+                                            laudantium accusantium eius natus deleniti animi incidunt iure sit velit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Do I have a warranty?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, labore
+                                        repudiandae. Quis ipsam distinctio necessitatibus, similique sit suscipit magni
+                                        nobis.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, labore
+                                        repudiandae. Quis ipsam distinctio necessitatibus, similique sit suscipit magni
+                                        nobis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What we offer?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cupiditate aliquam
+                                        corporis, delectus, quis molestias officiis culpa facere nulla fuga explicabo
+                                        expedita.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                    What's most important to you
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, omnis? Iure
+                                        inventore architecto repudiandae sequi vitae, iste autem pariatur ducimus
+                                        veritatis numquam error quo! Esse!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                                    Client Services
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic accusantium maiores
+                                        dolorem cupiditate debitis facilis inventore cumque nisi non, minus error, sit
+                                        asperiores, voluptates autem natus molestias aspernatur ut voluptate?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                                    Expect nothing less than perfect
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum obcaecati quis
+                                        veritatis reiciendis voluptate harum.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Faq section end -->
+
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="section-header text-center mb-50">
+                        <h2>Our Recent <span class="text-gradient">Blog</span> </h2>
+                        <p class="cmn-para-text mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-box">
+                        <div class="img-box">
+                            <img src="assets/img/blog/01.jpg" alt="">
+                        </div>
+                        <div class="blog-author">
+                            <div class="author-img">
+                                <img src="assets/img/testimonial/tst1.png" alt="">
+                            </div>
+                            <div class="author-info ">
+                                <a href="#">
+                                    <h5>Joshep brathwaith</h5>
+                                </a>
+                                <span>Consultant</span>
+                            </div>
+                        </div>
+                        <div class=" blog-title">
+                            <h4><a href="">Survival strategies to ensure business domination</a></h4>
+                        </div>
+                        <div class="pera-text">
+                            <p>Business we opertes in is like an intericate games and chess where every move counts
+                            </p>
+                        </div>
+                        <button type="button" class="cmn-btn3">read more</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-box" data-wow-delay="0.1s">
+                        <div class="img-box">
+                            <img src="assets/img/blog/2.png" alt="">
+                        </div>
+                        <div class="blog-author">
+                            <div class="author-img">
+                                <img src="assets/img/testimonial/tst2.png" alt="">
+                            </div>
+                            <div class="author-info ">
+                                <a href="#">
+                                    <h5>Joshep brathwaith</h5>
+                                </a>
+                                <span>Consultant</span>
+                            </div>
+                        </div>
+                        <div class=" blog-title">
+                            <h4><a href="">Survival strategies to ensure business domination Lorem ipsum dolor sit
+                                    amet consectetur adipisicing elit. Sed, aliquam?</a></h4>
+                        </div>
+                        <div class="pera-text">
+                            <p>Business we opertes in is like an intericate games and chess where every move counts
+                            </p>
+                        </div>
+                        <button type="button" class="cmn-btn3">read more</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-box" data-wow-delay="0.2s">
+                        <div class="img-box">
+                            <img src="assets/img/blog/3.png" alt="">
+                        </div>
+                        <div class="blog-author">
+                            <div class="author-img">
+                                <img src="assets/img/testimonial/tst3.png" alt="">
+                            </div>
+                            <div class="author-info ">
+                                <a href="#">
+                                    <h5>Joshep brathwaith</h5>
+                                </a>
+                                <span>Consultant</span>
+                            </div>
+                        </div>
+                        <div class=" blog-title">
+                            <h4><a href="">Survival strategies to ensure business domination</a></h4>
+                        </div>
+                        <div class="pera-text">
+                            <p>Business we opertes in is like an intericate games and chess where every move counts
+                            </p>
+                        </div>
+                        <button type="button" class="cmn-btn3">read more</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+
+
+    <!-- footer section start -->
+    <section class="footer-area pb-50 pt-50">
+        <div class="container">
+            <div class="newsletter-area">
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-6">
+                        <h2 class="Newslatter-title mb-0">Connect With Smart AI Tools
+                        </h2>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="newsletter-inner">
+                            <form class="subscribe-form">
+                                <input type="text" placeholder="Enter your email address">
+                                <button><i class="fa-regular fa-arrow-right fa-beat"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="cmn-hr">
+            <div class="row gy-4 gy-sm-5">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="footer-widget">
+                        <div class="widget_logo mb-30">
+                            <a href="#nav_area"><img class="footer-logo" src="assets/img/logo/logo.png" alt=""></a>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur fuga odit excepturi,
+                            natus voluptate commodi qui sunt quisquam cupiditate molestiae?</p>
+                        <div class="social-area mt-50">
+                            <ul class="d-flex">
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6">
+                    <div class="footer-widget">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 pt-sm-0 pt-3 ps-lg-5">
+                    <div class="footer-widget">
+                        <h5>Support</h5>
+                        <ul>
+                            <li><a href="">Help Center</a></li>
+                            <li><a href="">Blog & Tutorial</a></li>
+                            <li><a href="">Pricing</a></li>
+                            <li><a href="">Student Discount</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 pt-sm-0 pt-3">
+                    <div class="footer-widget">
+                        <h5>Contact Us</h5>
+                        <p>10714 163rd Pl, Orland Park, IL 60467, United States</p>
+                        <p>email@website.com</p>
+                        <p>354-4156745674</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="cmn-hr">
+            <div class="copy-right-area">
+                <div class="row gy-4 ">
+                    <div class="col-sm-6 text-sm-start text-center">
+                        <p>Copyright © 2023 <a href="" class="highlight">Best Ai</a> All Rights Reserved</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="language text-sm-end text-center">
+                            <a href="" class="language">English</a>
+                            <a href="" class="language">Spanish</a>
+                            <a href="" class="language">Germany</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section start -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Jquery_Js_link -->
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+
+    <!-- Bootstrap_Js_link -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Owl_carausel_Js_link -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Swiper_Js_link -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- select2_Js_link -->
+    <script src="assets/js/select2.min.js"></script>
+
+
+    <!-- Main_Js_link -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
