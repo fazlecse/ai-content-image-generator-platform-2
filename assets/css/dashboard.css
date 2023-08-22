@@ -1,34 +1,34 @@
-@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 :root {
-  --body-font: "Prompt", sans-serif;
-  --heading-font: "Prompt", sans-serif;
-  --primary-color: #3368fa;
-  --heading-color: #13281E;
-  --black: #13281E;
+  --body-font: "Space Grotesk", sans-serif;
+  --body-font: "Outfit", sans-serif;
+  --heading-font: "Space Grotesk", sans-serif;
+  --primary-color: #3f3eed;
+  --heading-color: #060607;
+  --black: #060607;
   --grayish-blue: #929cbf;
-  --btn-bg1: #3368fa;
+  --btn-after-bg: #5655ef;
   --white: #ffffff;
-  --soft-blue: #C1BFFD;
-  --grayish-violet: #f5f4f7;
-  --soft-green: #ccf888;
-  --soft-red: #FE5758;
-  --soft-red: #d82a68;
-  --lime-green: #40b781;
-  --vivid-orange: #fb6116;
-  --yellow: #fcc013;
-  --primary-color-opacity-low: rgb(51, 104, 250, 0.1);
-  --soft-red-opacity-low: rgba(216, 42, 103, 0.1);
-  --bg-color1: #F3F4F6;
-  --bg-color2: #282c34;
-  --bg-color3: #152748;
-  --bg-color4: #424449;
+  --magenta: #b125c0;
+  --blue: #0057ff;
+  --orange: #f6b91c;
+  --bg-color1: #ffffff;
+  --bg-color2: #F6F9FF;
+  --linear-gradient: rgba(62, 62, 237, 0.15), rgba(217, 217, 217, 0);
   --body-color: #707070;
-  --border-color1: #f2f2f2;
-  --border-color2: #e1e1e1;
-  --border-color3: rgb(51, 104, 250, 0.5);
-  --shadow1: 0px 3px 5px 0px rgba(0, 0, 0, 0.10);
-  --shadow2: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
-  --shadow3: 5px 5px 20px rgba(54, 97, 252, .15);
+  --border-color1: #e5e7eb;
+  --border-color2: #DCD8E8;
+  --border-color3: #e1f1ee;
+  --primary-color-opacity-low: rgba(62, 62, 237, 0.1);
+  --primary-color-opacity-low2: rgba(71, 190, 185, .2);
+  --primary-color-opacity-low3: rgba(5, 160, 129, .3);
+  --orange-opacity-low: rgb(234, 131, 49, 0.1);
+  --shadow1: 0px 7px 6px 0px rgba(0, 15, 44, 0.19), inset -1px 0px 27px 0px rgba(0, 0, 0, 0.29);
+  --shadow2: 0px 3px 5px 0px rgba(0, 0, 0, 0.10);
+  --shadow3: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
+  --drop-shadow1: drop-shadow(0 1px 2px rgba(0,
+              0, 0, 0.4));
+  --drop-shadow2: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.1));
   --transition: all .3s ease-in-out;
 }
 
@@ -37,12 +37,12 @@
 -------------------------------------------------------*/
 ::-moz-selection {
   color: #fff;
-  background: #47beb9;
+  background: #3f3eed;
 }
 
 ::selection {
   color: #fff;
-  background: #47beb9;
+  background: #3f3eed;
 }
 
 /* preloader-start */
@@ -602,18 +602,42 @@ body::-webkit-scrollbar-thumb {
 }
 
 .cmn-btn {
-  background: var(--btn-bg1);
-  padding: 7px 15px;
-  border-radius: 8px;
+  position: relative;
+  background: var(--primary-color);
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
   transition: all 0.3s ease-in-out;
   font-size: 16px;
   color: var(--white);
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   font-weight: 500;
   text-transform: capitalize;
-  border: 1px solid var(--primary-color);
+  font-family: var(--heading-font);
+  z-index: 1;
+}
+.cmn-btn:hover {
+  color: var(--white);
+  background-color: var(--btn-after-bg);
+  border-color: var(--btn-after-bg);
+}
+.cmn-btn:hover::after {
+  height: 100%;
+  width: 100%;
+}
+.cmn-btn::after {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--btn-after-bg);
+  transition: var(--transition);
+  border-radius: 5px;
+  z-index: -1;
 }
 .cmn-btn i {
   margin-left: 10px;
@@ -626,10 +650,6 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   border-radius: 50%;
   font-size: 12px;
-}
-.cmn-btn:hover {
-  color: var(--white);
-  background: var(--btn-bg2);
 }
 
 .rtl .cmn-btn i {
