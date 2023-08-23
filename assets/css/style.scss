@@ -12,6 +12,7 @@
     --black: #060607;
     --grayish-blue: #929cbf;
     --btn-after-bg: #5655ef;
+    --btn-after-bg: #7b75ff;
     --white: #ffffff;
     --magenta: #b125c0;
     --blue: #0057ff;
@@ -24,7 +25,7 @@
     --border-color2: #DCD8E8;
     --border-color3: #e1f1ee;
     --primary-color-opacity-low: #EBEBFD;
-    --primary-color-opacity-low2: rgba(71, 190, 185, .2);
+    --primary-color-opacity-low2: #D0CEFD;
     --primary-color-opacity-low3: rgba(5, 160, 129, .3);
     --orange-opacity-low: rgb(234, 131, 49, 0.1);
     --shadow1: 0px 7px 6px 0px rgba(0, 15, 44, 0.19), inset -1px 0px 27px 0px rgba(0, 0, 0, 0.29);
@@ -43,12 +44,12 @@
 // ----------------------------------------------------
 ::-moz-selection {
     color: #fff;
-    background: #3f3eed;
+    background: #635BFF;
 }
 
 ::selection {
     color: #fff;
-    background: #3f3eed;
+    background: #635BFF;
 }
 
 /* preloader-start */
@@ -183,7 +184,6 @@ body {
     overflow-x: hidden;
     background-color: var(--white);
     background-image: url(../img/background/body-bg-img.webp);
-    background-repeat: no-repeat;
 }
 
 @media (max-width: 991px) {
@@ -383,7 +383,7 @@ span.select2.select2-container.select2-container--default {
 p {
     color: #374151;
     margin-bottom: 10px;
-    line-height: 1.3;
+    line-height: 1.4;
 }
 
 a {
@@ -462,7 +462,7 @@ body::-webkit-scrollbar-thumb {
 
 .owl-theme .owl-dots .owl-dot span {
     width: 10px;
-    height: 10px;
+    height: 5px;
     background: var(--primary-color);
 }
 
@@ -475,7 +475,7 @@ body::-webkit-scrollbar-thumb {
 .owl-theme .owl-dots span {
     background: var(--primary-color);
     width: 30px;
-    height: 10px;
+    height: 5px;
 }
 
 .owl-theme .owl-dots .owl-dot span {
@@ -847,15 +847,15 @@ body::-webkit-scrollbar-thumb {
 .cmn-tabs .nav-pills {
     background-color: var(--primary-color-opacity-low);
     padding: 5px 7px;
-    border-radius: 24px;
+    border-radius: 5px;
 }
 
 .cmn-tabs .nav-pills .nav-link {
     padding: 3px 20px;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: capitalize;
-    border-radius: 24px;
+    border-radius: 5px;
     color: var(--heading-color);
     font-family: var(--heading-font);
 }
@@ -1800,6 +1800,7 @@ Nav end
                     padding: 20px;
                     border-radius: 5px;
                     text-align: center;
+
                     p {
                         font-size: 18px;
                     }
@@ -1845,37 +1846,55 @@ Nav end
 // ----------------------------------------------------
 
 .pricing-box {
+    position: relative;
     border-radius: 10px;
     background: var(--white);
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px -1px rgba(0, 0, 0, .1);
-    ;
+    box-shadow: var(--shadow3);
+    padding: 45px 32px 32px;
+
+    .featured-title {
+        position: absolute;
+        background: var(--primary-color);
+        top: 15px;
+        right: 15px;
+        padding: 4px 15px;
+        border-radius: 5px;
+        color: var(--white);
+        text-transform: capitalize;
+    }
 
     .section-header {
-        padding: 16px;
-        border-bottom: 1px solid var(--primary-color-opacity-low3);
-        border-right: 1px solid var(--primary-color-opacity-low3);
-        border-bottom-right-radius: 8px;
-        width: 90%;
-        padding-top: 32px;
-        text-align: center;
+        .title-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 5px;
+        }
+
         margin-bottom: 0;
 
-        .section-title {
+        .icon-area {
+            font-size: 24px;
+            color: var(--primary-color);
+        }
+
+        .title {
             text-transform: capitalize;
+            margin-bottom: 0;
         }
     }
 
     .section-body {
         color: var(--heading-color);
-        padding: 32px;
 
         .title {
-            font-size: 22px;
-            margin: 32px 0;
+            font-size: 20px;
+            margin: 20px 0;
+            font-family: var(--heading-font);
 
             .price {
                 font-weight: 500;
-                font-size: 40px;
+                font-size: 50px;
             }
         }
 
@@ -1910,20 +1929,8 @@ Nav end
 }
 
 .pricing-box.featured {
-    border: 1px solid var(--primary-color);
-    position: relative;
+    background-color: var(--primary-color-opacity-low);
 
-    .featured-title {
-        position: absolute;
-        background: var(--primary-color);
-        top: -17px;
-        padding: 4px 15px;
-        border-radius: 18px;
-        color: var(--white);
-        text-transform: capitalize;
-        left: 50%;
-        transform: translateX(-50%);
-    }
 
     .section-header {
         border-color: var(--primary-color);
@@ -1931,6 +1938,9 @@ Nav end
 }
 
 .prepaid-plan {
+    background-color: var(--white);
+    box-shadow: var(--shadow3);
+
     .section-body {
         display: flex;
         justify-content: space-between;
@@ -1951,7 +1961,8 @@ Nav end
         .price-title {
             font-size: 40px;
             font-family: var(--heading-font);
-            font-weight: 700;
+            font-weight: 500;
+            word-break: break-all;
         }
     }
 
@@ -1968,13 +1979,12 @@ Nav end
     sup {
         font-size: 22px;
         text-transform: uppercase;
-        font-weight: 800;
+        font-weight: 600;
         color: var(--grayish-blue);
     }
 
     .prepaid-info {
         margin-bottom: 0;
-        color: var(--grayish-blue);
 
         .highlight {
             font-weight: 600;
@@ -1983,6 +1993,9 @@ Nav end
 
     .btn-area {
         padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -2068,254 +2081,77 @@ Nav end
 // ----------------------------------------------------
 
 
-//----------------------------------------------------
-// Testimonial section start
-//----------------------------------------------------
-
+/*----------------------------------------------
+07. Testimonial section start
+----------------------------------------------*/
 .testimonial-section {
-    background: var(--bg-color1);
-}
+    .testimonial-box {
+        padding: 20px;
+        border-radius: 15px;
+        transition: var(--transition);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
 
-.testimonial-content {
-    padding: 20px;
-    display: inline-block;
-
-    .testimonial-rating {
-        ul {
-            display: flex;
-        }
-
-        margin-top: 10px;
-
-        li {
-            font-size: 14px;
-            color: var(--orange);
-        }
     }
 
-    .testimonial-text {
-        p {
-            line-height: 1.875;
-        }
-
-        &:before {
-            content: "";
-            height: 100%;
-            width: 40%;
-            position: absolute;
-            right: -45px;
-            z-index: -1;
-            bottom: -95px;
-            opacity: 0;
-            visibility: hidden;
-            transition: 0.3s all ease-in-out;
-            background-image: url(../img/saas-m/testimonial/tshape1.png);
-            background-repeat: no-repeat;
-        }
-
-        &:hover {
-            &:before {
-                bottom: -85px;
-                opacity: 1;
-                visibility: visible;
-            }
-        }
-    }
-}
-
-.testimonial-name-designation {
-    display: flex;
-    margin-top: 30px;
-
-    .testimonial-img {
-        height: 90px;
-        width: 90px;
-        border-radius: 100%;
-        margin-right: 18px;
-        overflow: hidden;
-        border: 5px solid var(--white);
-        box-shadow: var(--shadow1);
-    }
-
-    .testimonial-meta {
-        margin-top: 10px;
-        display: inline-block;
-
-        p {
-            font-size: 14px;
-        }
-    }
-}
-
-.testimonial-slider {
-    .carousel-preview {
-        position: relative;
-
-        button {
-            position: absolute;
-            bottom: -70px;
-            top: initial;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 45px;
-            height: 45px;
-            border-radius: 8px;
-            box-shadow: 0px 7px 7px 0px rgba(0, 15, 44, .18);
-            background: var(--btn-bg3);
-            left: 0;
-            right: 0px;
-            margin: auto;
-        }
-
-        .carousel-control-prev {
-            right: 60px;
-
-            .carousel-control-prev-icon {
-                width: 25px;
-            }
-        }
-
-        .carousel-control-next {
-            left: 60px;
-
-            .carousel-control-next-icon {
-                width: 25px;
-            }
-        }
-    }
-
-}
-
-.carousel-indicators {
-    position: static;
-}
-
-.testimonial-indicator {
-    margin: 20px 20px 0 0;
-    display: block;
-    height: 510px;
-    max-width: 100%;
-    position: relative;
-    background-repeat: no-repeat;
-    background-image: url(../img/testimonial/in-bg.png);
-
-    .carousel-indicators {
-        li {
-            position: absolute;
-            width: 60px;
-            height: 60px;
-            text-align: center;
+    .testimonial-thumbs {
+        img {
+            width: 110px;
+            height: 110px;
             border-radius: 50%;
-            border: 5px solid var(--white);
-            overflow: hidden;
-            transition: all 500ms ease;
-            box-shadow: var(--shadow1);
+            filter: grayscale(1);
+        }
 
+        border: 1px transparent;
+    }
+
+    .owl-item.active.center {
+        .testimonial-thumbs {
             img {
-                display: block;
+                width: 110px;
+                height: 110px;
+                border-radius: 50%;
+                filter: grayscale(0);
             }
+        }
 
-            &:nth-child(1) {
-                bottom: 130px;
-                right: 100px;
-            }
-
-            &:nth-child(2) {
-                left: 90px;
-                bottom: 45px;
-            }
-
-            &:nth-child(3) {
-                top: 40%;
-                left: 0px;
-            }
-
-            &:nth-child(4) {
-                top: 10px;
-                left: 50px;
-            }
-
-            &:nth-child(5) {
-                top: 35%;
-                left: 0;
-                right: 0;
-                margin: 0 auto;
-            }
-
-            &:nth-child(6) {
-                right: 120px;
-                top: -30px;
-            }
+        .testimonial-box {
+            border: 1px solid var(--primary-color);
+            border: 1px solid var(--border-color1);
+            background-color: var(--white);
         }
     }
 
-    .active {
-        transform: scale(1.5);
+    .quote-area {
+        width: 25px;
+        height: 25px;
+
+        &:last-child {
+            display: flex;
+            justify-content: end;
+        }
+    }
+
+    .owl-theme {
+        .owl-nav.disabled+.owl-dots {
+            margin-top: 30px;
+        }
     }
 }
 
-// Testimonial responsive start
-@media (max-width: 1199px) {
-    .testimonial-indicator {
-        background-size: contain;
-    }
 
-    .testimonial-indicator .carousel-indicators li:nth-child(1) {
-        bottom: 190px;
-        right: 35px;
-    }
 
-    .testimonial-indicator .carousel-indicators li:nth-child(2) {
-        left: 125px;
-        bottom: 125px;
-    }
-}
 
-@media (max-width: 991px) {
-    .testimonial-indicator .carousel-indicators li:nth-child(1) {
-        bottom: 130px;
-        right: 85px;
-    }
-
-    .testimonial-indicator .carousel-indicators li:nth-child(2) {
-        left: 90px;
-        bottom: 0;
-    }
-}
-
-@media (max-width: 767px) {
-    .testimonial-indicator .carousel-indicators li:nth-child(2) {
-        left: 90px;
-        bottom: 85px;
-    }
-}
-
-@media (max-width: 575px) {
-    .testimonial-indicator {
-        display: none;
-    }
-}
-
-// Testimonial responsive end
-
-// Testimonial rtl start
-.rtl .testimonial-name-designation .testimonial-img {
-    margin-right: 0;
-    margin-left: 18px;
-}
-
-// Testimonial rtl end
-
-// ----------------------------------------------------
-// Testimonial section end
-// ----------------------------------------------------
+// Rtl testimonial end
+/*----------------------------------------------
+Testimonial end
+----------------------------------------------*/
 
 // ---------------------------------------------------- 
 // Faq section start
 // ----------------------------------------------------
 .faq-area {
-    background: var(--bg-color2);
 
     .accordion-button {
         color: var(--heading-color);
@@ -2328,22 +2164,22 @@ Nav end
 
         &:not(.collapsed) {
             box-shadow: none;
-            background: var(--bg-color1);
+            background: var(--primary-color-opacity-low);
         }
     }
 }
 
 .accordion-item {
     margin: 10px 0;
-    box-shadow: var(--shadow2);
     background: var(--bg-color1);
+    border: none;
 
     &:last-of-type {
         border-radius: 0;
     }
 
     border: none;
-    border-bottom: 1px solid var(--primary-color) !important;
+    border-bottom: 1px solid var(--border-color1);
 }
 
 
@@ -2352,8 +2188,8 @@ Nav end
 
     &::after {
         background: url(../img/accordion/plus.png);
-        width: 35px;
-        height: 35px;
+        width: 25px;
+        height: 25px;
         background-color: var(--primary-color);
         background-size: 50%;
         background-repeat: no-repeat;
@@ -2364,8 +2200,8 @@ Nav end
     &:not(.collapsed) {
         &::after {
             background: url(../img/accordion/minus.png);
-            width: 35px;
-            height: 35px;
+            width: 25px;
+            height: 25px;
             background-color: var(--primary-color);
             background-size: 50%;
             background-repeat: no-repeat;
@@ -2386,57 +2222,78 @@ Nav end
 // Faq section end
 // ----------------------------------------------------
 
-// ---------------------------------------------------- 
-// Blog section start
-// ----------------------------------------------------
-
-.blog-section {
-    background: var(--bg-color2);
-}
-
-.pr1-blog-content {
-    margin-top: 30px;
-}
+/*----------------------------------------------
+10. Blog section start
+----------------------------------------------*/
 
 .blog-box {
+    background: var(--white);
+
     &:hover {
+        box-shadow: none;
+
         .img-box {
-            border-radius: 6px;
             overflow: hidden;
 
             img {
-                transform: scale(1);
+                transform: scale(1.1);
             }
         }
     }
 
     .img-box {
-        border-radius: 6px;
         overflow: hidden;
+        position: relative;
+        border-radius: 5px;
 
         img {
             transition: var(--transition);
-            transform: scale(1.1);
             width: 100%;
-            height: 15vw;
+            height: 270px;
+            border-radius: 5px;
+
+        }
+    }
+
+    .content-box {
+        position: relative;
+        padding: 20px;
+        box-shadow: var(--shadow2);
+        padding: 50px 15px 20px;
+        position: relative;
+        margin: -40px 20px 0;
+        z-index: 1;
+        background: var(--white);
+        border-radius: 5px;
+
+        .blog-btn {
+            color: var(--primary-color);
+            font-size: 18px;
+            font-family: var(--heading-font);
+            margin-top: 30px;
+            display: inline-flex;
+        }
+
+        .para-text {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
         }
     }
 
     .blog-author {
         display: inline-flex;
         align-items: center;
-        padding: 12px 18px;
-        background-color: var(--white);
-        box-shadow: 0px 23px 40px 0px rgba(135, 135, 135, 0.15);
-        border-radius: 6px;
-        transform: translate(20px, -30px);
+        margin-bottom: 20px;
 
         .author-img {
             margin-right: 10px;
 
             img {
-                width: 30px;
-                height: 30px;
+                width: 35px;
+                height: 35px;
                 border-radius: 50%;
             }
         }
@@ -2447,29 +2304,45 @@ Nav end
             }
 
             span {
-                color: var(--heading-color);
+                font-size: 14px;
             }
         }
     }
 
     .blog-title {
-        margin-bottom: 20px;
+        margin-bottom: 25px;
         overflow: hidden;
         text-overflow: ellipsis;
         -webkit-box-orient: vertical;
         display: -webkit-box;
         -webkit-line-clamp: 2;
     }
-
-    .cmn-btn3 {
-        margin-top: 30px;
-    }
 }
 
-// Blog responsive start
-@media (max-width: 991px) {
+.date {
+    position: absolute;
+    width: 70px;
+    height: 65px;
+    background: var(--primary-color);
+    top: -35px;
+    left: 50%;
+    text-align: center;
+    padding: 5px;
+    transform: translateX(-50%);
+    border-radius: 5px;
+
+    p,
+    h4 {
+        color: var(--white);
+        text-transform: uppercase;
+    }
+
+}
+
+// Responsive Blog section start
+@media (max-width: 1400px) {
     h5 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .blog-box {
@@ -2503,22 +2376,41 @@ Nav end
 // Blog responsive end
 
 // Blog responsive start
-.rtl .blog-box {
-    .blog-author {
-        transform: translate(-20px, -30px);
+.rtl {
+    .blog-box {
+        .blog-author {
+            .author-img {
+                margin-right: 0;
+                margin-left: 10px;
+            }
+        }
 
-        .author-img {
-            margin-right: 0;
-            margin-left: 10px;
+        .content-box {
+            .cmn-btn i {
+                margin-left: 0;
+                margin-right: 5px;
+                transform: rotate(180deg);
+            }
         }
     }
 }
 
 // Blog responsive end
+// Dark theme blog section start
+.dark-theme {
+    .blog-box {
+        background-color: var(--bg-color2);
 
-// ---------------------------------------------------- 
-// Blog section end
-// ----------------------------------------------------
+        .content-box {
+            background-color: var(--bg-color1);
+        }
+    }
+}
+
+// Dark theme blog section end
+/*----------------------------------------------
+Blog end
+----------------------------------------------*/
 
 
 
