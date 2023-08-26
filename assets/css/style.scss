@@ -18,8 +18,9 @@
     --blue: #0057ff;
     --orange: #f6b91c;
     --bg-color1: #ffffff;
-    --bg-color2: #0a1c3a;
-    --bg-color3: #F6F9FF;
+    --bg-color2: #ffffff;
+    --bg-color3: #0a1c3a;
+    --bg-color4: #F6F9FF;
     --linear-gradient: rgba(62, 62, 237, 0.15), rgba(217, 217, 217, 0);
     --body-color: #707070;
     --border-color1: #e5e7eb;
@@ -154,18 +155,13 @@ h2 {
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 26px;
     margin-bottom: 10px;
 }
 
-@media (max-width: 991px) {
-    h3 {
-        font-size: 22px;
-    }
-}
 
 h4 {
-    font-size: 20px;
+    font-size: 22px;
     text-transform: capitalize;
     margin-bottom: 5px;
 }
@@ -220,13 +216,13 @@ textarea.form-control {
 .form-select {
     border-radius: 5px;
     background-color: var(--white);
-    border: 1px solid var(--primary-color);
-    height: 40px;
+    border: 1px solid var(--border-color1);
+    height: 45px;
 }
 
 .form-control:focus,
 .form-select:focus {
-    box-shadow: 0 0 0 4px rgb(5 160 129 / 10%);
+    box-shadow: 0 0 0 4px rgba(99, 91, 255, 0.1);
     border: 1px solid var(--primary-color);
     background-color: var(--secondary-color);
 }
@@ -269,6 +265,75 @@ textarea.form-control {
     border: none;
     background: var(--secondary-color);
 }
+
+/*----------------------------------------------
+intlTelInput section start
+----------------------------------------------*/
+.iti {
+    display: flex;
+}
+
+.iti__selected-flag {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.iti__country-list {
+    box-shadow: var(--shadow2);
+    border: 1px solid var(--border-color1);
+    border-radius: 5px;
+}
+
+.iti-mobile .iti__country-list {
+    z-index: 9999;
+}
+
+// Rtl intlTelInput section start
+.rtl {
+
+    .iti--allow-dropdown .iti__flag-container,
+    .iti--separate-dial-code .iti__flag-container {
+        right: 0;
+        left: auto;
+
+    }
+
+    .iti__selected-flag {
+        border-top-left-radius: 0;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 10px;
+    }
+
+    .iti--allow-dropdown input,
+    .iti--allow-dropdown input[type=tel],
+    .iti--allow-dropdown input[type=text],
+    .iti--separate-dial-code input,
+    .iti--separate-dial-code input[type=tel],
+    .iti--separate-dial-code input[type=text] {
+        padding-left: 6px !important;
+        padding-right: 96px;
+    }
+}
+
+// Rtl intlTelInput section end
+// Dark theme intlTelInput section start
+.dark-theme {
+    .iti__country-list {
+        background-color: var(--bg-color3);
+        border-color: var(--bg-color3);
+        color: var(--white);
+    }
+
+    .iti__country.iti__highlight {
+        background-color: var(--primary-color);
+    }
+}
+
+// Dark theme intlTelInput section end
+/*----------------------------------------------
+intlTelInput end
+----------------------------------------------*/
 
 // Select2 start
 span.select2.select2-container.select2-container--default {
@@ -678,7 +743,7 @@ body::-webkit-scrollbar-thumb {
     padding: 8px 15px;
     border-radius: 5px;
     transition: var(--transition);
-    font-size: 18px;
+    font-size: 16px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -1510,7 +1575,8 @@ Nav end
 
 .hero-section {
     position: relative;
-    padding: 200px 0 180px;
+    padding: 250px 0 220px;
+    overflow: hidden;
 
     &::after {
         content: "";
@@ -1521,6 +1587,24 @@ Nav end
         width: 100%;
         z-index: -1;
         background: url(../img/background/banner_bg2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &::before {
+        content: '';
+        font-family: 'shape divider from ShapeDividers.com';
+        position: absolute;
+        z-index: 3;
+        pointer-events: none;
+        background-repeat: no-repeat;
+        bottom: -0.1vw;
+        left: -0.1vw;
+        right: -0.1vw;
+        top: -0.1vw;
+        background-size: 100% 53px;
+        background-position: 50% 100%;
+        background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M35.28 1.67c-3.07-.55-9.27.41-16.15 0-6.87-.4-13.74-.58-19.13.1v.4h35.28z" fill="%23ffffff"/><path d="M35.28 1.16c-3.17-.8-7.3.4-10.04.56-2.76.17-9.25-1.47-12.68-1.3-3.42.16-4.64.84-7.04.86C3.12 1.31 0 .4 0 .4v1.77h35.28z" opacity=".5" fill="%23ffffff"/><path d="M35.28.31c-2.57.84-7.68.3-11.8.43-4.1.12-6.85.61-9.57.28C11.18.69 8.3-.16 5.3.02 2.3.22.57.85 0 .87v1.2h35.28z" opacity=".5" fill="%23ffffff"/></svg>');
     }
 
     .hero-para-text {
@@ -1573,7 +1657,7 @@ Nav end
     }
 
     .hero-section {
-        padding: 130px 0 90px;
+        padding: 130px 0 120px;
         text-align: center;
 
         .hero-para-text {
@@ -1863,10 +1947,6 @@ Nav end
 }
 
 @media (max-width: 575px) {
-    h3 {
-        font-size: 18px;
-    }
-
     .how-it-work {
         .how-it-work-item {
             .content-area {
@@ -2526,7 +2606,7 @@ Blog end
         padding: 5px 40px 5px 5px;
         background: transparent;
         caret-color: var(--primary-color);
-        height: 50px;
+        height: 45px;
         border: none;
         border-radius: 0;
         border-bottom: 1px solid var(--border-color1);
@@ -2561,6 +2641,14 @@ Blog end
     }
 }
 
+// Responsive newslatter section start
+@media (max-width: 991px) {
+    .newsletter-area .newslatter-title {
+        font-size: 22px;
+    }
+}
+
+// Responsive newslatter section end
 
 // Newslatter rtl start
 .rtl {
@@ -2596,7 +2684,10 @@ Blog end
 
 
 .footer-area {
-    background-color: var(--bg-color2);
+    background-color: var(--bg-color3);
+    background-image: url(../img/background/blur-c.png);
+    background-position: top center;
+    background-repeat: no-repeat;
 
     .footer-widget {
         h5 {
@@ -2697,9 +2788,6 @@ Blog end
 // ----------------------------------------------------
 
 
-
-
-
 // ----------------------------------------------------
 // Banner section start
 // ----------------------------------------------------
@@ -2709,10 +2797,44 @@ Blog end
 
 .banner-area {
     padding-top: 150px;
-    padding-bottom: 70px;
+    padding-bottom: 100px;
     position: relative;
     z-index: 1;
-    background: linear-gradient(#dceaff 0%, #f5f9ff 100%);
+    background-color: var(--primary-color-opacity-low);
+    // background: linear-gradient(#dceaff 0%, #f5f9ff 100%);
+    overflow: hidden;
+    position: relative;
+
+
+    .shapedividers_com-8659 {
+        overflow: hidden;
+        position: relative;
+    }
+
+    &::before {
+        content: '';
+        font-family: 'shape divider from ShapeDividers.com';
+        position: absolute;
+        z-index: 3;
+        pointer-events: none;
+        background-repeat: no-repeat;
+        bottom: -0.1vw;
+        left: -0.1vw;
+        right: -0.1vw;
+        top: -0.1vw;
+        background-size: 100% 53px;
+        background-position: 50% 100%;
+        background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M35.28 1.67c-3.07-.55-9.27.41-16.15 0-6.87-.4-13.74-.58-19.13.1v.4h35.28z" fill="%23ffffff"/><path d="M35.28 1.16c-3.17-.8-7.3.4-10.04.56-2.76.17-9.25-1.47-12.68-1.3-3.42.16-4.64.84-7.04.86C3.12 1.31 0 .4 0 .4v1.77h35.28z" opacity=".5" fill="%23ffffff"/><path d="M35.28.31c-2.57.84-7.68.3-11.8.43-4.1.12-6.85.61-9.57.28C11.18.69 8.3-.16 5.3.02 2.3.22.57.85 0 .87v1.2h35.28z" opacity=".5" fill="%23ffffff"/></svg>');
+    }
+
+    @media (min-width:2100px) {
+        &::before {
+            background-size: 100% calc(2vw + 53px);
+        }
+    }
+
+
+
 
     h3 {
         font-size: 40px;
@@ -2735,7 +2857,7 @@ Blog end
 @media (max-width: 991px) {
     .banner-area {
         padding-top: 100px;
-        padding-bottom: 50px;
+        padding-bottom: 70px;
 
         h3 {
             font-size: 36px;
@@ -2749,15 +2871,50 @@ Blog end
 // ----------------------------------------------------
 
 
-
-// ---------------------------------------------------- 
-// Contact section start
-// ----------------------------------------------------
+/*----------------------------------------------
+16. Contact section start
+----------------------------------------------*/
 .contact-section {
-    padding: 100px 0;
-    background: var(--bg-color1);
+    .contact-area {
+        .contact-item-list {
+            margin-top: 30px;
+
+            .item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 30px;
+
+                .icon-area {
+                    margin-right: 15px;
+                    border-radius: 5px;
+                    width: 40px;
+                    height: 40px;
+                    font-size: 18px;
+                    color: var(--primary-color);
+                    background-color: var(--primary-color-opacity-low);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+            }
+        }
+    }
 
     .contact-message-area {
+        background-color: var(--white);
+        padding: 30px 25px;
+        box-shadow: var(--shadow3);
+        border-radius: 5px;
+
+        .contact-header {
+            margin-bottom: 30px;
+        }
+
+        .btn-area {
+            margin-top: 30px;
+        }
+
         .form-label {
             text-transform: capitalize;
 
@@ -2766,105 +2923,49 @@ Blog end
             }
         }
 
-        .form-control {
-            border: none;
-            border-bottom: 1px solid var(--primary-color);
-            border-radius: 0;
-            padding: 5px 0;
-            background: transparent;
-
-            &:focus {
-                box-shadow: none;
-            }
-        }
-
     }
 
-    .contact-area {
-        box-shadow: var(--shadow2);
-        padding: 50px;
-        background: var(--primary-color-opacity-low);
-        border-radius: 8px;
-        border-top-right-radius: 200px;
+}
 
-        .item-box {
-            margin-top: 30px;
-            display: flex;
-            align-items: center;
-            margin-right: 10px;
+// Responsive contact section start
+@media (max-width: 575px) {
+    .contact-section .contact-message-area {
+        padding: 20px;
 
-            .icon-box {
-                font-size: 25px;
-                color: var(--primary-color);
-                width: 50px;
-            }
+        .btn-area {
+            margin-top: 10px;
         }
     }
 }
 
-// Contact responsive start
-@media (max-width: 991px) {
-    .contact-section .contact-area {
-        padding: 30px;
+// Responsive contact section end
+
+// Rtl contact section start 
+.rtl {
+    .contact-section .contact-area .contact-item-list .item .icon-area {
+        margin-right: 0;
+        margin-left: 15px;
     }
 }
 
-// Contact responsive end
+// Rtl contact section end
 
-// Contact rtl start
-.rtl .contact-section .contact-area {
-    border-top-right-radius: 0;
-    border-top-left-radius: 200px;
-}
-
-// Contact rtl end
-
-// ---------------------------------------------------- 
-// Contact section end
-// ----------------------------------------------------
+/*----------------------------------------------
+Contact end
+----------------------------------------------*/
 
 
-// ---------------------------------------------------- 
-// Login Signup section start
-// ----------------------------------------------------
+/*----------------------------------------------
+18. Login Signup section start
+----------------------------------------------*/
 .login-signup-page {
-    background: var(--bg-color1);
+
 
     .login-signup-form {
-        padding: 40px;
-        background: var(--white);
-        border-radius: 8px;
+        background-color: var(--white);
+        padding: 30px 25px;
+        border-radius: 5px;
         box-shadow: var(--shadow3);
-
-        .form-title {
-            .description {
-                font-size: 16px;
-                max-width: 300px;
-                margin: 0 auto;
-                padding-top: 20px;
-                font-weight: 500;
-                color: var(--black2);
-            }
-        }
-
-        .form-control {
-            height: 45px;
-            background: transparent;
-            border: 1px solid var(--border-color2);
-
-            &:focus {
-                border-color: var(--primary-color);
-            }
-        }
-
-        .form-select {
-            height: 45px;
-            border: 1px solid var(--border-color2);
-
-            &:focus {
-                border-color: var(--primary-color);
-            }
-        }
 
         .cmn-btn {
             height: 45px;
@@ -2884,16 +2985,23 @@ Blog end
     }
 }
 
-// Responsive login signup start
-@media (max-width: 991px) {
-    .login-signup-page {
-        padding-top: 100px;
+.password-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .form-control {
+        padding-right: 35px;
     }
 
-    .cmn-btn3 {
-        font-size: 16px;
+    .password-icon {
+        position: absolute;
+        right: 15px;
+        cursor: pointer;
     }
 }
+
+// Responsive login signup start
 
 @media (max-width: 575px) {
     .login-signup-page .login-signup-form {
@@ -2904,15 +3012,31 @@ Blog end
 // Responsive login signup end
 
 // Rtl login signup page start
-.rtl .login-signup-page .login-signup-form .cmn-btn-group .btn img {
-    margin-left: 5px;
-    margin-right: 0;
+.rtl {
+    .login-signup-page .login-signup-form .cmn-btn-group .btn img {
+        margin-left: 5px;
+        margin-right: 0;
+    }
+
+    .password-box {
+        .form-control {
+            padding-right: .75rem;
+            padding-left: 35px;
+        }
+
+        .password-icon {
+            right: auto;
+            left: 15px;
+        }
+    }
+
 }
 
 // Rtl login signup page end
-// ---------------------------------------------------- 
-// Login Signup section end
-// ----------------------------------------------------
+
+/*----------------------------------------------
+Login Signup end
+----------------------------------------------*/
 
 
 

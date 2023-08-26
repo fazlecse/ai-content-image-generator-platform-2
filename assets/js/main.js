@@ -116,7 +116,6 @@ const previewImage = (id) => {
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
-
 // Dark theme start
 const toggleBtn = document.getElementById("toggle-btn");
 const body = document.querySelector("body");
@@ -145,5 +144,25 @@ function setTheme() {
 setTheme();
 // Dark theme end
 
+// Int Tel Input With Flags and Dial Codes start
+const input = document.querySelector("#telephone");
+window.intlTelInput(input, {
+    initialCountry: "bd",
+    separateDialCode: true,
+});
+// Int Tel Input With Flags and Dial Codes end
 
+// input field show hide password start
+const password = document.querySelector('.password');
+const passwordIcon = document.querySelector('.password-icon');
 
+passwordIcon.addEventListener("click", function () {
+    if (password.type == 'password') {
+        password.type = 'text';
+        passwordIcon.classList.add('fa-eye-slash');
+    } else {
+        password.type = 'password';
+        passwordIcon.classList.remove('fa-eye-slash');
+    }
+})
+// input field show hide password end
