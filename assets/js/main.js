@@ -157,6 +157,7 @@ const password = document.querySelector('.password');
 const passwordIcon = document.querySelector('.password-icon');
 
 passwordIcon.addEventListener("click", function () {
+    console.log("password icon clicked");
     if (password.type == 'password') {
         password.type = 'text';
         passwordIcon.classList.add('fa-eye-slash');

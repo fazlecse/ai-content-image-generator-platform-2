@@ -37,7 +37,7 @@
 
     <!-- Nav section start -->
     <nav class="navbar fixed-top navbar-expand-lg">
-        <div class="container">
+        <div class="container position-relative">
             <a class="navbar-brand logo" href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
@@ -51,7 +51,7 @@
                         aria-label="Close"><i class="fa-light fa-arrow-right"></i></button>
                 </div>
                 <div class="offcanvas-body align-items-center justify-content-between">
-                    <ul class="navbar-nav m-auto">
+                    <ul class="navbar-nav m-auto text-center">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">home</a>
                         </li>
@@ -70,26 +70,48 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html"><i
+                                    class="login-icon fa-regular fa-right-to-bracket"></i>Login</a>
+                        </li>
                     </ul>
-                    <form>
-                        <ul class="navbar-nav nav-right d-flex align-items-center">
-                            <li class="nav-item">
-                                <a class="nav-link" href="login.html"><i
-                                        class="login-icon fa-regular fa-right-to-bracket"></i>Login</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="get-start-btn" href="signup.html">register now</a>
-                            </li>
-                            <li>
-                                <a id="toggle-btn" class="nav-link d-flex toggle-btn">
-                                    <i class="fa-regular fa-moon" id="moon"></i>
-                                    <i class="fa-regular fa-sun-bright" id="sun"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </form>
+
 
                 </div>
+            </div>
+            <div class="nav-right">
+                <ul class="custom-nav">
+
+
+
+                    <li class="nav-item">
+                        <div class="profile-box">
+                            <div class="profile">
+                               <img src="./assets/img/Person/1.jpg" class="img-fluid" alt="" />
+                            </div>
+                            <ul class="user-dropdown">
+                               <li>
+                                  <a href="user-panel.html"> <i class="fal fa-user"></i> View Profile </a>
+                               </li>
+                               <li>
+                                  <a href="support-ticket.html"> <i class="fal fa-user-headset"></i> Support </a>
+                               </li>
+                               <li>
+                                  <a href="edit-profile.html"> <i class="fal fa-user-cog"></i> Account Settings </a>
+                               </li>
+                               <li>
+                                  <a href=""> <i class="fal fa-sign-out-alt"></i> Sign Out </a>
+                               </li>
+                            </ul>
+                         </div>
+                    </li>
+                    <li>
+                        <a id="toggle-btn" class="nav-link d-flex toggle-btn">
+                            <i class="fa-regular fa-moon" id="moon"></i>
+                            <i class="fa-regular fa-sun-bright" id="sun"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -141,6 +163,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="shape1">
         </div>
     </div>
     <!-- Hero area end -->
@@ -305,6 +329,8 @@
                 </div>
             </div>
         </div>
+        <div class="shape2">
+        </div>
     </section>
     <!-- Feature section end -->
 
@@ -370,6 +396,8 @@
                 </div>
             </div>
         </div>
+        <div class="shape3">
+        </div>
     </section>
     <!-- About section end -->
 
@@ -397,6 +425,8 @@
                 </div>
             </div>
         </div>
+        <div class="shape2">
+        </div>
     </section>
     <!-- Qr section start -->
 
@@ -407,41 +437,39 @@
                 <div class="col-12">
                     <div class="section-header text-center mb-50">
                         <div class="section-subtitle">How It Works</div>
-                        <h2 class="section-title mx-auto">How CreativeGenius AI works</span></h2>
-                        <p class="cmn-para-text mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus molestie, justo nec convallis sollicitudin.</p>
+                        <h2 class="section-title mx-auto">How CreativeGenius AI works</h2>
+                        <p class="cmn-para-text mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus molestie, justo nec convallis sollicitudin.</p>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-10 mx-auto ">
+                <div class="col-xl-10 mx-auto">
                     <div class="row g-4 g-sm-0">
                         <div class="col-12">
                             <div class="how-it-work-item">
                                 <div class="row align-items-center g-5">
                                     <div class="col-md-6">
                                         <div class="thumbs-area">
-                                            <img src="assets/img/how-it-works/how-it-work1.png" alt="">
+                                            <img src="assets/img/how-it-works/how-it-work1.png" alt="" />
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="content-area">
                                             <div class="icon-area">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" id="BG"
-                                                    viewBox="0 0 122 140.28">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" id="BG" viewBox="0 0 122 140.28">
                                                     <circle class="cls-1" cx="61" cy="60.985" r="61" />
-                                                    <ellipse class="cls-2" cx="60.999" cy="60.98" rx="52.561"
-                                                        ry="52.58" />
-                                                    <path class="cls-3"
+                                                    <ellipse class="cls-2" cx="60.999" cy="60.98" rx="52.561" ry="52.58" />
+                                                    <path
+                                                        class="cls-3"
                                                         d="M957.931,1752.67a44.36,44.36,0,0,0-11.563,86.1c5.908,2.06,12.592,7.75,12.592,14.04a15.639,15.639,0,0,1-.276,2.93,13.936,13.936,0,0,1-3.554,6.59,7.719,7.719,0,1,0,12.6,1.62h0.01c-0.007-.01-0.012-0.01-0.019-0.02a7.893,7.893,0,0,0-1.218-1.72,12.571,12.571,0,0,1-2.435-3.39,14.642,14.642,0,0,1-1.3-6.01c0-6.31,6.726-11.98,12.654-14.06A44.346,44.346,0,0,0,957.931,1752.67Z"
-                                                        transform="translate(-899.5 -1734.91)" />
+                                                        transform="translate(-899.5 -1734.91)"
+                                                    />
                                                 </svg>
                                                 <div class="number">STEP1</div>
                                             </div>
                                             <div class="text-area">
                                                 <h4>Enter your copywriting project</h4>
-                                                <p>Choose from emails, social posts, long-form blog posts, and more!
-                                                </p>
+                                                <p>Choose from emails, social posts, long-form blog posts, and more!</p>
                                             </div>
                                         </div>
                                     </div>
@@ -449,7 +477,7 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="section-devider-area">
-                                            <img src="assets/img/how-it-works/Connection2.png" alt="">
+                                            <img src="assets/img/how-it-works/Connection2.png" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -461,35 +489,33 @@
                                     <div class="col-md-6 order-2 order-md-1">
                                         <div class="content-area">
                                             <div class="icon-area">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" id="BG"
-                                                    viewBox="0 0 122 140.28">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" id="BG" viewBox="0 0 122 140.28">
                                                     <circle class="cls-1" cx="61" cy="60.985" r="61" />
-                                                    <ellipse class="cls-2" cx="60.999" cy="60.98" rx="52.561"
-                                                        ry="52.58" />
-                                                    <path class="cls-3"
+                                                    <ellipse class="cls-2" cx="60.999" cy="60.98" rx="52.561" ry="52.58" />
+                                                    <path
+                                                        class="cls-3"
                                                         d="M957.931,1752.67a44.36,44.36,0,0,0-11.563,86.1c5.908,2.06,12.592,7.75,12.592,14.04a15.639,15.639,0,0,1-.276,2.93,13.936,13.936,0,0,1-3.554,6.59,7.719,7.719,0,1,0,12.6,1.62h0.01c-0.007-.01-0.012-0.01-0.019-0.02a7.893,7.893,0,0,0-1.218-1.72,12.571,12.571,0,0,1-2.435-3.39,14.642,14.642,0,0,1-1.3-6.01c0-6.31,6.726-11.98,12.654-14.06A44.346,44.346,0,0,0,957.931,1752.67Z"
-                                                        transform="translate(-899.5 -1734.91)" />
+                                                        transform="translate(-899.5 -1734.91)"
+                                                    />
                                                 </svg>
                                                 <div class="number">STEP2</div>
                                             </div>
                                             <div class="text-area">
-                                                <h4>Give CreativeGenius AI a bit of context
-                                                </h4>
-                                                <p>Enter a few sentences about your brand and products.
-                                                </p>
+                                                <h4>Give CreativeGenius AI a bit of context</h4>
+                                                <p>Enter a few sentences about your brand and products.</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6 order-1 order-md-2">
                                         <div class="thumbs-area">
-                                            <img src="assets/img/how-it-works/how-it-work2.png" alt="">
+                                            <img src="assets/img/how-it-works/how-it-work2.png" alt="" />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="section-devider-area">
-                                            <img src="assets/img/how-it-works/connection.png" alt="">
+                                            <img src="assets/img/how-it-works/connection.png" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -500,30 +526,26 @@
                                 <div class="row align-items-center g-4">
                                     <div class="col-md-6">
                                         <div class="thumbs-area">
-                                            <img src="assets/img/how-it-works/how-it-work3.png" alt="">
+                                            <img src="assets/img/how-it-works/how-it-work3.png" alt="" />
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="content-area">
                                             <div class="icon-area">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" id="BG"
-                                                    viewBox="0 0 122 140.28">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" id="BG" viewBox="0 0 122 140.28">
                                                     <circle class="cls-1" cx="61" cy="60.985" r="61" />
-                                                    <ellipse class="cls-2" cx="60.999" cy="60.98" rx="52.561"
-                                                        ry="52.58" />
-                                                    <path class="cls-3"
+                                                    <ellipse class="cls-2" cx="60.999" cy="60.98" rx="52.561" ry="52.58" />
+                                                    <path
+                                                        class="cls-3"
                                                         d="M957.931,1752.67a44.36,44.36,0,0,0-11.563,86.1c5.908,2.06,12.592,7.75,12.592,14.04a15.639,15.639,0,0,1-.276,2.93,13.936,13.936,0,0,1-3.554,6.59,7.719,7.719,0,1,0,12.6,1.62h0.01c-0.007-.01-0.012-0.01-0.019-0.02a7.893,7.893,0,0,0-1.218-1.72,12.571,12.571,0,0,1-2.435-3.39,14.642,14.642,0,0,1-1.3-6.01c0-6.31,6.726-11.98,12.654-14.06A44.346,44.346,0,0,0,957.931,1752.67Z"
-                                                        transform="translate(-899.5 -1734.91)" />
+                                                        transform="translate(-899.5 -1734.91)"
+                                                    />
                                                 </svg>
                                                 <div class="number">STEP3</div>
                                             </div>
                                             <div class="text-area">
-                                                <h4>Sift through the results
-                                                </h4>
-                                                <p>Our AI content generator gives you multiple options for each campaign
-                                                    that
-                                                    you’re working on.
-                                                </p>
+                                                <h4>Sift through the results</h4>
+                                                <p>Our AI content generator gives you multiple options for each campaign that you’re working on.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -531,7 +553,7 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="section-devider-area">
-                                            <img src="assets/img/how-it-works/connection2.png" alt="">
+                                            <img src="assets/img/how-it-works/connection2.png" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -543,30 +565,26 @@
                                     <div class="col-md-6 order-2 order-md-1">
                                         <div class="content-area">
                                             <div class="icon-area">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" id="BG"
-                                                    viewBox="0 0 122 140.28">
+                                                <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" id="BG" viewBox="0 0 122 140.28">
                                                     <circle class="cls-1" cx="61" cy="60.985" r="61" />
-                                                    <ellipse class="cls-2" cx="60.999" cy="60.98" rx="52.561"
-                                                        ry="52.58" />
-                                                    <path class="cls-3"
+                                                    <ellipse class="cls-2" cx="60.999" cy="60.98" rx="52.561" ry="52.58" />
+                                                    <path
+                                                        class="cls-3"
                                                         d="M957.931,1752.67a44.36,44.36,0,0,0-11.563,86.1c5.908,2.06,12.592,7.75,12.592,14.04a15.639,15.639,0,0,1-.276,2.93,13.936,13.936,0,0,1-3.554,6.59,7.719,7.719,0,1,0,12.6,1.62h0.01c-0.007-.01-0.012-0.01-0.019-0.02a7.893,7.893,0,0,0-1.218-1.72,12.571,12.571,0,0,1-2.435-3.39,14.642,14.642,0,0,1-1.3-6.01c0-6.31,6.726-11.98,12.654-14.06A44.346,44.346,0,0,0,957.931,1752.67Z"
-                                                        transform="translate(-899.5 -1734.91)" />
+                                                        transform="translate(-899.5 -1734.91)"
+                                                    />
                                                 </svg>
                                                 <div class="number">STEP4</div>
                                             </div>
                                             <div class="text-area">
-                                                <h4>Edit, polish, and publish
-                                                </h4>
-                                                <p>Use Copy.ai’s editor to rewrite paragraphs and polish up sentences.
-                                                    Then,
-                                                    just copy and paste the work into your CMS for publishing.
-                                                </p>
+                                                <h4>Edit, polish, and publish</h4>
+                                                <p>Use Copy.ai’s editor to rewrite paragraphs and polish up sentences. Then, just copy and paste the work into your CMS for publishing.</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6 order-1 order-md-2">
                                         <div class="thumbs-area">
-                                            <img src="assets/img/how-it-works/how-it-work3.png" alt="">
+                                            <img src="assets/img/how-it-works/how-it-work3.png" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -575,7 +593,15 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="shape1">
+        </div>
+        <div class="shape4">
+        </div>
+        <div class="shape5">
+        </div>
     </section>
+    
     <!-- How it works section end -->
 
     <!-- Pricing section start -->
@@ -989,6 +1015,8 @@
                 </div>
             </div>
         </div>
+        <div class="shape3">
+        </div>
     </section>
     <!-- Pricing section end -->
 
@@ -1000,8 +1028,7 @@
                 <div class="section-header mb-50 text-center">
                     <div class="section-subtitle">testimonial</div>
                     <h2 class="">What Clients Say</h2>
-                    <p class="cmn-para-text m-auto">Help agencies to define their new business objectives and then
-                        create professional software. Lorem ipsum, dolor sit amet </p>
+                    <p class="cmn-para-text m-auto">Help agencies to define their new business objectives and then create professional software. Lorem ipsum, dolor sit amet</p>
                 </div>
             </div>
             <div class="row">
@@ -1009,70 +1036,64 @@
                     <div class="item">
                         <div class="testimonial-box">
                             <div class="testimonial-thumbs thumbs">
-                                <img src="assets/img/Person/2.jpg" alt="">
+                                <img src="assets/img/Person/2.jpg" alt="" />
                             </div>
-                            <div class="text_area text-center ">
+                            <div class="text_area text-center">
                                 <h4 class="mt-20">Crol Mickey</h4>
                                 <h6>Sydney, Australia</h6>
-                                <div class="quote-area"><img src="assets/img/testimonial/quote.png" alt=""></div>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur nemo modi
-                                    consectetur repudiandae atque doloremque</p>
-                                <div class="quote-area ms-auto"><img src="assets/img/testimonial/double-quotes.png"
-                                        alt=""></div>
+                                <div class="quote-area"><img src="assets/img/testimonial/quote.png" alt="" /></div>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur nemo modi consectetur repudiandae atque doloremque</p>
+                                <div class="quote-area ms-auto"><img src="assets/img/testimonial/double-quotes.png" alt="" /></div>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="testimonial-box">
                             <div class="testimonial-thumbs thumbs">
-                                <img src="assets/img/Person/1.jpg" alt="">
+                                <img src="assets/img/Person/1.jpg" alt="" />
                             </div>
-                            <div class="text_area text-center ">
+                            <div class="text_area text-center">
                                 <h4 class="mt-20">Crol Mickey</h4>
                                 <h6>Sydney, Australia</h6>
-                                <div class="quote-area"><img src="assets/img/testimonial/quote.png" alt=""></div>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur nemo modi
-                                    consectetur repudiandae atque doloremque</p>
-                                <div class="quote-area ms-auto"><img src="assets/img/testimonial/double-quotes.png"
-                                        alt=""></div>
+                                <div class="quote-area"><img src="assets/img/testimonial/quote.png" alt="" /></div>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur nemo modi consectetur repudiandae atque doloremque</p>
+                                <div class="quote-area ms-auto"><img src="assets/img/testimonial/double-quotes.png" alt="" /></div>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="testimonial-box box1">
                             <div class="testimonial-thumbs thumbs">
-                                <img src="assets/img/Person/3.jpg" alt="">
+                                <img src="assets/img/Person/3.jpg" alt="" />
                             </div>
-                            <div class="text_area text-center ">
+                            <div class="text_area text-center">
                                 <h4 class="mt-20">Crol Mickey</h4>
                                 <h6>Sydney, Australia</h6>
-                                <div class="quote-area"><img src="assets/img/testimonial/quote.png" alt=""></div>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur nemo modi
-                                    consectetur repudiandae atque doloremque</p>
-                                <div class="quote-area ms-auto"><img src="assets/img/testimonial/double-quotes.png"
-                                        alt=""></div>
+                                <div class="quote-area"><img src="assets/img/testimonial/quote.png" alt="" /></div>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur nemo modi consectetur repudiandae atque doloremque</p>
+                                <div class="quote-area ms-auto"><img src="assets/img/testimonial/double-quotes.png" alt="" /></div>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="testimonial-box box1">
                             <div class="testimonial-thumbs thumbs">
-                                <img src="assets/img/Person/4.jpg" alt="">
+                                <img src="assets/img/Person/4.jpg" alt="" />
                             </div>
-                            <div class="text_area text-center ">
+                            <div class="text_area text-center">
                                 <h4 class="mt-20">Crol Mickey</h4>
                                 <h6>Sydney, Australia</h6>
-                                <div class="quote-area"><img src="assets/img/testimonial/quote.png" alt=""></div>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur nemo modi
-                                    consectetur repudiandae atque doloremque</p>
-                                <div class="quote-area ms-auto"><img src="assets/img/testimonial/double-quotes.png"
-                                        alt=""></div>
+                                <div class="quote-area"><img src="assets/img/testimonial/quote.png" alt="" /></div>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur nemo modi consectetur repudiandae atque doloremque</p>
+                                <div class="quote-area ms-auto"><img src="assets/img/testimonial/double-quotes.png" alt="" /></div>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
+            </div>
+        </div>
+        <div class="shape2">
+        </div>
     </section>
     <!-- Testimonial section end -->
 
@@ -1081,7 +1102,6 @@
         <div class="container">
             <div class="row">
                 <div class="section-header text-center mb-50">
-                    <!-- <div class="section-subtitle">Faqs</div> -->
                     <div class="section-subtitle">Frequently Asked Questions</div>
                     <h2>Have Any Questions!</span> </h2>
                     <p class="cmn-para-text mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
@@ -1202,6 +1222,8 @@
                 </div>
             </div>
         </div>
+        <div class="shape3">
+        </div>
     </section>
     <!-- Faq section end -->
 
@@ -1213,7 +1235,7 @@
                 <div class="col-12">
                     <div class="section-header text-center mb-50">
                         <div class="section-subtitle">Our Blog</div>
-                        <h2 class="section-title mx-auto">Latest Blogs & <span class="highlight">Articles</span></h2>
+                        <h2 class="section-title mx-auto">Latest Blogs & Articles</h2>
                         <p class="cmn-para-text mx-auto">In today's fast-paced world, managing bill payments can become
                             a tedious and time-consuming task. Fortunately, with the advent of online payment services.
                         </p>
@@ -1308,6 +1330,8 @@
 
 
             </div>
+        </div>
+        <div class="shape2">
         </div>
     </section>
     <!-- Blog Section end -->

@@ -17,10 +17,10 @@
     --magenta: #b125c0;
     --blue: #0057ff;
     --orange: #f6b91c;
-    --bg-color1: #ffffff;
+    --bg-color1: transparent;
     --bg-color2: #ffffff;
-    --bg-color3: #0a1c3a;
-    --bg-color4: #F6F9FF;
+    --bg-color4: #0a1c3a;
+    --bg-color5: #ffffff;
     --linear-gradient: rgba(62, 62, 237, 0.15), rgba(217, 217, 217, 0);
     --body-color: #707070;
     --border-color1: #e5e7eb;
@@ -39,7 +39,107 @@
     --transition: all .3s ease-in-out;
 }
 
+// Dark theme section start
+.dark-theme {
+    --bg-color1: #000000;
+    --bg-color2: #111827;
+    --bg-color3: #1F2937;
+    --bg-color5: #212837;
+    --heading-color: #ffffff;
+    --border-color1: #37333e;
 
+    p {
+        color: #d1cbdb;
+    }
+    .form-control,
+    .form-select {
+        color: var(--white);
+    }
+    .cmn-btn3 {
+        background-color: var(--bg-color2);
+        border-color: var(--bg-color2);
+        color: var(--white);
+    }
+
+    .section-subtitle::after {
+        background: linear-gradient(90deg, #30185f, rgba(217, 217, 217, 0));
+    }
+  
+    .shape1 {
+        position: absolute;
+        max-width: 800px;
+        height: 800px;
+        background: linear-gradient(0deg, #D25EA4, #635BFF, #D25EA4, #635BFF);
+        border-radius: 50%;
+        filter: blur(150px);
+        width: 100%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        opacity: 0.3;
+        z-index: -1;
+    }
+
+    .shape2 {
+        position: absolute;
+        max-width: 700px;
+        height: 400px;
+        background: linear-gradient(0deg, #D25EA4, #635BFF, #D25EA4, #635BFF);
+        border-radius: 50%;
+        filter: blur(150px);
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        opacity: 0.4;
+        z-index: -1;
+    }
+
+    .shape3 {
+        position: absolute;
+        max-width: 700px;
+        height: 400px;
+        background: linear-gradient(0deg, #D25EA4, #635BFF, #D25EA4, #635BFF);
+        border-radius: 50%;
+        filter: blur(150px);
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        opacity: 0.4;
+        z-index: -1;
+    }
+
+    .shape4 {
+        position: absolute;
+        max-width: 700px;
+        height: 400px;
+        background: linear-gradient(0deg, #D25EA4, #635BFF, #D25EA4, #635BFF);
+        border-radius: 50%;
+        filter: blur(150px);
+        width: 100%;
+        top: 0;
+        right: 0;
+        opacity: 0.4;
+        z-index: -1;
+    }
+
+    .shape5 {
+        position: absolute;
+        max-width: 700px;
+        height: 400px;
+        background: linear-gradient(0deg, #D25EA4, #635BFF, #D25EA4, #635BFF);
+        border-radius: 50%;
+        filter: blur(150px);
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        opacity: 0.4;
+        z-index: -1;
+    }
+}
+
+// Dark theme section end
 
 // ---------------------------------------------------- 
 // Reset section start
@@ -189,6 +289,10 @@ body {
     background-image: url(../img/background/body-bg-img.webp);
 }
 
+body.dark-theme {
+    color: #d1cbdb;
+}
+
 @media (max-width: 991px) {
     body {
         padding-bottom: initial;
@@ -215,7 +319,7 @@ textarea.form-control {
 .form-control,
 .form-select {
     border-radius: 5px;
-    background-color: var(--white);
+    background-color: var(--bg-color3);
     border: 1px solid var(--border-color1);
     height: 45px;
 }
@@ -450,6 +554,14 @@ span.select2.select2-container.select2-container--default {
 }
 
 // Breadcrumb rtl end
+// Dark theme breadcrumb section start
+.dark-theme {
+    .breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+        color: var(--white);
+    }
+}
+
+// Dark theme breadcrumb section end
 // Breadcrumb end
 
 p {
@@ -573,7 +685,7 @@ body::-webkit-scrollbar-thumb {
 // Reuseble style section start
 // ----------------------------------------------------
 .offcanvas {
-    background: var(--bg-color1);
+    background: var(--white);
 }
 
 .offcanvas.offcanvas-end {
@@ -607,35 +719,6 @@ body::-webkit-scrollbar-thumb {
     to {
         transform: rotate(360deg);
     }
-}
-
-.shape1 {
-    position: absolute;
-    top: -240px;
-    z-index: -1;
-    left: 35px;
-}
-
-.shape2 {
-    position: absolute;
-    top: 160px;
-    z-index: -1;
-    width: 260px;
-}
-
-.shape3 {
-    position: absolute;
-    top: 240px;
-    left: 365px;
-    z-index: -1;
-}
-
-.shape4 {
-    position: absolute;
-    top: 285px;
-    left: 385px;
-    z-index: -1;
-    max-width: 175px;
 }
 
 .section-header {
@@ -1035,6 +1118,7 @@ section {
     }
 }
 
+
 .social-area ul li a {
     width: 40px;
     height: 40px;
@@ -1401,10 +1485,10 @@ hr.divider:after {
 01. Nav section start
 ----------------------------------------------*/
 .navbar.active {
-    background-color: var(--white);
+    background-color: var(--bg-color5);
     box-shadow: var(--shadow2);
     z-index: 999;
-    padding: 10px 0;
+    // padding: 10px 0;
 
     .navbar-nav .nav-link {
         color: var(--heading-color);
@@ -1445,9 +1529,8 @@ hr.divider:after {
         box-shadow: none;
     }
 
-    .navbar-nav {
-        text-align: center;
 
+    .navbar-nav {
         .nav-link {
             font-size: 16px;
             font-weight: 500;
@@ -1462,20 +1545,126 @@ hr.divider:after {
                 color: var(--primary-color);
             }
 
-            .login-icon {
-                margin-right: 5px;
-                color: var(--primary-color);
-            }
         }
 
-        .toggle-btn {
-            font-size: 20px;
-            cursor: pointer;
+    }
+
+    .login-icon {
+        margin-right: 5px;
+        color: var(--primary-color);
+    }
+
+    .nav-right {
+        position: absolute;
+        right: 0;
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--heading-color);
+        margin-right: 70px;
+
+        .custom-nav {
+            display: flex;
+            align-items: center;
+            gap: 15px;
         }
     }
 
+    .toggle-btn {
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
 
+// user panel
+.profile-box {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    padding: 0;
 
+    &:hover {
+        .user-dropdown {
+            opacity: 1;
+            visibility: visible;
+            top: 58px;
+        }
+    }
+
+    .profile {
+        cursor: pointer;
+        border: 1px solid var(--border-color1);
+        padding: 2px;
+        background-color: var(--white);
+        border-radius: 50%;
+
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+
+    .user-dropdown {
+        background: var(--white);
+        box-shadow: var(--shadow2);
+        width: 200px;
+        overflow: hidden;
+        padding-top: 0;
+        padding-left: 0;
+        position: absolute;
+        right: 0;
+        top: 0%;
+        border-radius: 5px;
+        visibility: hidden;
+        transition: 0.2s;
+        transition: var(--transition);
+        opacity: 0;
+        z-index: 3;
+
+        li {
+            list-style: none;
+
+            button {
+                width: 190px;
+                height: 38px;
+                padding: 5px;
+                margin: 5px;
+                margin-bottom: 0;
+                border-radius: 5px;
+                font-size: 13px;
+            }
+
+            a {
+                color: var(--heading-color);
+                font-weight: 400;
+                padding: 5px;
+                margin: 5px;
+                border-radius: 5px;
+                display: flex;
+                transition: 0.4s;
+
+                &:active,
+                &:focus,
+                &:hover {
+                    background-color: var(--primary-color-opacity-low);
+                }
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                i {
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 5px;
+                    color: var(--primary-color);
+                    margin: 0 5px;
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
 
 
@@ -1497,14 +1686,6 @@ hr.divider:after {
                 padding: 15px;
             }
         }
-
-        .nav-right {
-            flex-direction: column;
-
-            li {
-                padding: 15px;
-            }
-        }
     }
 
 }
@@ -1519,6 +1700,21 @@ hr.divider:after {
     }
 }
 
+// Dark theme navbar section start
+.dark-theme {
+    .profile-box .user-dropdown {
+        background-color: var(--bg-color3);
+
+        li {
+            a:hover {
+                background-color: var(--bg-color2);
+            }
+
+        }
+    }
+}
+
+// Dark theme navbar section end
 // Rtl nav end
 /*----------------------------------------------
 Nav end
@@ -1574,9 +1770,11 @@ Nav end
 // ----------------------------------------------------
 
 .hero-section {
+    background-color: var(--bg-color1);
     position: relative;
     padding: 250px 0 220px;
     overflow: hidden;
+    z-index: 0;
 
     &::after {
         content: "";
@@ -1691,13 +1889,34 @@ Nav end
 }
 
 // Hero rtl end
+// Drak theme hero section start
+.dark-theme {
+    .hero-section {
+
+        &::before {
+            background: none;
+        }
+
+        &::after {
+            background: none;
+        }
+
+    }
+}
+
+// Drak theme hero section end
 // ---------------------------------------------------- 
 // Hero section end
 // ----------------------------------------------------
 
-// ---------------------------------------------------- 
-// Feature section start
-// ----------------------------------------------------
+/*----------------------------------------------
+Feature section start
+----------------------------------------------*/
+.feature-section {
+    position: relative;
+    z-index: 0;
+    background-color: var(--bg-color1);
+}
 
 .feature-box {
     display: flex;
@@ -1705,10 +1924,9 @@ Nav end
     box-shadow: var(--shadow3);
     padding: 40px 25px;
     border-radius: 5px;
-    transition: var(--transition);
     gap: 15px;
     text-align: center;
-    background-color: var(--bg-color1);
+    background-color: var(--bg-color2);
     margin-top: 50px;
 
     .icon-box {
@@ -1735,7 +1953,6 @@ Nav end
         height: 110px;
         fill: var(--primary-color-opacity-low);
         stroke: none;
-        background-color: var(--white);
     }
 
     .icon {
@@ -1769,15 +1986,29 @@ Nav end
 }
 
 // Feature rtl end
-// ----------------------------------------------------
-// Feature sectin end
-// ----------------------------------------------------
+
+// Dark theme feature section start
+.dark-theme {
+    .icon-box .svg-icon {
+        fill: var(--bg-color3);
+    }
+}
+
+// Dark theme feature section end
+
+/*----------------------------------------------
+Feature section end
+----------------------------------------------*/
 
 
 // ----------------------------------------------------
 // About section start
 // ----------------------------------------------------
 .about-section {
+    position: relative;
+    z-index: 0;
+    background-color: var(--bg-color1);
+
     .about-image-area {
         text-align: center;
 
@@ -1833,7 +2064,9 @@ Nav end
 // Qr section start
 // ----------------------------------------------------
 .qr-section {
-    // background: var(--bg-color2);
+    position: relative;
+    z-index: 0;
+    background: var(--bg-color1);
 
     .qr-box {
         background: var(--white);
@@ -1869,6 +2102,9 @@ Nav end
 // ----------------------------------------------------
 
 .how-it-work {
+    position: relative;
+    z-index: 0;
+    background-color: var(--bg-color1);
 
     .how-it-work-item {
         .thumbs-area {
@@ -1978,7 +2214,14 @@ Nav end
 }
 
 // How it works rtl end
+// Dark theme how it work section start
+.dark-theme {
+    .how-it-work .how-it-work-item .content-area .text-area {
+        background-color: var(--bg-color2);
+    }
+}
 
+// Dark theme how it work section end
 // ----------------------------------------------------
 // How it works section end
 // ----------------------------------------------------
@@ -1987,11 +2230,16 @@ Nav end
 // ----------------------------------------------------
 // Pricing section start
 // ----------------------------------------------------
+.pricing-section {
+    position: relative;
+    z-index: 0;
+    background-color: var(--bg-color1);
+}
 
 .pricing-box {
     position: relative;
     border-radius: 10px;
-    background: var(--white);
+    background: var(--bg-color2);
     box-shadow: var(--shadow3);
     padding: 45px 32px 32px;
 
@@ -2081,8 +2329,9 @@ Nav end
 }
 
 .prepaid-plan {
-    background-color: var(--white);
+    background-color: var(--bg-color2);
     box-shadow: var(--shadow3);
+    border-radius: 5px;
 
     .section-body {
         display: flex;
@@ -2230,6 +2479,22 @@ Nav end
 }
 
 // Pricing rtl end
+// Dark theme pricing section start
+.dark-theme {
+    .pricing-box.featured {
+        background-color: var(--bg-color3);
+    }
+
+    .cmn-tabs .nav-pills {
+        background-color: var(--bg-color2);
+    }
+
+    .prepaid-plan .price-area {
+        background-color: var(--bg-color3);
+    }
+}
+
+// Dark theme pricing section end
 /*----------------------------------------------
 06. Pricing section end
 ----------------------------------------------*/
@@ -2238,6 +2503,10 @@ Nav end
 07. Testimonial section start
 ----------------------------------------------*/
 .testimonial-section {
+    position: relative;
+    z-index: 0;
+    background-color: var(--bg-color1);
+
     .testimonial-box {
         padding: 20px;
         border-radius: 15px;
@@ -2270,9 +2539,8 @@ Nav end
         }
 
         .testimonial-box {
-            border: 1px solid var(--primary-color);
             border: 1px solid var(--border-color1);
-            background-color: var(--white);
+            background-color: var(--bg-color2);
         }
     }
 
@@ -2293,10 +2561,15 @@ Nav end
     }
 }
 
-
-
-
 // Rtl testimonial end
+// Dark theme testimonial section start
+.dark-theme {
+    .testimonial-section .owl-item.active.center .testimonial-box {
+        border-color: var(--bg-color2);
+    }
+}
+
+// Dark theme testimonial section end
 /*----------------------------------------------
 Testimonial end
 ----------------------------------------------*/
@@ -2305,6 +2578,9 @@ Testimonial end
 // Faq section start
 // ----------------------------------------------------
 .faq-area {
+    position: relative;
+    z-index: 0;
+    background-color: var(--bg-color1);
 
     .accordion-button {
         color: var(--heading-color);
@@ -2378,6 +2654,14 @@ Testimonial end
 }
 
 // Faq rtl end
+// Dark theme faq section start
+.dark-theme {
+    .faq-area .accordion-button:not(.collapsed) {
+        background-color: var(--bg-color2);
+    }
+}
+
+// Dark theme faq section end
 // ---------------------------------------------------- 
 // Faq section end
 // ----------------------------------------------------
@@ -2385,9 +2669,14 @@ Testimonial end
 /*----------------------------------------------
 10. Blog section start
 ----------------------------------------------*/
+.blog-section {
+    position: relative;
+    z-index: 0;
+    background-color: var(--bg-color1);
+}
 
 .blog-box {
-    background: var(--white);
+    background: var(--bg-color1);
 
     &:hover {
         box-shadow: none;
@@ -2423,7 +2712,7 @@ Testimonial end
         position: relative;
         margin: -40px 20px 0;
         z-index: 1;
-        background: var(--white);
+        background: var(--bg-color2);
         border-radius: 5px;
 
         .blog-btn {
@@ -2563,15 +2852,7 @@ Testimonial end
 
 // Blog responsive end
 // Dark theme blog section start
-.dark-theme {
-    .blog-box {
-        background-color: var(--bg-color2);
 
-        .content-box {
-            background-color: var(--bg-color1);
-        }
-    }
-}
 
 // Dark theme blog section end
 /*----------------------------------------------
@@ -2669,10 +2950,15 @@ Blog end
 
 }
 
-
-
 // Newslatter rtl end
+// Dark theme newslatter section start
+.dark-theme {
+    .subscribe-form .form-control {
+        border-bottom: 1px solid #e5e7eb;
+    }
+}
 
+// Dark theme newslatter section end
 // ----------------------------------------------------
 // Newsletter section end
 // ----------------------------------------------------
@@ -2681,10 +2967,8 @@ Blog end
 // ---------------------------------------------------- 
 // Footer section start
 // ----------------------------------------------------
-
-
 .footer-area {
-    background-color: var(--bg-color3);
+    background-color: var(--bg-color4);
     background-image: url(../img/background/blur-c.png);
     background-position: top center;
     background-repeat: no-repeat;
@@ -2753,6 +3037,12 @@ Blog end
 }
 
 // Footer rtl end
+// Dark theme footer section start
+.social-area ul li a {
+    border-color: #e5e7eb;
+}
+
+// Dark theme footer section end
 // ---------------------------------------------------- 
 // Footer section end
 // ----------------------------------------------------
@@ -2801,7 +3091,6 @@ Blog end
     position: relative;
     z-index: 1;
     background-color: var(--primary-color-opacity-low);
-    // background: linear-gradient(#dceaff 0%, #f5f9ff 100%);
     overflow: hidden;
     position: relative;
 
@@ -2866,6 +3155,18 @@ Blog end
 }
 
 // Responsive banner end
+// Dark theme banner section start
+.dark-theme {
+    .banner-area {
+        background-color: var(--bg-color2);
+
+        &::before {
+            background: none;
+        }
+    }
+}
+
+// Dark theme banner section end
 // ---------------------------------------------------- 
 // Banner section end
 // ----------------------------------------------------
@@ -2875,6 +3176,10 @@ Blog end
 16. Contact section start
 ----------------------------------------------*/
 .contact-section {
+    background-color: var(--bg-color1);
+    position: relative;
+    z-index: 0;
+
     .contact-area {
         .contact-item-list {
             margin-top: 30px;
@@ -2902,7 +3207,7 @@ Blog end
     }
 
     .contact-message-area {
-        background-color: var(--white);
+        background-color: var(--bg-color2);
         padding: 30px 25px;
         box-shadow: var(--shadow3);
         border-radius: 5px;
@@ -2949,7 +3254,14 @@ Blog end
 }
 
 // Rtl contact section end
+// Dark theme contact section start
+.dark-theme {
+    .contact-section .contact-area .contact-item-list .item .icon-area {
+        background-color: var(--bg-color2);
+    }
+}
 
+// Dark theme contact section end
 /*----------------------------------------------
 Contact end
 ----------------------------------------------*/

@@ -35,65 +35,90 @@
     </div>
     <!-- Preloader area end -->
 
-    <!-- Nav Area Start -->
-    <nav class="navbar banner-nav fixed-top navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand logo" href="#"><img src="assets/img/logo/logo.png" alt=""></a>
+    <!-- Nav section start -->
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container position-relative">
+            <a class="navbar-brand logo" href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
-                <i class="fa-regular fa-bars-staggered"></i>
+                <i class="fa-light fa-list"></i>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbar">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><a class="navbar-brand logo" href="#"><img
-                                src="assets/img/logo/chatbot.png" alt=""></a></h5>
+                    <a class="navbar-brand" href="index.html"><img class="logo" src="assets/img/logo/logo.png"
+                            alt=""></a>
                     <button type="button" class="cmn-btn-close btn-close" data-bs-dismiss="offcanvas"
-                        aria-label="Close"><i class="fa-regular fa-arrow-right"></i></button>
+                        aria-label="Close"><i class="fa-light fa-arrow-right"></i></button>
                 </div>
                 <div class="offcanvas-body align-items-center justify-content-between">
-                    <ul class="navbar-nav m-auto">
+                    <ul class="navbar-nav m-auto text-center">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About us</a>
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="features.html">features</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pricing.html">pricing</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="features.html">features</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="faq.html">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Contact.html">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html"><i
+                                    class="login-icon fa-regular fa-right-to-bracket"></i>Login</a>
                         </li>
                     </ul>
-                    <form>
-                        <ul class="nav-right d-flex align-items-center">
-                            <li>
-                                <a class="login-btn" href="login.html">Login</a>
-                            </li>
-                            <li>
-                                <button type="button" class="get-start-btn" href="signup.html">Get Started</button>
-                            </li>
 
-                        </ul>
-                    </form>
 
                 </div>
             </div>
+            <div class="nav-right">
+                <ul class="custom-nav">
+
+
+
+                    <li class="nav-item">
+                        <div class="profile-box">
+                            <div class="profile">
+                               <img src="./assets/img/Person/1.jpg" class="img-fluid" alt="" />
+                            </div>
+                            <ul class="user-dropdown">
+                               <li>
+                                  <a href="user-panel.html"> <i class="fal fa-user"></i> View Profile </a>
+                               </li>
+                               <li>
+                                  <a href="support-ticket.html"> <i class="fal fa-user-headset"></i> Support </a>
+                               </li>
+                               <li>
+                                  <a href="edit-profile.html"> <i class="fal fa-user-cog"></i> Account Settings </a>
+                               </li>
+                               <li>
+                                  <a href=""> <i class="fal fa-sign-out-alt"></i> Sign Out </a>
+                               </li>
+                            </ul>
+                         </div>
+                    </li>
+                    <li>
+                        <a id="toggle-btn" class="nav-link d-flex toggle-btn">
+                            <i class="fa-regular fa-moon" id="moon"></i>
+                            <i class="fa-regular fa-sun-bright" id="sun"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <!-- Nav Area End -->
+    <!-- Nav section end -->
 
 
     <!-- Bottom Mobile Tab nav section start -->
-
     <ul class="nav bottom-nav fixed-bottom d-lg-none">
         <li class="nav-item">
             <a class="nav-link" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvasExample"
@@ -112,7 +137,6 @@
             <a class="nav-link" href="#"><i class="fa-regular fa-user"></i></a>
         </li>
     </ul>
-
     <!-- Bottom Mobile Tab nav section end -->
 
 
@@ -196,6 +220,8 @@
                 </div>
             </div>
         </div>
+        <div class="shape3">
+        </div>
     </section>
     <!-- About section end -->
 
@@ -206,8 +232,7 @@
                 <div class="section-header mb-50 text-center">
                     <div class="section-subtitle">testimonial</div>
                     <h2 class="">What Clients Say</h2>
-                    <p class="cmn-para-text m-auto">Help agencies to define their new business objectives and then
-                        create professional software. Lorem ipsum, dolor sit amet </p>
+                    <p class="cmn-para-text m-auto">Help agencies to define their new business objectives and then create professional software. Lorem ipsum, dolor sit amet</p>
                 </div>
             </div>
             <div class="row">
@@ -215,70 +240,64 @@
                     <div class="item">
                         <div class="testimonial-box">
                             <div class="testimonial-thumbs thumbs">
-                                <img src="assets/img/Person/2.jpg" alt="">
+                                <img src="assets/img/Person/2.jpg" alt="" />
                             </div>
-                            <div class="text_area text-center ">
+                            <div class="text_area text-center">
                                 <h4 class="mt-20">Crol Mickey</h4>
                                 <h6>Sydney, Australia</h6>
-                                <div class="quote-area"><img src="assets/img/testimonial/quote.png" alt=""></div>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur nemo modi
-                                    consectetur repudiandae atque doloremque</p>
-                                <div class="quote-area ms-auto"><img src="assets/img/testimonial/double-quotes.png"
-                                        alt=""></div>
+                                <div class="quote-area"><img src="assets/img/testimonial/quote.png" alt="" /></div>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur nemo modi consectetur repudiandae atque doloremque</p>
+                                <div class="quote-area ms-auto"><img src="assets/img/testimonial/double-quotes.png" alt="" /></div>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="testimonial-box">
                             <div class="testimonial-thumbs thumbs">
-                                <img src="assets/img/Person/1.jpg" alt="">
+                                <img src="assets/img/Person/1.jpg" alt="" />
                             </div>
-                            <div class="text_area text-center ">
+                            <div class="text_area text-center">
                                 <h4 class="mt-20">Crol Mickey</h4>
                                 <h6>Sydney, Australia</h6>
-                                <div class="quote-area"><img src="assets/img/testimonial/quote.png" alt=""></div>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur nemo modi
-                                    consectetur repudiandae atque doloremque</p>
-                                <div class="quote-area ms-auto"><img src="assets/img/testimonial/double-quotes.png"
-                                        alt=""></div>
+                                <div class="quote-area"><img src="assets/img/testimonial/quote.png" alt="" /></div>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur nemo modi consectetur repudiandae atque doloremque</p>
+                                <div class="quote-area ms-auto"><img src="assets/img/testimonial/double-quotes.png" alt="" /></div>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="testimonial-box box1">
                             <div class="testimonial-thumbs thumbs">
-                                <img src="assets/img/Person/3.jpg" alt="">
+                                <img src="assets/img/Person/3.jpg" alt="" />
                             </div>
-                            <div class="text_area text-center ">
+                            <div class="text_area text-center">
                                 <h4 class="mt-20">Crol Mickey</h4>
                                 <h6>Sydney, Australia</h6>
-                                <div class="quote-area"><img src="assets/img/testimonial/quote.png" alt=""></div>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur nemo modi
-                                    consectetur repudiandae atque doloremque</p>
-                                <div class="quote-area ms-auto"><img src="assets/img/testimonial/double-quotes.png"
-                                        alt=""></div>
+                                <div class="quote-area"><img src="assets/img/testimonial/quote.png" alt="" /></div>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur nemo modi consectetur repudiandae atque doloremque</p>
+                                <div class="quote-area ms-auto"><img src="assets/img/testimonial/double-quotes.png" alt="" /></div>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="testimonial-box box1">
                             <div class="testimonial-thumbs thumbs">
-                                <img src="assets/img/Person/4.jpg" alt="">
+                                <img src="assets/img/Person/4.jpg" alt="" />
                             </div>
-                            <div class="text_area text-center ">
+                            <div class="text_area text-center">
                                 <h4 class="mt-20">Crol Mickey</h4>
                                 <h6>Sydney, Australia</h6>
-                                <div class="quote-area"><img src="assets/img/testimonial/quote.png" alt=""></div>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur nemo modi
-                                    consectetur repudiandae atque doloremque</p>
-                                <div class="quote-area ms-auto"><img src="assets/img/testimonial/double-quotes.png"
-                                        alt=""></div>
+                                <div class="quote-area"><img src="assets/img/testimonial/quote.png" alt="" /></div>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aspernatur nemo modi consectetur repudiandae atque doloremque</p>
+                                <div class="quote-area ms-auto"><img src="assets/img/testimonial/double-quotes.png" alt="" /></div>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
+            </div>
+        </div>
+        <div class="shape2">
+        </div>
     </section>
     <!-- Testimonial section end -->
 
@@ -287,7 +306,6 @@
         <div class="container">
             <div class="row">
                 <div class="section-header text-center mb-50">
-                    <!-- <div class="section-subtitle">Faqs</div> -->
                     <div class="section-subtitle">Frequently Asked Questions</div>
                     <h2>Have Any Questions!</span> </h2>
                     <p class="cmn-para-text mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
@@ -408,6 +426,8 @@
                 </div>
             </div>
         </div>
+        <div class="shape3">
+        </div>
     </section>
     <!-- Faq section end -->
 
@@ -419,7 +439,7 @@
                 <div class="col-12">
                     <div class="section-header text-center mb-50">
                         <div class="section-subtitle">Our Blog</div>
-                        <h2 class="section-title mx-auto">Latest Blogs & <span class="highlight">Articles</span></h2>
+                        <h2 class="section-title mx-auto">Latest Blogs & Articles</h2>
                         <p class="cmn-para-text mx-auto">In today's fast-paced world, managing bill payments can become
                             a tedious and time-consuming task. Fortunately, with the advent of online payment services.
                         </p>
@@ -514,6 +534,8 @@
 
 
             </div>
+        </div>
+        <div class="shape2">
         </div>
     </section>
     <!-- Blog Section end -->
