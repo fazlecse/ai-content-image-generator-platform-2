@@ -179,8 +179,78 @@ Reset section start
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: #ffffff url(../img/preloader/preloader.gif) no-repeat center;
   z-index: 99999;
+  background-color: var(--black);
+}
+@keyframes animateC {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(405deg);
+  }
+}
+#preloader .loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  background: transparent;
+  border: 3px solid var(--primary-color-opacity-low);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 150px;
+  font-size: 20px;
+  color: var(--primary-color);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px var(--primary-color);
+  box-shadow: var(--shadow3);
+}
+#preloader .loader::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid transparent;
+  border-top: 3px solid var(--primary-color);
+  border-right: 3px solid var(--primary-color);
+  border-radius: 50%;
+  animation: animateC 2s linear infinite;
+}
+#preloader .loader span {
+  display: block;
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 50%;
+  width: 50%;
+  height: 4px;
+  background: transparent;
+  transform-origin: left;
+  animation: animate 2s linear infinite;
+}
+#preloader .loader span::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  top: -6px;
+  right: -6px;
+  box-shadow: 0 0 20px 5px var(--primary-color);
 }
 
 /* preloader-end */
