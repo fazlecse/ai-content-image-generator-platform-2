@@ -1,9 +1,41 @@
+/*
+Author        :
+Author Uri    :
+Template Name : 
+Version       : 1.0
+*/
+/*----------------------------------------------
+[Table of contents]
+
+01. Nav section start
+02. Bottom Mobile, Tab Nav section start
+03. Hero section start
+04. Feature section start
+05. About section start
+06. Qr section start
+07. How it works section start
+08. Pricing section start
+09. Testimonial section start
+10. Faq section start
+11. Blog section start
+11. App section start
+12. Newsletter section start
+13. Footer section start
+14. Copyright section start
+15. Banner section start
+16. Contact section start
+17. Login Signup section start
+18. Blog details section start
+19. Pagination section start
+20. Error section start
+----------------------------------------------*/
+/*----------------------------------------------
+Typography 
+----------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 :root {
-  --body-font: "Space Grotesk", sans-serif;
   --body-font: "Outfit", sans-serif;
   --heading-font: "Space Grotesk", sans-serif;
-  --primary-color: #3f3eed;
   --primary-color: #635BFF;
   --heading-color: #060607;
   --black: #060607;
@@ -16,23 +48,19 @@
   --orange: #f6b91c;
   --bg-color1: transparent;
   --bg-color2: #ffffff;
+  --bg-color3: #ffffff;
   --bg-color4: #0a1c3a;
   --bg-color5: #ffffff;
-  --linear-gradient: rgba(62, 62, 237, 0.15), rgba(217, 217, 217, 0);
+  --bg-color6: #EBEBFD;
   --body-color: #707070;
   --border-color1: #e5e7eb;
   --border-color2: #DCD8E8;
   --border-color3: #e1f1ee;
   --primary-color-opacity-low: #EBEBFD;
   --primary-color-opacity-low2: #D0CEFD;
-  --primary-color-opacity-low3: rgba(5, 160, 129, .3);
-  --orange-opacity-low: rgb(234, 131, 49, 0.1);
   --shadow1: 0px 7px 6px 0px rgba(0, 15, 44, 0.19), inset -1px 0px 27px 0px rgba(0, 0, 0, 0.29);
   --shadow2: 0px 3px 5px 0px rgba(0, 0, 0, 0.10);
   --shadow3: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
-  --drop-shadow1: drop-shadow(0 1px 2px rgba(0,
-              0, 0, 0.4));
-  --drop-shadow2: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.1));
   --transition: all .3s ease-in-out;
 }
 
@@ -41,6 +69,7 @@
   --bg-color2: #111827;
   --bg-color3: #1F2937;
   --bg-color5: #212837;
+  --bg-color6: #111827;
   --heading-color: #ffffff;
   --border-color1: #37333e;
 }
@@ -50,9 +79,10 @@
 .dark-theme .form-control,
 .dark-theme .form-select {
   color: var(--white);
+  border: 1px solid var(--bg-color3);
 }
 .dark-theme .cmn-btn3 {
-  background-color: var(--bg-color2);
+  background-color: var(--bg-color3);
   border-color: var(--bg-color2);
   color: var(--white);
 }
@@ -128,6 +158,12 @@
   z-index: -1;
 }
 
+/*----------------------------------------------
+Dark theme section end
+----------------------------------------------*/
+/*----------------------------------------------
+Reset section start
+----------------------------------------------*/
 ::-moz-selection {
   color: #fff;
   background: #635BFF;
@@ -260,12 +296,13 @@ body {
   color: var(--body-color);
   font-size: 16px;
   overflow-x: hidden;
-  background-color: var(--white);
+  background-color: var(--bg-color1);
   background-image: url(../img/background/body-bg-img.webp);
 }
 
 body.dark-theme {
   color: #d1cbdb;
+  background-image: none;
 }
 
 @media (max-width: 991px) {
@@ -543,6 +580,11 @@ figure {
   min-width: 100px;
 }
 
+.rtl .logo {
+  margin-right: 0;
+  margin-left: var(--bs-navbar-brand-margin-end);
+}
+
 .footer-logo {
   max-width: 100px;
   min-width: 100px;
@@ -606,8 +648,49 @@ body::-webkit-scrollbar-thumb:hover {
   transition: all 0.5s ease-in-out;
 }
 
+/*----------------------------------------------
+Reset section end
+----------------------------------------------*/
+/*----------------------------------------------
+Reuseble style section start
+----------------------------------------------*/
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search-box .form-control {
+  border-radius: 5px;
+  background-color: var(--bg-color3);
+  padding-right: 50px;
+}
+.search-box .form-control:focus {
+  border-color: var(--primary-color);
+}
+.search-box .search-btn {
+  position: absolute;
+  background-color: var(--primary-color);
+  width: 45px;
+  height: 90%;
+  border-radius: 5px;
+  right: 2px;
+}
+.search-box .search-btn i {
+  color: var(--white);
+  font-size: 18px;
+}
+
+.rtl .search-box .search-btn {
+  left: 2px;
+  right: auto;
+}
+.rtl .search-box .form-control {
+  padding-right: 10px;
+  padding-left: 50px;
+}
+
 .offcanvas {
-  background: var(--white);
+  background: var(--bg-color5);
 }
 
 .offcanvas.offcanvas-end {
@@ -661,6 +744,10 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .highlight {
+  color: var(--primary-color);
+}
+
+.dark-theme .highlight {
   color: var(--primary-color);
 }
 
@@ -1064,7 +1151,7 @@ hr.divider:after {
   position: relative;
   top: -12px;
   padding: 0 16px;
-  background: var(--white);
+  background: var(--bg-color2);
   color: var(--heading-color);
 }
 
@@ -1340,6 +1427,9 @@ hr.divider:after {
 }
 
 /*----------------------------------------------
+Reuseble style section end
+----------------------------------------------*/
+/*----------------------------------------------
 01. Nav section start
 ----------------------------------------------*/
 .navbar.active {
@@ -1398,12 +1488,9 @@ hr.divider:after {
   color: var(--primary-color);
 }
 .navbar .nav-right {
-  position: absolute;
-  right: 0;
   font-size: 16px;
   font-weight: 500;
   color: var(--heading-color);
-  margin-right: 70px;
 }
 .navbar .nav-right .custom-nav {
   display: flex;
@@ -1415,6 +1502,9 @@ hr.divider:after {
   cursor: pointer;
 }
 
+/*----------------------------------------------
+user nav Profile start
+----------------------------------------------*/
 .profile-box {
   position: relative;
   display: inline-block;
@@ -1492,6 +1582,14 @@ hr.divider:after {
   text-align: center;
 }
 
+.rtl .profile-box .user-dropdown {
+  left: 0;
+  right: auto;
+}
+
+/*----------------------------------------------
+user nav Profile end
+----------------------------------------------*/
 @media (min-width: 992px) {
   .navbar {
     padding: 15px 0;
@@ -1504,11 +1602,22 @@ hr.divider:after {
   .navbar .navbar-nav .nav-link {
     padding: 15px;
   }
+  .navbar .nav-right {
+    margin-right: 70px;
+    position: absolute;
+    right: 0;
+  }
 }
 .rtl .navbar .navbar-nav .nav-link .login-icon {
   margin-right: 0;
   margin-left: 5px;
   transform: rotate(180deg);
+}
+.rtl .navbar .nav-right {
+  left: 0;
+  right: auto;
+  margin-left: 70px;
+  margin-right: 0;
 }
 
 .dark-theme .profile-box .user-dropdown {
@@ -1521,8 +1630,11 @@ hr.divider:after {
 /*----------------------------------------------
 Nav end
 ----------------------------------------------*/
+/*----------------------------------------------
+02. Bottom Mobile, Tab Nav section start
+----------------------------------------------*/
 .bottom-nav {
-  background: var(--white);
+  background: var(--bg-color5);
   justify-content: space-around;
   box-shadow: var(--shadow3);
   border-top-right-radius: 8px;
@@ -1551,6 +1663,12 @@ Nav end
   font-size: 20px;
 }
 
+/*----------------------------------------------
+Bottom Mobile, Tab Nav section end
+----------------------------------------------*/
+/*----------------------------------------------
+03. Hero section start
+----------------------------------------------*/
 .hero-section {
   background-color: var(--bg-color1);
   position: relative;
@@ -1637,6 +1755,11 @@ Nav end
     justify-content: center;
   }
 }
+@media (max-width: 575px) {
+  .dark-theme .hero-section {
+    padding: 130px 0 70px;
+  }
+}
 .rtl .hero-section::after {
   transform: rotate(180deg);
 }
@@ -1653,7 +1776,10 @@ Nav end
 }
 
 /*----------------------------------------------
-Feature section start
+Hero section start
+----------------------------------------------*/
+/*----------------------------------------------
+04. Feature section start
 ----------------------------------------------*/
 .feature-section {
   position: relative;
@@ -1721,6 +1847,9 @@ Feature section start
 /*----------------------------------------------
 Feature section end
 ----------------------------------------------*/
+/*----------------------------------------------
+05. About section start
+----------------------------------------------*/
 .about-section {
   position: relative;
   z-index: 0;
@@ -1755,6 +1884,12 @@ Feature section end
     flex-direction: column;
   }
 }
+/*----------------------------------------------
+About section end
+----------------------------------------------*/
+/*----------------------------------------------
+06. Qr section start
+----------------------------------------------*/
 .qr-section {
   position: relative;
   z-index: 0;
@@ -1778,6 +1913,12 @@ Feature section end
     margin: auto;
   }
 }
+/*----------------------------------------------
+Qr section end
+----------------------------------------------*/
+/*----------------------------------------------
+07. How it works section start
+----------------------------------------------*/
 .how-it-work {
   position: relative;
   z-index: 0;
@@ -1860,6 +2001,12 @@ Feature section end
   background-color: var(--bg-color2);
 }
 
+/*----------------------------------------------
+How it works section end
+----------------------------------------------*/
+/*----------------------------------------------
+08. Pricing section start
+----------------------------------------------*/
 .pricing-section {
   position: relative;
   z-index: 0;
@@ -2060,10 +2207,10 @@ Feature section end
 }
 
 /*----------------------------------------------
-06. Pricing section end
+Pricing section end
 ----------------------------------------------*/
 /*----------------------------------------------
-07. Testimonial section start
+09. Testimonial section start
 ----------------------------------------------*/
 .testimonial-section {
   position: relative;
@@ -2114,7 +2261,10 @@ Feature section end
 }
 
 /*----------------------------------------------
-Testimonial end
+Testimonial section end
+----------------------------------------------*/
+/*----------------------------------------------
+10. Faq section start
 ----------------------------------------------*/
 .faq-area {
   position: relative;
@@ -2183,7 +2333,10 @@ Testimonial end
 }
 
 /*----------------------------------------------
-10. Blog section start
+10. Faq section start
+----------------------------------------------*/
+/*----------------------------------------------
+11. Blog section start
 ----------------------------------------------*/
 .blog-section {
   position: relative;
@@ -2322,7 +2475,10 @@ Testimonial end
 }
 
 /*----------------------------------------------
-Blog end
+Blog section end
+----------------------------------------------*/
+/*----------------------------------------------
+12. Newsletter section start
 ----------------------------------------------*/
 .newsletter-area {
   margin-top: 50px;
@@ -2397,6 +2553,12 @@ Blog end
   border-bottom: 1px solid #e5e7eb;
 }
 
+/*----------------------------------------------
+Newsletter section end
+----------------------------------------------*/
+/*----------------------------------------------
+13. Footer section start
+----------------------------------------------*/
 .footer-area {
   background-color: var(--bg-color4);
   background-image: url(../img/background/blur-c.png);
@@ -2440,6 +2602,12 @@ Blog end
   color: var(--primary-color);
 }
 
+@media (min-width: 992px) {
+  .footer-area {
+    margin: 0 10px 10px;
+    border-radius: 15px;
+  }
+}
 @media (max-width: 991px) {
   .footer-area {
     padding-bottom: 90px;
@@ -2454,6 +2622,12 @@ Blog end
   border-color: #e5e7eb;
 }
 
+/*----------------------------------------------
+Footer section end
+----------------------------------------------*/
+/*----------------------------------------------
+14. Copyright section start
+----------------------------------------------*/
 .copy-right-area p {
   margin-bottom: 0;
   font-weight: 400;
@@ -2470,6 +2644,12 @@ Blog end
   margin-right: 10px;
 }
 
+/*----------------------------------------------
+Copyright section end
+----------------------------------------------*/
+/*----------------------------------------------
+15. Banner section start
+----------------------------------------------*/
 .banner-nav {
   background: transparent;
 }
@@ -2539,6 +2719,9 @@ Blog end
 }
 
 /*----------------------------------------------
+Banner section end
+----------------------------------------------*/
+/*----------------------------------------------
 16. Contact section start
 ----------------------------------------------*/
 .contact-section {
@@ -2606,10 +2789,13 @@ Blog end
 Contact end
 ----------------------------------------------*/
 /*----------------------------------------------
-18. Login Signup section start
+17. Login Signup section start
 ----------------------------------------------*/
+.login-signup-page {
+  background-color: var(--bg-color1);
+}
 .login-signup-page .login-signup-form {
-  background-color: var(--white);
+  background-color: var(--bg-color2);
   padding: 30px 25px;
   border-radius: 5px;
   box-shadow: var(--shadow3);
@@ -2661,22 +2847,27 @@ Contact end
 /*----------------------------------------------
 Login Signup end
 ----------------------------------------------*/
+/*----------------------------------------------
+18. Blog details section start
+----------------------------------------------*/
+.blog-details-section {
+  background-color: var(--bg-color1);
+}
 .blog-details-section .blog-details .thum-inner {
+  position: relative;
+}
+.blog-details-section .blog-details .blog-image {
   position: relative;
 }
 .blog-details-section .blog-details .blog-image img {
   width: 100%;
   max-height: 490px;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 .blog-details-section .blog-details .blog-author {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  padding: 12px 18px;
-  background-color: var(--white);
-  box-shadow: 0px 23px 40px 0px rgba(135, 135, 135, 0.15);
-  border-radius: 6px;
-  transform: translate(40px, -40px);
+  margin: 30px 0 20px 0;
 }
 .blog-details-section .blog-details .blog-author .author-img {
   margin-right: 15px;
@@ -2686,9 +2877,11 @@ Login Signup end
   height: 40px;
   border-radius: 50%;
 }
+.blog-details-section .blog-header {
+  margin-bottom: 20px;
+}
 .blog-details-section .blog-header h3 {
   margin-bottom: 0;
-  font-weight: 600;
 }
 .blog-details-section .blog-header span {
   margin-right: 15px;
@@ -2698,11 +2891,11 @@ Login Signup end
   color: var(--primary-color);
 }
 .blog-details-section .blog-widget-image {
-  width: 30%;
+  width: 100px;
 }
 .blog-details-section .blog-widget-content {
   margin-left: 15px;
-  width: 70%;
+  width: calc(100% - 100px);
 }
 .blog-details-section .blog-widget-content .blog-title {
   font-size: 16px;
@@ -2712,84 +2905,99 @@ Login Signup end
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-weight: 600;
-  line-height: 1.5;
+  font-weight: 500;
+  line-height: 1.3;
   color: var(--heading-color);
-}
-.blog-details-section .categories-area {
-  padding: 20px;
-  background: var(--bg-color1);
-  box-shadow: var(--shadow2);
-  border-radius: 8px;
+  margin-bottom: 10px;
+  font-family: var(--heading-font);
 }
 .blog-details-section .categories-area li {
-  border-bottom: 1px solid var(--border-color3);
+  border-bottom: 1px solid var(--border-color1);
   padding: 10px 0;
 }
 .blog-details-section .categories-area li a {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   display: flex;
   justify-content: space-between;
   color: var(--heading-color);
+  font-family: var(--heading-font);
 }
 .blog-details-section .categories-area li a:hover {
   color: var(--primary-color);
 }
-
-.blog-sidebar {
-  padding: 25px;
-  border-radius: 8px;
-  background: var(--bg-color2);
+.blog-details-section .categories-area li:first-child {
+  padding-top: 0;
 }
-.blog-sidebar .section-header {
+
+.blog-sidebar .blog-widget-area {
+  padding: 30px;
+  background-color: var(--bg-color6);
+  border-radius: 5px;
   margin-bottom: 30px;
 }
-.blog-sidebar .search-area {
-  padding: 0;
-  margin-bottom: 60px;
-  border-radius: 0;
+.blog-sidebar .blog-widget-area .widget-title {
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
 }
-.blog-sidebar .input-group {
-  background: var(--bg-color1);
-  box-shadow: var(--shadow2);
-  border-radius: 8px;
-}
-.blog-sidebar .form-control {
-  height: 50px;
-  border: 1px solid transparent;
-}
-.blog-sidebar .input-group-text {
-  font-size: 25px;
-  color: var(--primary-color);
+.blog-sidebar .blog-widget-area .widget-title::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
   width: 50px;
-  border: none;
-  border-radius: 0;
-  display: flex;
-  justify-content: center;
+  height: 2px;
+  background-color: var(--primary-color);
 }
-.blog-sidebar input[type=text]:focus {
-  border: 1px solid var(--primary-color);
+.blog-sidebar .blog-widget-area .widget-title::after {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  content: "";
+  width: 150px;
+  height: 2px;
+  background-color: rgba(225, 225, 225, 0.4);
 }
 .blog-sidebar .blog-widget-area .blog-widget-item {
   display: flex;
-  margin: 20px 0;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: var(--shadow2);
-  background-color: var(--bg-color1);
   transition: var(--transition);
 }
 .blog-sidebar .blog-widget-area .blog-widget-item:hover .blog-widget-content .blog-title {
   color: var(--primary-color);
 }
+.blog-sidebar .blog-widget-area .blog-widget-item:not(:last-child) {
+  margin-bottom: 20px;
+}
 .blog-sidebar .blog-widget-image img {
   width: 100%;
   height: 85px;
-  border-radius: 8px;
+  border-radius: 5px;
+}
+.blog-sidebar .tag-list .item {
+  display: inline-block;
+  font-size: 14px;
+  padding: 10px 15px;
+  background-color: var(--bg-color3);
+  transition: var(--transition);
+  border-radius: 5px;
+  margin: 0 5px 5px 0;
+  border: 1px solid var(--border-color1);
+}
+.blog-sidebar .tag-list .item:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+.blog-sidebar .tag-list .item:last-child {
+  margin-bottom: 0;
 }
 
 .blog-date {
+  color: var(--heading-color);
+  font-size: 14px;
+}
+.blog-date i {
+  margin-right: 5px;
   color: var(--primary-color);
 }
 
@@ -2801,46 +3009,71 @@ Login Signup end
   margin-right: 0;
   margin-left: 15px;
 }
-.rtl .blog-details-section .blog-details .blog-author {
-  transform: translate(-40px, -40px);
+.rtl .blog-sidebar .blog-widget-area .widget-title::before, .rtl .blog-sidebar .blog-widget-area .widget-title::after {
+  right: 0;
+  left: auto;
 }
 
-.pagination-section .page-link:focus {
-  background-color: var(--primary-color);
-  outline: 0;
-  box-shadow: none;
+.dark-theme .blog-sidebar .tag-list .item {
+  border-color: var(--bg-color3);
 }
-.pagination-section ul li a {
+.dark-theme .blog-sidebar .tag-list .item:hover {
+  background-color: var(--primary-color);
+}
+
+/*----------------------------------------------
+Blog details end
+----------------------------------------------*/
+/*----------------------------------------------
+19. Pagination section start
+----------------------------------------------*/
+.pagination-section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: end;
+}
+
+.pagination .page-item .page-link {
+  margin: 5px;
   width: 40px;
   height: 40px;
   border-radius: 8px !important;
   color: var(--heading-color);
-  background-color: var(--white);
+  background-color: var(--bg-color2);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 10px;
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--border-color2);
   box-shadow: none;
 }
-.pagination-section ul li a:hover {
+
+.pagination .page-item .page-link:hover,
+.pagination .page-item .page-link:focus {
   background-color: var(--primary-color);
-  color: var(--white) !important;
+  color: var(--white);
   border: 1px solid var(--primary-color);
 }
-.pagination-section ul li i {
-  display: flex;
-}
-.pagination-section ul .active a {
+
+.pagination .page-item.active .page-link {
   background-color: var(--primary-color);
   color: var(--white);
   border-color: var(--primary-color);
 }
 
-.rtl .pagination_area ul li i {
+.rtl .pagination-section nav .pagination .page-item .page-link i {
   transform: rotate(180deg);
 }
 
+.dark-theme .pagination .page-item .page-link {
+  border-color: var(--bg-color2);
+}
+
+/*----------------------------------------------
+Pagination end
+----------------------------------------------*/
+/*----------------------------------------------
+20. Error section start
+----------------------------------------------*/
 .error-section {
   height: 100vh;
   width: 100vw;
@@ -2892,73 +3125,9 @@ Login Signup end
   .error-section {
     height: 100%;
     width: 100%;
+    text-align: center;
   }
 }
-.payment-section {
-  background-color: var(--bg-color1);
-}
-.payment-section .section-title {
-  margin-bottom: 20px;
-}
-.payment-section .btn-area {
-  margin-top: 30px;
-}
-
-.payment-options {
-  height: 260px;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-.payment-options .btn-check + .btn-primary {
-  background: var(--white);
-  border: 2px solid var(--border-color1);
-  border-radius: 15px;
-  padding: 8px;
-  color: #212529;
-  position: relative;
-  transition: 0.4s;
-}
-.payment-options .btn-check + .btn-primary .check {
-  position: absolute;
-  left: 15px;
-  top: 15px;
-  opacity: 0;
-  width: 18px;
-}
-.payment-options .btn-check + .btn-primary::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.4);
-  top: 0;
-  left: 0;
-}
-.payment-options .btn-check:checked + .btn-primary .check {
-  opacity: 1;
-}
-.payment-options .btn-check:checked + .btn-primary::after {
-  background: none;
-}
-.payment-options label img {
-  border-radius: 6px;
-}
-.payment-options .btn-check:checked + .btn-primary {
-  border: 2px solid var(--primary-color) !important;
-}
-
-.payment-summary {
-  padding: 20px;
-  border-radius: 15px;
-  background-color: var(--white);
-  box-shadow: var(--shadow3);
-}
-.payment-summary .summary-list li {
-  display: flex;
-  justify-content: space-between;
-  padding: 7px;
-  color: var(--heading-color);
-}
-.payment-summary .summary-list li:not(:last-child) {
-  border-bottom: 1px solid var(--border-color1);
-}
+/*----------------------------------------------
+Error section start
+----------------------------------------------*/

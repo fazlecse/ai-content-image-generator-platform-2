@@ -35,59 +35,87 @@
     </div>
     <!-- Preloader area end -->
 
-    <!-- Nav Area Start -->
-    <nav class="navbar desktop-nav banner-nav fixed-top navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand logo" href="#"><img src="assets/img/logo/logo.png" alt=""></a>
+    <!-- Nav section start -->
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container position-relative">
+            <a class="navbar-brand logo" href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
-                <i class="fa-regular fa-bars-staggered"></i>
+                <i class="fa-light fa-list"></i>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbar">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <a class="navbar-brand" href="index.html"><img class="logo" src="assets/img/logo/logo.png"
+                            alt=""></a>
+                    <button type="button" class="cmn-btn-close btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"><i class="fa-light fa-arrow-right"></i></button>
                 </div>
                 <div class="offcanvas-body align-items-center justify-content-between">
-                    <ul class="navbar-nav m-auto">
+                    <ul class="navbar-nav m-auto text-center">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About us</a>
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="features.html">features</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="pricing.html">pricing</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="features.html">features</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="faq.html">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Contact.html">Contact</a>
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html"><i
+                                    class="login-icon fa-regular fa-right-to-bracket"></i>Login</a>
                         </li>
                     </ul>
-                    <form>
-                        <ul class="nav-right d-flex align-items-center">
-                            <li>
-                                <a class="login-btn" href="login.html">Login</a>
-                            </li>
-                            <li>
-                                <button type="button" class="get-start-btn" href="signup.html">Get Started</button>
-                            </li>
 
-                        </ul>
-                    </form>
 
                 </div>
             </div>
+            <div class="nav-right">
+                <ul class="custom-nav">
+
+
+
+                    <li class="nav-item">
+                        <div class="profile-box">
+                            <div class="profile">
+                               <img src="./assets/img/Person/1.jpg" class="img-fluid" alt="" />
+                            </div>
+                            <ul class="user-dropdown">
+                               <li>
+                                  <a href="user-panel.html"> <i class="fal fa-user"></i> View Profile </a>
+                               </li>
+                               <li>
+                                  <a href="support-ticket.html"> <i class="fal fa-user-headset"></i> Support </a>
+                               </li>
+                               <li>
+                                  <a href="edit-profile.html"> <i class="fal fa-user-cog"></i> Account Settings </a>
+                               </li>
+                               <li>
+                                  <a href=""> <i class="fal fa-sign-out-alt"></i> Sign Out </a>
+                               </li>
+                            </ul>
+                         </div>
+                    </li>
+                    <li>
+                        <a id="toggle-btn" class="nav-link d-flex toggle-btn">
+                            <i class="fa-regular fa-moon" id="moon"></i>
+                            <i class="fa-regular fa-sun-bright" id="sun"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <!-- Nav Area End -->
+    <!-- Nav section end -->
 
     <!-- Banner section start -->
     <div class="banner-area">
@@ -107,17 +135,16 @@
     </div>
     <!-- Banner section end -->
 
-    <!-- ---------------------------------------------------- -->
     <!-- Blog Section start -->
-    <!-- ---------------------------------------------------- -->
     <section class="blog-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 offset-lg-1">
+                <div class="col-12">
                     <div class="section-header text-center mb-50">
-                        <h2>Our Recent <span class="text-gradient">Blog</span> </h2>
-                        <p class="cmn-para-text mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        <div class="section-subtitle">Our Blog</div>
+                        <h2 class="section-title mx-auto">Latest Blogs & Articles</h2>
+                        <p class="cmn-para-text mx-auto">In today's fast-paced world, managing bill payments can become
+                            a tedious and time-consuming task. Fortunately, with the advent of online payment services.
                         </p>
                     </div>
                 </div>
@@ -126,127 +153,109 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="blog-box">
                         <div class="img-box">
-                            <img src="assets/img/blog/01.jpg" alt="">
+                            <a href="blog-details.html">
+                                <img src="assets/img/blog/01.jpg" alt="">
+                            </a>
+
                         </div>
-                        <div class="blog-author">
-                            <div class="author-img">
-                                <img src="assets/img/testimonial/tst1.png" alt="">
+                        <div class="content-box">
+                            <div class="date">
+                                <p class="mb-0">fab</p>
+                                <h4 class="mb-0">18</h4>
                             </div>
-                            <div class="author-info ">
-                                <a href="#">
-                                    <h5>Joshep brathwaith</h5>
-                                </a>
-                                <span>Consultant</span>
+                            <div class="blog-title">
+                                <h5><a href="blog-details.html"> How AI-Powered Chatbots are Enhancing Customer
+                                        Service</a></h5>
                             </div>
-                        </div>
-                        <div class=" blog-title">
-                            <h4><a href="blog-details.html">Survival strategies to ensure business domination</a></h4>
-                        </div>
-                        <div class="pera-text">
-                            <p>Business we opertes in is like an intericate games and chess where every move counts
-                            </p>
-                        </div>
-                        <button type="button" class="cmn-btn3">read more</button>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="blog-box" data-wow-delay="0.1s">
-                        <div class="img-box">
-                            <img src="assets/img/blog/2.png" alt="">
-                        </div>
-                        <div class="blog-author">
-                            <div class="author-img">
-                                <img src="assets/img/testimonial/tst2.png" alt="">
+                            <div class="para-text">
+                                <p>This blog can explain what chatbots are, their benefits in improving customer
+                                    service, and provide examples of industries successfully using chatbots.</p>
                             </div>
-                            <div class="author-info ">
-                                <a href="#">
-                                    <h5>Joshep brathwaith</h5>
-                                </a>
-                                <span>Consultant</span>
-                            </div>
+                            <a href="" class="blog-btn">
+                                <div class="link">Read more</div> <i class="fa-regular fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <div class=" blog-title">
-                            <h4><a href="">Survival strategies to ensure business domination Lorem ipsum dolor sit
-                                    amet consectetur adipisicing elit. Sed, aliquam?</a></h4>
-                        </div>
-                        <div class="pera-text">
-                            <p>Business we opertes in is like an intericate games and chess where every move counts
-                            </p>
-                        </div>
-                        <button type="button" class="cmn-btn3">read more</button>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="blog-box" data-wow-delay="0.2s">
-                        <div class="img-box">
-                            <img src="assets/img/blog/3.png" alt="">
-                        </div>
-                        <div class="blog-author">
-                            <div class="author-img">
-                                <img src="assets/img/testimonial/tst3.png" alt="">
-                            </div>
-                            <div class="author-info ">
-                                <a href="#">
-                                    <h5>Joshep brathwaith</h5>
-                                </a>
-                                <span>Consultant</span>
-                            </div>
-                        </div>
-                        <div class=" blog-title">
-                            <h4><a href="">Survival strategies to ensure business domination</a></h4>
-                        </div>
-                        <div class="pera-text">
-                            <p>Business we opertes in is like an intericate games and chess where every move counts
-                            </p>
-                        </div>
-                        <button type="button" class="cmn-btn3">read more</button>
 
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-box">
+                        <div class="img-box">
+                            <a href="blog-details.html">
+                                <img src="assets/img/blog/2.jpg" alt="">
+                            </a>
+
+                        </div>
+                        <div class="content-box">
+                            <div class="date">
+                                <p class="mb-0">fab</p>
+                                <h4 class="mb-0">18</h4>
+                            </div>
+                            <div class="blog-title">
+                                <h5><a href="blog-details.html"> Finding the Right Balance for Content Creation</a></h5>
+                            </div>
+                            <div class="para-text">
+                                <p>Explore the strengths and limitations of AI-generated content compared to content
+                                    created by human writers.</p>
+                            </div>
+                            <a href="" class="blog-btn">
+                                <div class="link">Read more</div> <i class="fa-regular fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-box">
+                        <div class="img-box">
+                            <a href="blog-details.html">
+                                <img src="assets/img/blog/3.webp" alt="">
+                            </a>
+
+                        </div>
+                        <div class="content-box">
+                            <div class="date">
+                                <p class="mb-0">fab</p>
+                                <h4 class="mb-0">18</h4>
+                            </div>
+                            <div class="blog-title">
+                                <h5><a href="blog-details.html">Maximizing SEO Potential with AI-Generated Content</a>
+                                </h5>
+                            </div>
+                            <div class="para-text">
+                                <p>Discuss the practical aspects of using AI to boost SEO. Offer insights on how to
+                                    effectively integrate AI content into SEO strategies, including keyword optimization
+                                    and content planning.</p>
+                            </div>
+                            <a href="" class="blog-btn">
+                                <div class="link">Read more</div> <i class="fa-regular fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
             </div>
         </div>
+        <div class="shape2">
+        </div>
     </section>
-    <!-- ---------------------------------------------------- -->
     <!-- Blog Section end -->
-    <!-- ---------------------------------------------------- -->
 
     <!-- footer section start -->
-    <section class="footer-area pb-50 pt-50">
+    <section class="footer-area pb-50">
         <div class="container">
-            <div class="newsletter-area">
-                <div class="row g-5 align-items-center">
-                    <div class="col-md-6">
-                        <h2 class="Newslatter-title mb-0">Connect With Smart AI Tools
-                        </h2>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="newsletter-inner">
-                            <form class="subscribe-form">
-                                <input type="text" placeholder="Enter your email address">
-                                <button><i class="fa-regular fa-arrow-right fa-beat"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <hr class="cmn-hr">
             <div class="row gy-4 gy-sm-5">
-                <div class="col-lg-4 col-sm-6">
+                <div class="col-lg-6 col-sm-6">
                     <div class="footer-widget">
                         <div class="widget_logo mb-30">
                             <a href="#nav_area"><img class="footer-logo" src="assets/img/logo/logo.png" alt=""></a>
                         </div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur fuga odit excepturi,
+                        <p class="cmn-para-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur
+                            fuga odit excepturi,
                             natus voluptate commodi qui sunt quisquam cupiditate molestiae?</p>
-                        <div class="social-area mt-50">
-                            <ul class="d-flex">
-                                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
+
                     </div>
                 </div>
                 <div class="col-lg-2 col-sm-6">
@@ -261,7 +270,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-sm-6 pt-sm-0 pt-3 ps-lg-5">
+                <!-- <div class="col-lg-3 col-sm-6 pt-sm-0 pt-3 ps-lg-5">
                     <div class="footer-widget">
                         <h5>Support</h5>
                         <ul>
@@ -271,13 +280,39 @@
                             <li><a href="">Student Discount</a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 pt-sm-0 pt-3">
+                </div> -->
+                <div class="col-lg-4 col-sm-6 pt-sm-0 pt-3">
                     <div class="footer-widget">
                         <h5>Contact Us</h5>
                         <p>10714 163rd Pl, Orland Park, IL 60467, United States</p>
                         <p>email@website.com</p>
                         <p>354-4156745674</p>
+                    </div>
+                </div>
+            </div>
+            <div class="newsletter-area">
+                <div class="row g-5 align-items-end">
+                    <div class="col-md-6">
+                        <div class="newsletter-inner">
+                            <h3 class="newslatter-title">Get the latest news and updates,
+                                <br>
+                                Subscribe now!
+                            </h3>
+                            <form class="subscribe-form">
+                                <input class="form-control" type="text" placeholder="Enter your email address">
+                                <button class="subscribe-btn"><i class="fa-regular fa-arrow-right fa-beat"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="social-area">
+                            <ul class="d-flex justify-content-md-end">
+                                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

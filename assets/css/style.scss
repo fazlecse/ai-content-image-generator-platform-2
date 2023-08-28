@@ -1,12 +1,47 @@
-// @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@charset "UTF-8";
+/*
+Author        :
+Author Uri    :
+Template Name : 
+Version       : 1.0
+*/
+
+
+/*----------------------------------------------
+[Table of contents]
+
+01. Nav section start
+02. Bottom Mobile, Tab Nav section start
+03. Hero section start
+04. Feature section start
+05. About section start
+06. Qr section start
+07. How it works section start
+08. Pricing section start
+09. Testimonial section start
+10. Faq section start
+11. Blog section start
+11. App section start
+12. Newsletter section start
+13. Footer section start
+14. Copyright section start
+15. Banner section start
+16. Contact section start
+17. Login Signup section start
+18. Blog details section start
+19. Pagination section start
+20. Error section start
+----------------------------------------------*/
+
+
+/*----------------------------------------------
+Typography 
+----------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 :root {
-    --body-font: 'Space Grotesk', sans-serif;
     --body-font: 'Outfit', sans-serif;
     --heading-font: 'Space Grotesk', sans-serif;
-    // --heading-font: 'Outfit', sans-serif;
-    --primary-color: #3f3eed;
     --primary-color: #635BFF;
     --heading-color: #060607;
     --black: #060607;
@@ -19,23 +54,19 @@
     --orange: #f6b91c;
     --bg-color1: transparent;
     --bg-color2: #ffffff;
+    --bg-color3: #ffffff;
     --bg-color4: #0a1c3a;
     --bg-color5: #ffffff;
-    --linear-gradient: rgba(62, 62, 237, 0.15), rgba(217, 217, 217, 0);
+    --bg-color6: #EBEBFD;
     --body-color: #707070;
     --border-color1: #e5e7eb;
     --border-color2: #DCD8E8;
     --border-color3: #e1f1ee;
     --primary-color-opacity-low: #EBEBFD;
     --primary-color-opacity-low2: #D0CEFD;
-    --primary-color-opacity-low3: rgba(5, 160, 129, .3);
-    --orange-opacity-low: rgb(234, 131, 49, 0.1);
     --shadow1: 0px 7px 6px 0px rgba(0, 15, 44, 0.19), inset -1px 0px 27px 0px rgba(0, 0, 0, 0.29);
     --shadow2: 0px 3px 5px 0px rgba(0, 0, 0, 0.10);
     --shadow3: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
-    --drop-shadow1: drop-shadow(0 1px 2px rgba(0,
-                0, 0, 0.4));
-    --drop-shadow2: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.1));
     --transition: all .3s ease-in-out;
 }
 
@@ -45,18 +76,22 @@
     --bg-color2: #111827;
     --bg-color3: #1F2937;
     --bg-color5: #212837;
+    --bg-color6: #111827;
     --heading-color: #ffffff;
     --border-color1: #37333e;
 
     p {
         color: #d1cbdb;
     }
+
     .form-control,
     .form-select {
         color: var(--white);
+        border: 1px solid var(--bg-color3);
     }
+
     .cmn-btn3 {
-        background-color: var(--bg-color2);
+        background-color: var(--bg-color3);
         border-color: var(--bg-color2);
         color: var(--white);
     }
@@ -64,7 +99,7 @@
     .section-subtitle::after {
         background: linear-gradient(90deg, #30185f, rgba(217, 217, 217, 0));
     }
-  
+
     .shape1 {
         position: absolute;
         max-width: 800px;
@@ -139,11 +174,13 @@
     }
 }
 
-// Dark theme section end
+/*----------------------------------------------
+Dark theme section end
+----------------------------------------------*/
 
-// ---------------------------------------------------- 
-// Reset section start
-// ----------------------------------------------------
+/*----------------------------------------------
+Reset section start
+----------------------------------------------*/
 ::-moz-selection {
     color: #fff;
     background: #635BFF;
@@ -285,12 +322,13 @@ body {
     color: var(--body-color);
     font-size: 16px;
     overflow-x: hidden;
-    background-color: var(--white);
+    background-color: var(--bg-color1);
     background-image: url(../img/background/body-bg-img.webp);
 }
 
 body.dark-theme {
     color: #d1cbdb;
+    background-image: none;
 }
 
 @media (max-width: 991px) {
@@ -611,6 +649,11 @@ figure {
     min-width: 100px;
 }
 
+.rtl .logo {
+    margin-right: 0;
+    margin-left: var(--bs-navbar-brand-margin-end);
+}
+
 .footer-logo {
     max-width: 100px;
     min-width: 100px;
@@ -676,16 +719,67 @@ body::-webkit-scrollbar-thumb {
     transition: all 0.5s ease-in-out;
 }
 
-// ---------------------------------------------------- 
-// Reset section start
-// ----------------------------------------------------
+/*----------------------------------------------
+Reset section end
+----------------------------------------------*/
+
+/*----------------------------------------------
+Reuseble style section start
+----------------------------------------------*/
+// Search box section start 
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .form-control {
+        border-radius: 5px;
+        background-color: var(--bg-color3);
+        padding-right: 50px;
+
+        &:focus {
+            border-color: var(--primary-color);
+        }
+    }
+
+    .search-btn {
+        position: absolute;
+        background-color: var(--primary-color);
+        width: 45px;
+        height: 90%;
+        border-radius: 5px;
+        right: 2px;
+
+        i {
+            color: var(--white);
+            font-size: 18px;
+        }
+    }
 
 
-// ---------------------------------------------------- 
-// Reuseble style section start
-// ----------------------------------------------------
+}
+
+// Rtl search box section start 
+.rtl {
+    .search-box {
+        .search-btn {
+            left: 2px;
+            right: auto;
+        }
+
+        .form-control {
+            padding-right: 10px;
+            padding-left: 50px;
+        }
+    }
+}
+
+// Rtl search box section end
+
+// Search box section end
+
 .offcanvas {
-    background: var(--white);
+    background: var(--bg-color5);
 }
 
 .offcanvas.offcanvas-end {
@@ -743,6 +837,12 @@ body::-webkit-scrollbar-thumb {
 
 .highlight {
     color: var(--primary-color);
+}
+
+.dark-theme {
+    .highlight {
+        color: var(--primary-color);
+    }
 }
 
 .bg-highlight {
@@ -1196,7 +1296,7 @@ hr.divider:after {
     position: relative;
     top: -12px;
     padding: 0 16px;
-    background: var(--white);
+    background: var(--bg-color2);
     color: var(--heading-color);
 }
 
@@ -1477,9 +1577,9 @@ hr.divider:after {
     padding-bottom: 150px;
 }
 
-// ---------------------------------------------------- 
-// Reuseble style section end
-// ----------------------------------------------------
+/*----------------------------------------------
+Reuseble style section end
+----------------------------------------------*/
 
 /*----------------------------------------------
 01. Nav section start
@@ -1488,7 +1588,6 @@ hr.divider:after {
     background-color: var(--bg-color5);
     box-shadow: var(--shadow2);
     z-index: 999;
-    // padding: 10px 0;
 
     .navbar-nav .nav-link {
         color: var(--heading-color);
@@ -1555,12 +1654,11 @@ hr.divider:after {
     }
 
     .nav-right {
-        position: absolute;
-        right: 0;
+
         font-size: 16px;
         font-weight: 500;
         color: var(--heading-color);
-        margin-right: 70px;
+
 
         .custom-nav {
             display: flex;
@@ -1575,7 +1673,9 @@ hr.divider:after {
     }
 }
 
-// user panel
+/*----------------------------------------------
+user nav Profile start
+----------------------------------------------*/
 .profile-box {
     position: relative;
     display: inline-block;
@@ -1667,6 +1767,19 @@ hr.divider:after {
     }
 }
 
+// Rtl user nav profile start
+.rtl {
+    .profile-box .user-dropdown {
+        left: 0;
+        right: auto;
+    }
+}
+
+// Rtl user nav profile end
+/*----------------------------------------------
+user nav Profile end
+----------------------------------------------*/
+
 
 // Nav responsive start
 @media (min-width: 992px) {
@@ -1686,6 +1799,12 @@ hr.divider:after {
                 padding: 15px;
             }
         }
+
+        .nav-right {
+            margin-right: 70px;
+            position: absolute;
+            right: 0;
+        }
     }
 
 }
@@ -1693,10 +1812,20 @@ hr.divider:after {
 // Nav responsive end
 // Rtl nav start
 .rtl {
-    .navbar .navbar-nav .nav-link .login-icon {
-        margin-right: 0;
-        margin-left: 5px;
-        transform: rotate(180deg);
+    .navbar {
+        .navbar-nav .nav-link .login-icon {
+            margin-right: 0;
+            margin-left: 5px;
+            transform: rotate(180deg);
+        }
+
+        .nav-right {
+            left: 0;
+            right: auto;
+            margin-left: 70px;
+            margin-right: 0;
+
+        }
     }
 }
 
@@ -1720,11 +1849,11 @@ hr.divider:after {
 Nav end
 ----------------------------------------------*/
 
-// ---------------------------------------------------- 
-// Bottom Mobile Tab nav section start
-// ----------------------------------------------------
+/*----------------------------------------------
+02. Bottom Mobile, Tab Nav section start
+----------------------------------------------*/
 .bottom-nav {
-    background: var(--white);
+    background: var(--bg-color5);
     justify-content: space-around;
     box-shadow: var(--shadow3);
     border-top-right-radius: 8px;
@@ -1761,14 +1890,13 @@ Nav end
     }
 }
 
-// ---------------------------------------------------- 
-// Bottom Mobile Tab nav section end
-// ----------------------------------------------------
+/*----------------------------------------------
+Bottom Mobile, Tab Nav section end
+----------------------------------------------*/
 
-// ---------------------------------------------------- 
-// Hero section start
-// ----------------------------------------------------
-
+/*----------------------------------------------
+03. Hero section start
+----------------------------------------------*/
 .hero-section {
     background-color: var(--bg-color1);
     position: relative;
@@ -1870,7 +1998,13 @@ Nav end
     }
 }
 
-
+@media (max-width: 575px) {
+    .dark-theme {
+        .hero-section {
+            padding: 130px 0 70px;
+        }
+    }
+}
 
 // Hero responsive end
 
@@ -1892,7 +2026,6 @@ Nav end
 // Drak theme hero section start
 .dark-theme {
     .hero-section {
-
         &::before {
             background: none;
         }
@@ -1900,17 +2033,18 @@ Nav end
         &::after {
             background: none;
         }
-
     }
+
 }
 
 // Drak theme hero section end
-// ---------------------------------------------------- 
-// Hero section end
-// ----------------------------------------------------
 
 /*----------------------------------------------
-Feature section start
+Hero section start
+----------------------------------------------*/
+
+/*----------------------------------------------
+04. Feature section start
 ----------------------------------------------*/
 .feature-section {
     position: relative;
@@ -2000,10 +2134,9 @@ Feature section start
 Feature section end
 ----------------------------------------------*/
 
-
-// ----------------------------------------------------
-// About section start
-// ----------------------------------------------------
+/*----------------------------------------------
+05. About section start
+----------------------------------------------*/
 .about-section {
     position: relative;
     z-index: 0;
@@ -2056,13 +2189,14 @@ Feature section end
 }
 
 // About responsive end
-// ----------------------------------------------------
-// About section end
-// ---------------------------------------------------
 
-// ----------------------------------------------------
-// Qr section start
-// ----------------------------------------------------
+/*----------------------------------------------
+About section end
+----------------------------------------------*/
+
+/*----------------------------------------------
+06. Qr section start
+----------------------------------------------*/
 .qr-section {
     position: relative;
     z-index: 0;
@@ -2093,14 +2227,14 @@ Feature section end
 }
 
 // Qr responsive end
-// ----------------------------------------------------
-// Qr section end
-// ----------------------------------------------------
 
-// ----------------------------------------------------
-// How it works section start
-// ----------------------------------------------------
+/*----------------------------------------------
+Qr section end
+----------------------------------------------*/
 
+/*----------------------------------------------
+07. How it works section start
+----------------------------------------------*/
 .how-it-work {
     position: relative;
     z-index: 0;
@@ -2222,14 +2356,13 @@ Feature section end
 }
 
 // Dark theme how it work section end
-// ----------------------------------------------------
-// How it works section end
-// ----------------------------------------------------
+/*----------------------------------------------
+How it works section end
+----------------------------------------------*/
 
-
-// ----------------------------------------------------
-// Pricing section start
-// ----------------------------------------------------
+/*----------------------------------------------
+08. Pricing section start
+----------------------------------------------*/
 .pricing-section {
     position: relative;
     z-index: 0;
@@ -2496,11 +2629,11 @@ Feature section end
 
 // Dark theme pricing section end
 /*----------------------------------------------
-06. Pricing section end
+Pricing section end
 ----------------------------------------------*/
 
 /*----------------------------------------------
-07. Testimonial section start
+09. Testimonial section start
 ----------------------------------------------*/
 .testimonial-section {
     position: relative;
@@ -2571,12 +2704,12 @@ Feature section end
 
 // Dark theme testimonial section end
 /*----------------------------------------------
-Testimonial end
+Testimonial section end
 ----------------------------------------------*/
 
-// ---------------------------------------------------- 
-// Faq section start
-// ----------------------------------------------------
+/*----------------------------------------------
+10. Faq section start
+----------------------------------------------*/
 .faq-area {
     position: relative;
     z-index: 0;
@@ -2662,12 +2795,12 @@ Testimonial end
 }
 
 // Dark theme faq section end
-// ---------------------------------------------------- 
-// Faq section end
-// ----------------------------------------------------
+/*----------------------------------------------
+10. Faq section start
+----------------------------------------------*/
 
 /*----------------------------------------------
-10. Blog section start
+11. Blog section start
 ----------------------------------------------*/
 .blog-section {
     position: relative;
@@ -2856,15 +2989,12 @@ Testimonial end
 
 // Dark theme blog section end
 /*----------------------------------------------
-Blog end
+Blog section end
 ----------------------------------------------*/
 
-
-
-
-// ---------------------------------------------------- 
-// Newsletter section start
-// ----------------------------------------------------
+/*----------------------------------------------
+12. Newsletter section start
+----------------------------------------------*/
 .newsletter-area {
     margin-top: 50px;
 
@@ -2959,14 +3089,13 @@ Blog end
 }
 
 // Dark theme newslatter section end
-// ----------------------------------------------------
-// Newsletter section end
-// ----------------------------------------------------
+/*----------------------------------------------
+Newsletter section end
+----------------------------------------------*/
 
-
-// ---------------------------------------------------- 
-// Footer section start
-// ----------------------------------------------------
+/*----------------------------------------------
+13. Footer section start
+----------------------------------------------*/
 .footer-area {
     background-color: var(--bg-color4);
     background-image: url(../img/background/blur-c.png);
@@ -3023,6 +3152,14 @@ Blog end
 }
 
 // Footer responsive start
+@media(min-width: 992px) {
+    .footer-area {
+        margin: 0 10px 10px;
+        border-radius: 15px;
+    }
+
+}
+
 @media (max-width: 991px) {
     .footer-area {
         padding-bottom: 90px;
@@ -3043,13 +3180,13 @@ Blog end
 }
 
 // Dark theme footer section end
-// ---------------------------------------------------- 
-// Footer section end
-// ----------------------------------------------------
+/*----------------------------------------------
+Footer section end
+----------------------------------------------*/
 
-// ---------------------------------------------------- 
-// Copyright section start
-// ----------------------------------------------------
+/*----------------------------------------------
+14. Copyright section start
+----------------------------------------------*/
 .copy-right-area {
     p {
         margin-bottom: 0;
@@ -3073,14 +3210,13 @@ Blog end
 }
 
 
-// ---------------------------------------------------- 
-// Copyright section end
-// ----------------------------------------------------
+/*----------------------------------------------
+Copyright section end
+----------------------------------------------*/
 
-
-// ----------------------------------------------------
-// Banner section start
-// ----------------------------------------------------
+/*----------------------------------------------
+15. Banner section start
+----------------------------------------------*/
 .banner-nav {
     background: transparent;
 }
@@ -3167,9 +3303,9 @@ Blog end
 }
 
 // Dark theme banner section end
-// ---------------------------------------------------- 
-// Banner section end
-// ----------------------------------------------------
+/*----------------------------------------------
+Banner section end
+----------------------------------------------*/
 
 
 /*----------------------------------------------
@@ -3268,13 +3404,13 @@ Contact end
 
 
 /*----------------------------------------------
-18. Login Signup section start
+17. Login Signup section start
 ----------------------------------------------*/
 .login-signup-page {
-
+    background-color: var(--bg-color1);
 
     .login-signup-form {
-        background-color: var(--white);
+        background-color: var(--bg-color2);
         padding: 30px 25px;
         border-radius: 5px;
         box-shadow: var(--shadow3);
@@ -3353,31 +3489,31 @@ Login Signup end
 
 
 
-// ----------------------------------------------------
-// Blog details section start
-// ----------------------------------------------------
+/*----------------------------------------------
+18. Blog details section start
+----------------------------------------------*/
 .blog-details-section {
+    background-color: var(--bg-color1);
+
     .blog-details {
         .thum-inner {
             position: relative;
         }
 
         .blog-image {
+            position: relative;
+
             img {
                 width: 100%;
                 max-height: 490px;
-                border-radius: 8px;
+                border-radius: 5px;
             }
         }
 
         .blog-author {
-            display: inline-flex;
+            display: flex;
             align-items: center;
-            padding: 12px 18px;
-            background-color: var(--white);
-            box-shadow: 0px 23px 40px 0px rgba(135, 135, 135, .15);
-            border-radius: 6px;
-            transform: translate(40px, -40px);
+            margin: 30px 0 20px 0;
 
             .author-img {
                 margin-right: 15px;
@@ -3392,9 +3528,10 @@ Login Signup end
     }
 
     .blog-header {
+        margin-bottom: 20px;
+
         h3 {
             margin-bottom: 0;
-            font-weight: 600;
         }
 
         span {
@@ -3408,12 +3545,12 @@ Login Signup end
     }
 
     .blog-widget-image {
-        width: 30%;
+        width: 100px;
     }
 
     .blog-widget-content {
         margin-left: 15px;
-        width: 70%;
+        width: calc(100% - 100px);
 
         .blog-title {
             font-size: 16px;
@@ -3423,92 +3560,89 @@ Login Signup end
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;
-            font-weight: 600;
-            line-height: 1.5;
+            font-weight: 500;
+            line-height: 1.3;
             color: var(--heading-color);
+            margin-bottom: 10px;
+            font-family: var(--heading-font);
         }
     }
 
     .categories-area {
-        padding: 20px;
-        background: var(--bg-color1);
-        box-shadow: var(--shadow2);
-        border-radius: 8px;
 
         li {
-            border-bottom: 1px solid var(--border-color3);
+            border-bottom: 1px solid var(--border-color1);
             padding: 10px 0;
 
             a {
                 font-size: 16px;
-                font-weight: 600;
+                font-weight: 500;
                 display: flex;
                 justify-content: space-between;
                 color: var(--heading-color);
+                font-family: var(--heading-font);
 
                 &:hover {
                     color: var(--primary-color);
                 }
             }
         }
+
+        li {
+            &:first-child {
+                padding-top: 0;
+            }
+        }
     }
 }
 
 .blog-sidebar {
-    padding: 25px;
-    border-radius: 8px;
-    background: var(--bg-color2);
-
-    .section-header {
-        margin-bottom: 30px;
-    }
-
-    .search-area {
-        padding: 0;
-        margin-bottom: 60px;
-        border-radius: 0;
-    }
-
-    .input-group {
-        background: var(--bg-color1);
-        box-shadow: var(--shadow2);
-        border-radius: 8px;
-    }
-
-    .form-control {
-        height: 50px;
-        border: 1px solid transparent;
-    }
-
-    .input-group-text {
-        font-size: 25px;
-        color: var(--primary-color);
-        width: 50px;
-        border: none;
-        border-radius: 0;
-        display: flex;
-        justify-content: center;
-    }
-
-    input[type="text"] {
-        &:focus {
-            border: 1px solid var(--primary-color);
-        }
-    }
-
     .blog-widget-area {
+        padding: 30px;
+        background-color: var(--bg-color6);
+        border-radius: 5px;
+        margin-bottom: 30px;
+
+        .widget-title {
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+
+            &::before {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                content: "";
+                width: 50px;
+                height: 2px;
+                background-color: var(--primary-color);
+            }
+
+            &::after {
+                position: absolute;
+                bottom: 0px;
+                left: 0;
+                content: "";
+                width: 150px;
+                height: 2px;
+                background-color: rgba(225, 225, 225, 0.40);
+            }
+        }
+
         .blog-widget-item {
             display: flex;
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: var(--shadow2);
-            background-color: var(--bg-color1);
             transition: var(--transition);
 
             &:hover .blog-widget-content .blog-title {
                 color: var(--primary-color);
             }
+        }
+
+        .blog-widget-item {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+
         }
     }
 
@@ -3516,102 +3650,150 @@ Login Signup end
         img {
             width: 100%;
             height: 85px;
-            border-radius: 8px;
+            border-radius: 5px;
+        }
+    }
+
+    .tag-list {
+        .item {
+            display: inline-block;
+            font-size: 14px;
+            padding: 10px 15px;
+            background-color: var(--bg-color3);
+            transition: var(--transition);
+            border-radius: 5px;
+            margin: 0 5px 5px 0;
+
+            border: 1px solid var(--border-color1);
+
+            &:hover {
+                background-color: var(--primary-color);
+                color: var(--white);
+            }
+        }
+
+        .item {
+            &:last-child {
+                margin-bottom: 0;
+            }
+
         }
     }
 }
 
 .blog-date {
-    color: var(--primary-color);
+    color: var(--heading-color);
+
+    i {
+        margin-right: 5px;
+        color: var(--primary-color);
+    }
+
+    font-size: 14px;
 }
 
 // Blog details rtl start
-.rtl .blog-details-section {
-    .blog-widget-content {
-        margin-left: 0;
-        margin-right: 15px;
+.rtl {
+    .blog-details-section {
+        .blog-widget-content {
+            margin-left: 0;
+            margin-right: 15px;
+        }
+
+        .blog-details .blog-author .author-img {
+            margin-right: 0;
+            margin-left: 15px;
+        }
     }
 
-    .blog-details .blog-author .author-img {
-        margin-right: 0;
-        margin-left: 15px;
-    }
+    .blog-sidebar .blog-widget-area {
+        .widget-title {
 
-    .blog-details .blog-author {
-        transform: translate(-40px, -40px);
+            &::before,
+            &::after {
+                right: 0;
+                left: auto;
+            }
+        }
     }
 }
 
 // Blog details rtl end
-
-// ---------------------------------------------------- 
-// Blog details section end
-// ----------------------------------------------------
-
-
-// ----------------------------------------------------
-// Pagination section start
-// ----------------------------------------------------
-.pagination-section {
-    .page-link {
-        &:focus {
-            background-color: var(--primary-color);
-            outline: 0;
-            box-shadow: none;
-        }
-    }
-
-    ul {
-        li {
-            a {
-                width: 40px;
-                height: 40px;
-                border-radius: 8px !important;
-                color: var(--heading-color);
-                background-color: var(--white);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin: 0 10px;
-                border: 1px solid var(--primary-color);
-                box-shadow: none;
+// Dark theme blog details section start
+.dark-theme {
+    .blog-sidebar {
+        .tag-list {
+            .item {
+                border-color: var(--bg-color3);
 
                 &:hover {
                     background-color: var(--primary-color);
-                    color: var(--white) !important;
-                    border: 1px solid var(--primary-color);
                 }
-            }
-
-            i {
-                display: flex;
-            }
-        }
-
-        .active {
-            a {
-                background-color: var(--primary-color);
-                color: var(--white);
-                border-color: var(--primary-color);
             }
         }
     }
 }
 
-// Pagination rtl start
-.rtl .pagination_area ul li i {
+// Dark theme blog details section end
+
+/*----------------------------------------------
+Blog details end
+----------------------------------------------*/
+
+
+/*----------------------------------------------
+19. Pagination section start
+----------------------------------------------*/
+.pagination-section {
+    margin-top: 50px;
+    display: flex;
+    justify-content: end;
+}
+
+.pagination .page-item .page-link {
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px !important;
+    color: var(--heading-color);
+    background-color: var(--bg-color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--border-color2);
+    box-shadow: none;
+}
+
+.pagination .page-item .page-link:hover,
+.pagination .page-item .page-link:focus {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: 1px solid var(--primary-color);
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+
+.rtl .pagination-section nav .pagination .page-item .page-link i {
     transform: rotate(180deg);
 }
 
-// Pagination rtl end
-// ----------------------------------------------------
-// Pagination section end
-// ----------------------------------------------------
+.dark-theme {
+    .pagination .page-item .page-link {
+        border-color: var(--bg-color2);
+    }
+}
 
+/*----------------------------------------------
+Pagination end
+----------------------------------------------*/
 
-// ----------------------------------------------------
-// Error section start
-// ----------------------------------------------------
+/*----------------------------------------------
+20. Error section start
+----------------------------------------------*/
 .error-section {
     height: 100vh;
     width: 100vw;
@@ -3681,101 +3863,11 @@ Login Signup end
     .error-section {
         height: 100%;
         width: 100%;
+        text-align: center;
     }
 }
 
 // Responsive error section end
-// ----------------------------------------------------
-// Error section end
-// ----------------------------------------------------
-// ----------------------------------------------------
-// Payment section start
-// ----------------------------------------------------
-.payment-section {
-    background-color: var(--bg-color1);
-
-    .section-title {
-        margin-bottom: 20px;
-    }
-
-    .btn-area {
-        margin-top: 30px;
-    }
-}
-
-.payment-options {
-    height: 260px;
-    overflow-y: auto;
-    overflow-x: hidden;
-
-    .btn-check+.btn-primary {
-        background: var(--white);
-        border: 2px solid var(--border-color1);
-        border-radius: 15px;
-        padding: 8px;
-        color: #212529;
-        position: relative;
-        transition: 0.4s;
-
-        .check {
-            position: absolute;
-            left: 15px;
-            top: 15px;
-            opacity: 0;
-            width: 18px;
-        }
-
-        &::after {
-            position: absolute;
-            content: "";
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.4);
-            top: 0;
-            left: 0;
-        }
-    }
-
-    .btn-check:checked+.btn-primary {
-        .check {
-            opacity: 1;
-        }
-
-        &::after {
-            background: none;
-        }
-    }
-
-    label img {
-        border-radius: 6px;
-    }
-
-    .btn-check:checked+.btn-primary {
-        border: 2px solid var(--primary-color) !important;
-    }
-}
-
-.payment-summary {
-    padding: 20px;
-    border-radius: 15px;
-    background-color: var(--white);
-    box-shadow: var(--shadow3);
-
-    .summary-list {
-        li {
-            display: flex;
-            justify-content: space-between;
-            padding: 7px;
-            color: var(--heading-color);
-
-            &:not(:last-child) {
-                border-bottom: 1px solid var(--border-color1);
-            }
-        }
-    }
-}
-
-// }
-// ----------------------------------------------------
-// Payment section end
-// ----------------------------------------------------
+/*----------------------------------------------
+Error section start
+----------------------------------------------*/
