@@ -2714,6 +2714,15 @@ Footer section end
   margin-right: 10px;
 }
 
+@media (max-width: 575px) {
+  .language {
+    text-align: center;
+  }
+}
+.rtl .copy-right-area .text-end {
+  text-align: left !important;
+}
+
 /*----------------------------------------------
 Copyright section end
 ----------------------------------------------*/

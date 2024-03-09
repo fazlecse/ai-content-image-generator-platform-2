@@ -3289,7 +3289,25 @@ Footer section end
     }
 }
 
+// Responsive copyright area start
 
+@media(max-width: 575px) {
+    .language {
+        text-align: center;
+    }
+}
+
+// Responsive copyright area end
+// Rtl copyright area start
+.rtl {
+    .copy-right-area {
+        .text-end {
+            text-align: left !important;
+        }
+    }
+}
+
+// Rtl copyright area end
 /*----------------------------------------------
 Copyright section end
 ----------------------------------------------*/
